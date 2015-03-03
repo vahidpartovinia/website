@@ -1,0 +1,196 @@
+<html>
+[<a href="http://probstat.ca">HOME</a>] 
+[<a href="contact.htm">CONTACT</a>] 
+[<a href="bio.htm">BIO</a>] 
+[<a href="publication.htm">PUBLICATION</a>] 
+[<a href="student.htm">STUDENT</a>] 
+[<a href="teaching.htm">TEACHING</a>]
+[<a href="software.htm">SOFTWARE</a>]
+[<a href="cyrus.htm">CYRUS</a>]
+[<a href="link.htm">LINK</a>]
+<head> <title> Cyrus </title> </head>
+
+
+<h3>What is CYRUS?</h3>
+CYRUS is a computing server intended to serve my graduate students, named after Cyrus the great, 
+who served humanity.  This CentOS 6 Linux server supports SSH and FTP services currently 
+running over 32 parallel processors and a total of 64GB RAM. The server includes a powerful Tesla K40 GPU server with 12 GB RAM and 2880 CUDA cores on one of its PCI 2.0 slots. I adminstrate the server with help
+of Benoit Forest, the computer technician of math department. 
+
+<h3>More hardware details</h3>
+<li>Motherboard Asus KGP(M)-D16.</li>
+<li>Dual core AMD Opteron 6272, each core with 16 CPUs.</li>
+<li>RAM 64 Giga octets.</li>
+<li>Tesla K40 GPU server computing accelator.</li>
+<li>One hard disk SSD 120 Giga.</li>
+<li>Two hard disks STATA 10K, one for data and home folders, another mirroring these folders.</li>
+<li>One hard disk STATA 7.2K for regular backup.</li>
+
+
+<h3>How can I have access?</h3>
+I must create you a username and send you a toy password. 
+I strongly suggest to change your password 
+as soon as you logged in the first time.
+
+<h3>How do I login?</h3>
+You can connect to the server using ssh command.
+If you work on Microsoft Windows, you need to install 
+<a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html">Putty</a>.  
+For Mac or Linux users
+the following command can be run directly from your terminal
+
+<pre  style="font-family:arial;font-size:12px;border:1px dashed #CCCCCC;width:99%;height:auto;overflow:auto;background:#f0f0f0;;background-image:URL(http://2.bp.blogspot.com/_z5ltvMQPaa8/SjJXr_U2YBI/AAAAAAAAAAM/46OqEP32CJ8/s320/codebg.gif);padding:0px;color:#000000;text-align:left;line-height:20px;"><code style="color:#000000;word-wrap:normal;">LOCAL$ ssh username@cyrus.mathappl.polymtl.ca  
+</code></pre>
+
+<h3>How to change password? </h3>
+After you login on the server
+<pre  style="font-family:arial;font-size:12px;border:1px dashed #CCCCCC;width:99%;height:auto;overflow:auto;background:#f0f0f0;;background-image:URL(http://2.bp.blogspot.com/_z5ltvMQPaa8/SjJXr_U2YBI/AAAAAAAAAAM/46OqEP32CJ8/s320/codebg.gif);padding:0px;color:#000000;text-align:left;line-height:20px;"><code style="color:#000000;word-wrap:normal;">CYRUS$ passwd username  
+</code></pre>
+then follow the messages.
+
+<h3>How to copy files?</h3>
+If you need to copy files from your computer to the server, or back from the server to your computer, you can use ftp.
+Install the ftp interface called <a href="https://addons.mozilla.org/en-US/firefox/addon/fireftp/">fireftp</a> on your 
+<a href="https://www.mozilla.org/en-US/">mozilla firefox</a>  browser.
+
+The ftp server is cyrus.mathappl.polymtl.ca, see below for more details
+<br>
+<a href="ftp.png"><img src="ftp_thumbnail.jpeg" width="382" height="239"></a>
+<br>
+<h3>How to use R on CYRUS?</h3>
+R is installed on the server. If you need some libraries, you have to install  the libraries locally on your space 
+on the server. 
+First make a directory to install your local libraries in.
+<pre  style="font-family:arial;font-size:12px;border:1px dashed #CCCCCC;width:99%;height:auto;overflow:auto;background:#f0f0f0;;background-image:URL(http://2.bp.blogspot.com/_z5ltvMQPaa8/SjJXr_U2YBI/AAAAAAAAAAM/46OqEP32CJ8/s320/codebg.gif);padding:0px;color:#000000;text-align:left;line-height:20px;"><code style="color:#000000;word-wrap:normal;"> CYRUS$ cd /home/username  
+ CYRUS$ mkdir Rlibs  
+</code></pre>
+Then launch R and install a library in Rlibs
+<pre  style="font-family:arial;font-size:12px;border:1px dashed #CCCCCC;width:99%;height:auto;overflow:auto;background:#f0f0f0;;background-image:URL(http://2.bp.blogspot.com/_z5ltvMQPaa8/SjJXr_U2YBI/AAAAAAAAAAM/46OqEP32CJ8/s320/codebg.gif);padding:0px;color:#000000;text-align:left;line-height:20px;"><code style="color:#000000;word-wrap:normal;"> CYRUS$ R  
+ R&gt; install.packages( "mylibrary", lib = "/home/username/Rlibs" )  
+</code></pre>
+You have to read the library from the Rlibs location that you specified.
+Call your library after the installation is complete using
+<pre  style="font-family:arial;font-size:12px;border:1px dashed #CCCCCC;width:99%;height:auto;overflow:auto;background:#f0f0f0;;background-image:URL(http://2.bp.blogspot.com/_z5ltvMQPaa8/SjJXr_U2YBI/AAAAAAAAAAM/46OqEP32CJ8/s320/codebg.gif);padding:0px;color:#000000;text-align:left;line-height:20px;"><code style="color:#000000;word-wrap:normal;"> R&gt; library( "mylibrary", lib.loc = "/home/username/Rlibs/" )  
+</code></pre>
+
+<h3>How to write parallel R codes?</h3>
+There are two ways. <br><br>
+1- Call processors using "parallel" or "snow" package in R and associate a function to 
+each processor.<br>
+2- Let the operating system distribute your code.<br><br>
+
+If you are a first timer I suggest you the second approach (explained below).<br>
+Suppose you want to run two codes in parallel. For instance you want to sum the 
+integer numbers from 1 to 20 000 000.
+One code sums from 1 to 10 000 000 and 
+saves the result in 01.RData, another code sums from 10 000 001 to 20 000 000 and 
+saves the result in 02.RData. Then you will aggregate the result. <br><br>
+First I suggest to make a folder for your saved data, call this folder "parallelresult", 
+and another folder for your codes, call this folder "parallelcode". 
+
+<pre  style="font-family:arial;font-size:12px;border:1px dashed #CCCCCC;width:99%;height:auto;overflow:auto;background:#f0f0f0;;background-image:URL(http://2.bp.blogspot.com/_z5ltvMQPaa8/SjJXr_U2YBI/AAAAAAAAAAM/46OqEP32CJ8/s320/codebg.gif);padding:0px;color:#000000;text-align:left;line-height:20px;"><code style="color:#000000;word-wrap:normal;"> CYRUS$ mkdir parallelcode  
+ CYRUS$ mkdir parallelresult  
+</code></pre>
+
+The code 01.R that sums from 1 to 10 000 000 is something like
+
+<pre  style="font-family:arial;font-size:12px;border:1px dashed #CCCCCC;width:99%;height:auto;overflow:auto;background:#f0f0f0;;background-image:URL(http://2.bp.blogspot.com/_z5ltvMQPaa8/SjJXr_U2YBI/AAAAAAAAAAM/46OqEP32CJ8/s320/codebg.gif);padding:0px;color:#000000;text-align:left;line-height:20px;"><code style="color:#000000;word-wrap:normal;"> R&gt; remove( list = ls() )  
+ R&gt; s &lt;- 0  
+ R&gt; for( i in 1:10^6 )  
+ R&gt; {  
+ R&gt; s = s + i  
+ R&gt; print( i )   
+ R&gt; }  
+ R&gt; save( list = ls(), file = "/home/username/parallelresult/01.RData" )  
+</code></pre>
+and code 02.R sums from 10 000 001 to 20 000 000 is something like
+<pre  style="font-family:arial;font-size:12px;border:1px dashed #CCCCCC;width:99%;height:auto;overflow:auto;background:#f0f0f0;;background-image:URL(http://2.bp.blogspot.com/_z5ltvMQPaa8/SjJXr_U2YBI/AAAAAAAAAAM/46OqEP32CJ8/s320/codebg.gif);padding:0px;color:#000000;text-align:left;line-height:20px;"><code style="color:#000000;word-wrap:normal;"> R&gt; remove( list = ls() )  
+ R&gt; s &lt;- 0  
+ R&gt; for( i in 10000001:20^6 )  
+ R&gt; {  
+ R&gt; s = s + i
+ R&gt; print( i )   
+ R&gt; }  
+ R&gt; save( list = ls(), file="/home/username/parallelresult/02.RData" )  
+</code></pre>
+<br>
+<br>
+1- Make sure that you do not write on the same .RData file! <br>
+2- Make sure that you print something which shows how much of your computation is left. <br>
+<br>
+<br>
+Copy these two files to /home/username/parallelcode/ using fireftp.
+Then run these two files one after another on CYRUS using the following command.
+<pre  style="font-family:arial;font-size:12px;border:1px dashed #CCCCCC;width:99%;height:auto;overflow:auto;background:#f0f0f0;;background-image:URL(http://2.bp.blogspot.com/_z5ltvMQPaa8/SjJXr_U2YBI/AAAAAAAAAAM/46OqEP32CJ8/s320/codebg.gif);padding:0px;color:#000000;text-align:left;line-height:20px;"><code style="color:#000000;word-wrap:normal;"> CYRUS$ nohup Rscript /home/username/parallelcode/01.R &amp;  
+ CYRUS$ nohup Rscript /home/username/parallelcode/02.R &amp;  
+</code></pre>
+Do not forget "&", it will return you commandline after you press enter.
+There is "nohup.out", a text file, now created that writes the Rconsole output. If you want to check how much of your computation
+is left check this file out. This file is specially helpful if your code exits with some error. The R error and warnings
+are written in this file.
+<pre  style="font-family:arial;font-size:12px;border:1px dashed #CCCCCC;width:99%;height:auto;overflow:auto;background:#f0f0f0;;background-image:URL(http://2.bp.blogspot.com/_z5ltvMQPaa8/SjJXr_U2YBI/AAAAAAAAAAM/46OqEP32CJ8/s320/codebg.gif);padding:0px;color:#000000;text-align:left;line-height:20px;"><code style="color:#000000;word-wrap:normal;"> CYRUS$ nano nohup.out  
+</code></pre>
+
+Just to be sure that there are two jobs now running on the server 
+<pre  style="font-family:arial;font-size:12px;border:1px dashed #CCCCCC;width:99%;height:auto;overflow:auto;background:#f0f0f0;;background-image:URL(http://2.bp.blogspot.com/_z5ltvMQPaa8/SjJXr_U2YBI/AAAAAAAAAAM/46OqEP32CJ8/s320/codebg.gif);padding:0px;color:#000000;text-align:left;line-height:20px;"><code style="color:#000000;word-wrap:normal;"> CYRUS$ top  
+</code></pre>
+and press "q" to exit the "top" interface, press "k" to kill a job.
+The "nohup" command keeps your job running even if you disconnect from
+the server, or logout from the server.
+
+When your jobs are executed you have to read the results from the saved files  
+and aggregate them to produce the final result. Call this file "final.R".
+ 
+You can transfer the files on your local computer and run final.R on your computer if the .RData 
+files are not big. 
+If your R.Data files are big you need to run "final.R" on the CYRUS, aggregate result in "final.RData" 
+transfer this file to your local computer.
+
+
+<pre  style="font-family:arial;font-size:12px;border:1px dashed #CCCCCC;width:99%;height:auto;overflow:auto;background:#f0f0f0;;background-image:URL(http://2.bp.blogspot.com/_z5ltvMQPaa8/SjJXr_U2YBI/AAAAAAAAAAM/46OqEP32CJ8/s320/codebg.gif);padding:0px;color:#000000;text-align:left;line-height:20px;"><code style="color:#000000;word-wrap:normal;"> R&gt; remove( list = ls() )  
+ R&gt; total &lt;- 0  
+ R&gt; load( file = "/home/username/parallelresult/01.RData" )  
+ R&gt; total&lt;- s  
+ R&gt; load( file = "/home/username/parallelresult/02.RData" )  
+ R&gt; total &lt;- total + s  
+ R&gt; save( list = "total", file = "/home/username/parallelresult/final.RData" )  
+</code></pre>
+
+
+<h3>Important tips</h3>
+<li> Save all data that you use in your codes "save( list = ls(),...)" since you may need some of your variables later. 
+Summarize the result in a small file "final.RData" and only save what you need. Only transfer this "final.RData" file to your local computer.</li>
+<li> Compress your transfering data in one file using the "zip" or "unzip" terminal commands insalled on Cyrus.</li>
+<li> Cyrus does not have a graophical card, if you need to plot something, you must write your plot using "postscript" or "pdf" commands in R.
+I suggest that you always save the data that you need, tansfer them to your computer, and make the graph on your local computer.</li>
+<li> If you need other software to be installed, just let me know by dropping an email.</li>
+<li> Learn some basic linux terminal commands from 
+<a href="http://vic.gedris.org/Manual-ShellIntro/1.2/ShellIntro.pdf">here</a>. </li>
+<li> Write your R codes on you own machine and run it on the server. Do not touch your R codes on the server. 
+If you really needed to see you R codes use "nano" linux command.</li>
+<li> Check if there is a free node using "top" command before running jobs.</li>
+<li> Do not run more than 10 parallel jobs on this server. If you need to run more than 10 parallel jobs, ask me. </li>
+<li> The memory of the server is shared between processors. Do not run demanding memory codes. It will crash the server and quites all jobs.</li>
+<li> You need to re-insall your libraries if I update R. Check the R version before using your libraries.</li>
+<li> If you run parallel in C, use MPI.</li>
+
+
+
+ 
+
+ 
+
+<br>
+[<a href="http://probstat.ca">HOME</a>] 
+[<a href="contact.htm">CONTACT</a>] 
+[<a href="bio.htm">BIO</a>] 
+[<a href="publication.htm">PUBLICATION</a>] 
+[<a href="student.htm">STUDENT</a>] 
+[<a href="teaching.htm">TEACHING</a>]
+[<a href="software.htm">SOFTWARE</a>]
+[<a href="cyrus.htm">CYRUS</a>]
+[<a href="link.htm">LINK</a>]
+<br>
+<br>
+</body>
+</html> 
