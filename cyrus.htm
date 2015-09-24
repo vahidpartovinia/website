@@ -11,7 +11,7 @@
 <head> <title> Cyrus </title> </head>
 
 <h3>How many servers do we have?</h3>
-We have two servers, one CPU server (Cyrus) and one GPU server (Gupiter).
+We have three servers, one CPU server (Cyrus), one GPU server (Gupiter), and one Rstudio server (RSTUDIO).
 
 <h3>What is CYRUS?</h3>
 CYRUS is a CPU computing server intended to serve my graduate students, named after Cyrus the great, 
@@ -20,10 +20,15 @@ running over 32 parallel processors and a total of 64GB RAM. I adminstrate CYRUS
 of Benoit Forest, the computer technician of math department. 
 
 <h3>What is GUPITER?</h3>
-CYRUS is a GPU computing server intended to serve my graduate students, GUPITER is a mixture of JUPITER the greek myth (king of gods)  
+GUPITER is a GPU computing server intended to serve my graduate students. GUPITER is a mixture of JUPITER the greek myth (king of gods)  
 and GPGPU (General Purpose Graphical Processing Unit). This Ubuntu Linux server supports SSH and FTP services currently 
 running over 8 CPU that hosts  a powerful Tesla K40 GPU server with 12 GB RAM and 2880 CUDA cores on one of its PCI 3.0 express slots. I adminstrate GUPITER with help
 of Benoit Forest, the computer technician of math department. 
+
+<h3>What is RSTUDIO?</h3>
+RSTUDIO is a moderate computing facility intended to serve students who just started computing over a remote server. RSTUDIO server is a web interface that mimics the common RStudio Desktop except that the computations are sent to the server. 
+
+
 
 
 <h3>More hardware details</h3>
@@ -59,6 +64,7 @@ as soon as you logged in the first time.
 You can connect to the server using ssh command.
 If you work on Microsoft Windows, you need to install 
 <a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html">Putty</a>.  
+Below I describe some basic hints supposing that the server is CYRUS.
 For Mac or Linux users
 the following command can be run directly from your terminal
 
