@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Probability Graph</title>
+	<!-- CSS code for the selector styles -->
+		
+		<!-- Ceci permet d'inclure les fichiers CSS -->
+		<link href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet">
+		<link href="style.css" rel="stylesheet" type="text/css">
+
+	<!-- Ceci permet d'inclure les fichiers JavaScript de jQuery, jQuery UI ainsi que code.js -->
+		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+		<script type="text/javascript" src="code.js"></script>
+</head>
+
+<!--Contains the html code for the page content-->
+<body>
+	<div class="title">
+		<h1 class="fr">Démonstration de la loi normale
+			<span>
+			<button id="engButton">English</button>
+			</span>
+		</h1>
+		<h1 class="eng">Central Limit Theorem
+			<span>
+			<button id="frButton">Francais</button>
+			</span>
+		</h1>
+	</div>
+	<div id="graphs">
+		<canvas id="canvas" width="600" height="450"></canvas>
+		<canvas id="canvas2" width="600" height="450"></canvas>
+
+	</div>
+	<p style="display:inline" class="fr">Distribution et loi normale</p>
+	<p style="display:inline" class="eng">Result table and normal distribution</p>
+	<p style="display:inline; margin-left:420px" class="fr">Version centrée réduite</p>
+	<p style="display:inline; margin-left:420px" class="eng">Central limit version</p>
+	<br>
+	<br>
+	<div>
+
+		<p style="display:inline" class="fr">x : Pourcentage de succès </p>
+		<p style="display:inline" class="eng">x : Percentage of success </p>
+		<p style="display:inline; margin-left:50px" class="fr">y : Nombre de tests </p>
+		<p style="display:inline; margin-left:50px" class="eng">y : Number of tests </p>
+		<p id="moyenneFR"class="fr">Moyenne : </p> 
+		<p id="moyenneENG"class="eng">Average : </p> 
+		<p style="display:inline" class="fr">Probabilité de succès : </p>
+		<p style="display:inline" class="eng">Probability of sucess : </p>
+		<input type = "range" id = "success" min = "0" max = "100" value = "50" step = "1" />
+		<p id="success_tag" style="display:inline"/>1
+		<p style="display:inline">%</p>
+		<br>
+		<br>
+		<p style="display:inline" class="fr">Échantillons par test(max 200) : </p>
+		<p style="display:inline" class="eng">Samples per tests(max 200) : </p>
+		<input id = "samples" type = "number" min = "10" max = "200"  value = "200"/>
+		<p style="display:inline; margin-left:50px" class="fr">Total de tests : </p>
+		<p style="display:inline; margin-left:50px" class="eng">Total of tests : </p>
+		<input id = "tests" type = "number" value = "1000"/>
+		<button type="button" id="graphButtonFR" class="fr">Graphique</button>
+		<button type="button" id="graphButtonENG" class="eng">Graph</button>
+	</div>
+</body>
+
+</html>

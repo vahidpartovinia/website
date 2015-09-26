@@ -1,0 +1,1382 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dés non-transitifs</title>
+<link rel="stylesheet" type="text/css" href="main.css" />
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="libs/three.js"></script>
+	<script type="text/javascript" src="libs/Detector.js"></script>
+	<script type="text/javascript" src="dictionnaire.js"></script>
+	<script type="text/javascript" src="de3d.js"></script>
+	<script type="text/javascript">
+	
+	var turnsToWin;
+	var DEBUG = false;
+	var activeScreen;
+	var globalGameRef;
+	var dict;
+
+	function fakeLoop(objetAModifier, de, dureeTotale, iterationsRestantes, iterationsAuTotal)
+	{
+		got = de._throw();
+
+		if(!(de instanceof Dice) && DEBUG)
+		{
+			alert("ERROR :: 'de' n'est pas une instance de 'Dice'.")
+		}
+		else
+		{
+		   // alert(Math.floor(dureeTotale/(3*iterationsAuTotal)));
+		}
+	
+		objetAModifier.attr("src","grime" + de.numberOfDicesInTheSet_ +"/faces/black.png");
+		objetAModifier.delay(dureeTotale/(3*iterationsAuTotal)).attr("src","grime" + de.numberOfDicesInTheSet_ +"/faces/"+got+".png");
+
+		if(iterationsRestantes>0)
+		{
+			setTimeOut(fakeLoop(objetAModifier, de, dureeTotale, iterationsRestantes-1, iterationsAuTotal ),dureeTotale/iterations);
+		}
+	}
+
+	function pickGrime5(nbPlayers)
+	{
+		if(nbPlayers < 2 || nbPlayers > 3)
+		{
+			//Handle Error
+		}
+		div = "<div id = 'screen0' class = 'screen'>"
+				+petiteEntete()
+				+dict.getText("CHOIX_DEE")+"<br/>"
+				+dict.getText("J1")+"<br/>"
+				+"<select id='screen0_player0_Dice'>"
+				+"GRIME5:<br/>"
+				+"<option value = '"+DiceType5.GRIME5_RED+"'>" + dict.getText("C_ROUGE")+ "</option><br/>"
+				+"<option value = '"+DiceType5.GRIME5_YELLOW+"'>" + dict.getText("C_JAUNE")+ "</option><br/>"
+				+"<option value = '"+DiceType5.GRIME5_BLUE+"'>" + dict.getText("C_BLEU")+ "</option><br/>"
+				+"<option value = '"+DiceType5.GRIME5_PURPLE+"'>" + dict.getText("C_VIOLET")+ "</option><br/>"
+				+"<option value = '"+DiceType5.GRIME5_GREEN+"'>" + dict.getText("C_VERT")+ "</option><br/>"
+				+"</select><br/>"
+				+dict.getText("J2")+"<br/>"
+				+"<select id='screen0_player1_Dice'>"
+				+"GRIME5:<br/>"
+				+"<option value = '"+DiceType5.GRIME5_RED+"'>" + dict.getText("C_ROUGE")+ "</option><br/>"
+				+"<option  selected='selected' value = '"+DiceType5.GRIME5_YELLOW+"'>" + dict.getText("C_JAUNE")+ "</option><br/>"
+				+"<option value = '"+DiceType5.GRIME5_BLUE+"'>" + dict.getText("C_BLEU")+ "</option><br/>"
+				+"<option value = '"+DiceType5.GRIME5_PURPLE+"'>" + dict.getText("C_VIOLET")+ "</option><br/>"
+				+"<option value = '"+DiceType5.GRIME5_GREEN+"'>" + dict.getText("C_VERT")+ "</option><br/>"
+				+"</select>";
+				
+		if(nbPlayers == 3)
+		{
+			div +=  "<br/>"
+				+dict.getText("J3")+"<br/>"
+				+"<select id='screen0_player2_Dice'>"
+				+"GRIME5:<br/>"
+				+"<option value = '"+DiceType5.GRIME5_RED+"'>" + dict.getText("C_ROUGE")+ "</option><br/>"
+				+"<option value = '"+DiceType5.GRIME5_YELLOW+"'>" + dict.getText("C_JAUNE")+ "</option><br/>"
+				+"<option selected='selected'  value = '"+DiceType5.GRIME5_BLUE+"'>" + dict.getText("C_BLEU")+ "</option><br/>"
+				+"<option value = '"+DiceType5.GRIME5_PURPLE+"'>" + dict.getText("C_VIOLET")+ "</option><br/>"
+				+"<option value = '"+DiceType5.GRIME5_GREEN+"'>" + dict.getText("C_VERT")+ "</option><br/>"
+				+"</select>";
+				
+			div += "<br/><br/><input type = 'submit' id='screen0_Submit' value='Ok'/>"
+				 +"<br/><br/><br/><div id=\"mainImageContainer3Players\"><img src='grime5.png' width='450px'/></div>"
+				 +"</div>";
+		}
+		else
+		{
+			div += "<br/><br/><input type = 'submit' id='screen0_Submit' value='Ok'/>"
+				 +"<br/><br/><br/><div id=\"mainImageContainer\"><img src='grime5.png' width='450px'/></div>"
+				 +"</div>";
+		}
+		
+		return div;
+	}
+
+
+	///////////////////
+	//enum DiceType
+	// exemple:
+	//  DiceType.GRIME3_RED; // renvoie un int, 0.
+	///////////////////
+
+	var DiceType3=
+		{
+			GRIME3_RED:		0,
+			GRIME3_BLUE:	1,
+			GRIME3_OLIVE:	2,
+		}
+	var DiceType5 = 
+	{
+			GRIME5_RED:		0,
+			GRIME5_YELLOW:	1,
+			GRIME5_BLUE:	2,
+			GRIME5_PURPLE:	3,
+			GRIME5_GREEN:	4
+	};
+
+	///////////////////
+
+	///////////////////
+	//class Dice
+	//Prend le type de dé en argument de construction;
+	///////////////////
+
+	function Dice(whichDice, numberOfDicesInTheSet)
+	{
+		this.diceNo = whichDice;
+		this.faces = new Array();
+		this.numberOfDicesInTheSet_ = numberOfDicesInTheSet;
+		if(numberOfDicesInTheSet == 3)
+		{
+			switch(whichDice)
+			{
+				case DiceType3.GRIME3_RED:
+					this.faces[0]=9;
+					this.faces[1]=4;
+					this.faces[2]=4;
+					this.faces[3]=4;
+					this.faces[4]=4;
+					this.faces[5]=4;
+				break;
+				case DiceType3.GRIME3_BLUE:
+					this.faces[0]=7;
+					this.faces[1]=7;
+					this.faces[2]=7;
+					this.faces[3]=2;
+					this.faces[4]=2;
+					this.faces[5]=2;
+				break;
+				case DiceType3.GRIME3_OLIVE:
+					this.faces[0]=5;
+					this.faces[1]=5;
+					this.faces[2]=5;
+					this.faces[3]=5;
+					this.faces[4]=5;
+					this.faces[5]=0;
+				break;
+
+				//TODO: Autres dés
+			}
+		}
+		else if (numberOfDicesInTheSet == 5)
+		{
+			switch(whichDice)
+			{
+			case DiceType5.GRIME5_RED:
+				this.faces[0]=9;
+				this.faces[1]=4;
+				this.faces[2]=4;
+				this.faces[3]=4;
+				this.faces[4]=4;
+				this.faces[5]=4;
+				break;
+			
+			case DiceType5.GRIME5_YELLOW:
+				this.faces[0]=8;
+				this.faces[1]=8;
+				this.faces[2]=3;
+				this.faces[3]=3;
+				this.faces[4]=3;
+				this.faces[5]=3;
+				break;
+			
+			case DiceType5.GRIME5_BLUE:
+				this.faces[0]=7;
+				this.faces[1]=7;
+				this.faces[2]=7;
+				this.faces[3]=2;
+				this.faces[4]=2;
+				this.faces[5]=2;
+				break;
+			
+			case DiceType5.GRIME5_PURPLE:
+				this.faces[0]=6;
+				this.faces[1]=6;
+				this.faces[2]=6;
+				this.faces[3]=6;
+				this.faces[4]=1;
+				this.faces[5]=1;
+				break;
+			
+			case DiceType5.GRIME5_GREEN:
+				this.faces[0]=5;
+				this.faces[1]=5;
+				this.faces[2]=5;
+				this.faces[3]=5;
+				this.faces[4]=5;
+				this.faces[5]=0;
+				break;		
+			}
+		}
+		else
+		{
+			if(DEBUG)
+			{
+				alert("Mauvais nombre de dés dans le set.");
+			}
+		}
+	}
+	//Dice::_throw()
+	Dice.prototype._throw = function()
+	{
+		return this.faces[Math.floor(6*Math.random())];
+	}
+
+
+	///////////////////
+	// Fin de class Dice
+	///////////////////
+
+	///////////////////
+	// struct Resultat
+	///////////////////
+	function Resultat(winner, loser, results)
+	{
+		this.winner = winner;
+		this.results = results;
+		this.loser = loser;
+	}
+	///////////////////
+	// fin struct Resultat
+	///////////////////
+
+	///////////////////
+	// class Game
+	///////////////////
+	function Game()
+	{
+		this.numberOfPlayers = 2; // éventuellement potentiellement 3
+		this.numberOfDicesPerPlayer = 1;
+		this.numberOfDicesInTheSet = 3;
+		this.dices = [];
+		this.playerVictories = [];
+		this.playerVictories[0] = 0;
+		this.playerVictories[1] = 0;
+		this.playerVictories[2] = 0;
+		this.someoneHasWon = false;
+	}
+	//Game::pickDices()
+
+	Game.prototype.assignDices = function(whichDices)
+	{
+
+		if(DEBUG && !(whichDices instanceof Array))
+		{
+			alert("Dans Game::pickDices(whichDices), whichDices doit être un array avec tous les dés dedans.");
+		}
+		
+		if(DEBUG && (!(whichDices[0] instanceof Dice)&&!(whichDices[0][0] instanceof Dice)))
+		{
+			alert("Les dés passés doivent être des objets Dice, pas des ints");
+		}
+
+		this.dices = whichDices;
+	}
+
+	Game.prototype._throw = function()
+	{
+		if(this.numberOfDicesPerPlayer == 1)
+		{
+			highestYet = 0;
+			winner = -1;
+			loser = 0;
+			resultats = [];
+		
+			for(i = 0; i < this.numberOfPlayers; i++)
+			{
+				resultats.push
+				(
+					this.dices[i]._throw()
+				);
+				if(highestYet < resultats[i])
+				{
+					highestYet = resultats[i];
+					winner = i;
+				}
+				if(i != winner)
+				{
+					loser = i;
+				}
+			}
+		
+			this.playerVictories[winner]++;
+		
+			if(DEBUG && winner == -1)
+			{
+				alert("Erreur: winner est encore -1.");
+			}
+		
+			if(DEBUG && loser == -1)
+			{
+				alert("Erreur: loser est encore -1.");
+			}
+		
+			return new Resultat(winner, loser, resultats);
+		}
+		else if(this.numberOfDicesPerPlayer == 2)
+		{
+			highestYet = [0,0];
+			winner = -1;
+			loser = 0;
+			resultats = [];
+
+			for(i = 0; i < this.numberOfPlayers; i++)
+			{
+				resultats.push([this.dices[i][0]._throw(),this.dices[i][1]._throw()]);
+				if(highestYet[0] + highestYet[1] < resultats[i][0] + resultats[i][1])
+				{
+					highestYet = resultats[i];
+					winner = i;
+				}
+				if(i != winner)
+				{
+					loser = i;
+				}
+			}
+		
+			this.playerVictories[winner]++;
+		
+			if(DEBUG && winner == -1)
+			{
+				alert("Erreur: winner est encore -1.");
+			}
+		
+			if(DEBUG && loser == -1)
+			{
+				alert("Erreur: loser est encore -1.");
+			}
+			return new Resultat(winner, loser, resultats);
+		}
+	}
+	///////////////////
+	// Fin class Game
+	///////////////////
+
+	function Game_SetOf3Dices_2Players_1PerPlayer()
+	{
+	}
+	Game_SetOf3Dices_2Players_1PerPlayer.prototype = new Game();
+	Game_SetOf3Dices_2Players_1PerPlayer.prototype.numberOfDicesPerPlayer = 1;
+	Game_SetOf3Dices_2Players_1PerPlayer.prototype.numberOfPlayers = 2;
+	Game_SetOf3Dices_2Players_1PerPlayer.prototype.numberOfDicesInTheSet = 3;
+
+	function Game_SetOf3Dices_2Players_2PerPlayer()
+	{
+	}
+	Game_SetOf3Dices_2Players_2PerPlayer.prototype = new Game();
+	Game_SetOf3Dices_2Players_2PerPlayer.prototype.numberOfDicesPerPlayer = 2;
+	Game_SetOf3Dices_2Players_2PerPlayer.prototype.numberOfPlayers = 2;
+	Game_SetOf3Dices_2Players_2PerPlayer.prototype.numberOfDicesInTheSet = 3;
+
+	function Game_SetOf5Dices_2Players_1PerPlayer()
+	{
+	}
+	Game_SetOf5Dices_2Players_1PerPlayer.prototype = new Game();
+	Game_SetOf5Dices_2Players_1PerPlayer.prototype.numberOfDicesPerPlayer = 1;
+	Game_SetOf5Dices_2Players_1PerPlayer.prototype.numberOfPlayers = 2;
+	Game_SetOf5Dices_2Players_1PerPlayer.prototype.numberOfDicesInTheSet = 5;
+
+	function Game_SetOf5Dices_2Players_2PerPlayer()
+	{
+	}
+	Game_SetOf5Dices_2Players_2PerPlayer.prototype = new Game();
+	Game_SetOf5Dices_2Players_2PerPlayer.prototype.numberOfDicesPerPlayer = 2;
+	Game_SetOf5Dices_2Players_2PerPlayer.prototype.numberOfPlayers = 2;
+	Game_SetOf5Dices_2Players_2PerPlayer.prototype.numberOfDicesInTheSet = 5;
+
+	function Game_SetOf5Dices_3Players_1PerPlayer()
+	{
+	}
+	Game_SetOf5Dices_3Players_1PerPlayer.prototype = new Game();
+	Game_SetOf5Dices_3Players_1PerPlayer.prototype.numberOfDicesPerPlayer = 1;
+	Game_SetOf5Dices_3Players_1PerPlayer.prototype.numberOfPlayers = 3;
+	Game_SetOf5Dices_3Players_1PerPlayer.prototype.numberOfDicesInTheSet = 5;
+
+	function Game_SetOf5Dices_3Players_2PerPlayer()
+	{
+	}
+	Game_SetOf5Dices_3Players_2PerPlayer.prototype = new Game();
+	Game_SetOf5Dices_3Players_2PerPlayer.prototype.numberOfDicesPerPlayer = 2;
+	Game_SetOf5Dices_3Players_2PerPlayer.prototype.numberOfPlayers = 3;
+	Game_SetOf5Dices_3Players_2PerPlayer.prototype.numberOfDicesInTheSet = 5;
+
+	///////////////////
+	// class Screen
+	//   VIRTUELLE PURE**********
+	///////////////////
+	function Screen ()
+	{
+		//VIRTUELLE PURE
+		this.initialHtml = "";	
+	}
+
+	Screen.prototype.run = function()
+	{
+	//	console.log(this.initialHtml());
+		$("#content").html(this.initialHtml());
+	
+		this.action();
+	};
+
+	///////////////////
+	// Fin class Screen
+	///////////////////
+
+	
+
+	function victoryAnim( resultats)
+	{
+		messageDeVictoire = dict.getText("GAGNANT_EST") + ((parseInt(resultats.winner) + 1).toString() + " !" );
+		$("#screen1_Resultats").css("opacity","0");
+		$("#screen1_Resultats").html(messageDeVictoire);
+		$("#screen1_Resultats").delay(1000).animate({opacity:1},200);
+	}
+
+	function LangChoiceScreen()
+	{
+	}
+
+	LangChoiceScreen.prototype = new Screen();
+	LangChoiceScreen.prototype.initialHtml = function() {
+		return "<div id = 'LangChoiceScreen' class = 'screen'>"
+		+ petiteEntete()
+			+"<p>Informations sur les dés grimes (en anglais) : <a href='http://plus.maths.org/content/non-transitiv-dice'>Ici</a><br/>"
+			+"Information on the grime dice : <a href='http://plus.maths.org/content/non-transitiv-dice'>Here</a><br/></p>"
+            +"Choisissez votre langue/ Choose your language:"
+			+"<ul>"
+				+"<li class='enabled'>"
+					+"<input type='submit' class='LangChoiceScreen_boutons' id='LangChoiceScreen_FR' value = 'Fran&ccedil;ais' /><br/>"
+				+"</li>"
+				+"<li class='enabled'>"
+					+"<input type='submit' class='LangChoiceScreen_boutons' id='LangChoiceScreen_EN' value = 'English' /><br/>"
+				+"</li>"
+			+"</ul>"
+		+"</div>"; }
+	LangChoiceScreen.prototype.action = function()
+	{
+		$("#LangChoiceScreen_FR").unbind();
+		$("#LangChoiceScreen_FR").click(
+			function()
+			{
+				dict = new Dict("FR");
+				activeScreen = new NumberOfDicesScreen();
+				activeScreen.run();
+			}
+		);
+	
+		$("#LangChoiceScreen_EN").unbind();
+		$("#LangChoiceScreen_EN").click(
+			function()
+			{
+				dict = new Dict("EN");
+				activeScreen = new NumberOfDicesScreen();
+				activeScreen.run();
+			}
+		);
+	}
+
+	function NumberOfDicesScreen()
+	{
+		
+	}
+	petiteEntete = function() 
+	{ 
+		if(typeof(dict) == "undefined")
+		{
+		   console.log("undefined");
+		   return "<img src='Titre.png' id='titre'><br />";
+		}
+		else
+		{
+			return dict.getText('ENTETE') ;
+		}
+			//return "<span id='titre'>" + + "</span><br/>" 
+	};
+
+	NumberOfDicesScreen.prototype = new Screen();
+	NumberOfDicesScreen.prototype.initialHtml = function() { 
+		return "<div id = 'NumberOfDicesScreen' class = 'screen'>"
+		+petiteEntete()
+			+"" + dict.getText('TYPE_PARTIE') +""
+			+"<ul>"
+				+"<li class='enabled'>"
+					+"<input type='submit' class='NumberOfDicesScreen_boutons' id='NumberOfDicesScreen_SetOf3Dices_2Players_1PerPlayer_Button' value = '" + dict.getText("3D2J")  + "' /><br/>"
+				+"</li>"
+				+"<li class='enabled'>"
+					+"<input type='submit' class='NumberOfDicesScreen_boutons' id='NumberOfDicesScreen_SetOf3Dices_2Players_2PerPlayer_Button' value = '" + dict.getText("2X_3D2J")  + "' /><br/>"
+				+"</li>"
+				+"<li class='enabled'>"
+					+"<input type='submit' class='NumberOfDicesScreen_boutons' id='NumberOfDicesScreen_SetOf5Dices_2Players_1PerPlayer_Button' value = '" + dict.getText("5D2J")  + "' /><br/>"
+				+"</li>"
+				+"<li class='enabled'>"
+					+"<input type='submit' class='NumberOfDicesScreen_boutons' id='NumberOfDicesScreen_SetOf5Dices_2Players_2PerPlayer_Button' value = '" + dict.getText("2X_5D2J")  + "'/><br/>"
+				+"</li>"
+				+"<li class='enabled'>"
+					+"<input type='submit' class='NumberOfDicesScreen_boutons' id='NumberOfDicesScreen_SetOf5Dices_3Players_1PerPlayer_Button' value = '" + dict.getText("5D3J")  + "' /><br/>"
+				+"</li>"
+				+"<li class='enabled'>"
+					+"<input type='submit' class='NumberOfDicesScreen_boutons' id='NumberOfDicesScreen_SetOf5Dices_3Players_2PerPlayer_Button' value = '" + dict.getText("2X_5D3J")  + "' /><br/>"
+				+"</li>"
+			+"</ul>"
+			+ dict.getText('COMBIEN_TOURS') +" : <input type='text' id='nombreTours' value='20' /> "
+		+"</div>";
+		 }
+
+	NumberOfDicesScreen.prototype.action = function()
+	{
+		/*
+		 
+			 turnsToWin = $("#nombreTours").val();
+			 if(isNaN(parseInt(turnsToWin)))
+			 {
+				alert(dict.getText("TOURS_NAN"));
+				return;
+			 }
+			 turnsToWin = parseInt(turnsToWin);
+
+		 
+		 */
+		$("#NumberOfDicesScreen_SetOf3Dices_2Players_1PerPlayer_Button").unbind();
+		$("#NumberOfDicesScreen_SetOf3Dices_2Players_1PerPlayer_Button").click(
+		function()
+		{
+			 turnsToWin = $("#nombreTours").val();
+			 if(isNaN(parseInt(turnsToWin)))
+			 {
+				alert(dict.getText("TOURS_NAN"));
+				return;
+			 }
+			 turnsToWin = parseInt(turnsToWin);
+			activeScreen = new SetOf3Dices_2Players_1PerPlayer_Screen0();
+			activeScreen.run();
+		}
+		);
+	
+		$("#NumberOfDicesScreen_SetOf3Dices_2Players_2PerPlayer_Button").unbind();
+		$("#NumberOfDicesScreen_SetOf3Dices_2Players_2PerPlayer_Button").click(
+		function()
+		{
+			 turnsToWin = $("#nombreTours").val();
+			 if(isNaN(parseInt(turnsToWin)))
+			 {
+				alert(dict.getText("TOURS_NAN"));
+				return;
+			 }
+			 turnsToWin = parseInt(turnsToWin);
+			activeScreen = new SetOf3Dices_2Players_2PerPlayer_Screen0();
+			activeScreen.run();
+		}
+		);
+	
+		$("#NumberOfDicesScreen_SetOf5Dices_2Players_1PerPlayer_Button").unbind();
+		$("#NumberOfDicesScreen_SetOf5Dices_2Players_1PerPlayer_Button").click(
+		function()
+		{
+			 turnsToWin = $("#nombreTours").val();
+			 if(isNaN(parseInt(turnsToWin)))
+			 {
+				alert(dict.getText("TOURS_NAN"));
+				return;
+			 }
+			 turnsToWin = parseInt(turnsToWin);
+			activeScreen = new SetOf5Dices_2Players_1PerPlayer_Screen0();
+			activeScreen.run();
+		}
+		);
+
+		$("#NumberOfDicesScreen_SetOf5Dices_2Players_2PerPlayer_Button").unbind();
+		$("#NumberOfDicesScreen_SetOf5Dices_2Players_2PerPlayer_Button").click(
+			function()
+			{
+				turnsToWin = $("#nombreTours").val();
+				 if(isNaN(parseInt(turnsToWin)))
+				 {
+					alert(dict.getText("TOURS_NAN"));
+					return;
+				 }
+				 turnsToWin = parseInt(turnsToWin);
+				activeScreen = new SetOf5Dices_2Players_2PerPlayer_Screen0();
+				activeScreen.run();
+			}
+		);
+
+		$("#NumberOfDicesScreen_SetOf5Dices_3Players_1PerPlayer_Button").unbind();
+		$("#NumberOfDicesScreen_SetOf5Dices_3Players_1PerPlayer_Button").click(
+			function()
+			{
+				turnsToWin = $("#nombreTours").val();
+				 if(isNaN(parseInt(turnsToWin)))
+				 {
+					alert(dict.getText("TOURS_NAN"));
+					return;
+				 }
+				 turnsToWin = parseInt(turnsToWin);
+				activeScreen = new SetOf5Dices_3Players_1PerPlayer_Screen0();
+				activeScreen.run();
+			}
+		);
+		
+		$("#NumberOfDicesScreen_SetOf5Dices_3Players_2PerPlayer_Button").unbind();
+		$("#NumberOfDicesScreen_SetOf5Dices_3Players_2PerPlayer_Button").click(
+			function()
+			{
+				turnsToWin = $("#nombreTours").val();
+				 if(isNaN(parseInt(turnsToWin)))
+				 {
+					alert(dict.getText("TOURS_NAN"));
+					return;
+				 }
+				 turnsToWin = parseInt(turnsToWin);
+				activeScreen = new SetOf5Dices_3Players_2PerPlayer_Screen0();
+				activeScreen.run();
+			}
+		);
+	}
+
+
+	///////////////////
+	// class Screen0 : public Screen
+	///////////////////
+
+		function SetOf3Dices_2Players_1PerPlayer_Screen0()
+		{	
+	
+		};
+		// L'héritage se passe ici
+		SetOf3Dices_2Players_1PerPlayer_Screen0.prototype = new Screen();
+		//Screen0.prototype.constructor = Screen0;
+	
+		SetOf3Dices_2Players_1PerPlayer_Screen0.prototype.initialHtml = function() { 
+			return "<div id ='screen0' class = 'screen'>"
+			+petiteEntete()
+			+dict.getText("CHOIX_DEE")+"<br/>"
+			+dict.getText("J1")+"<br/>"
+			+"<select id='screen0_player0_Dice'>"
+				+"GRIME3:<br/>"
+				+"<option value = '0'>" + dict.getText("C_ROUGE") + "</option><br/>"
+				+"<option value = '1'>" + dict.getText("C_BLEU") + "</option><br/>"
+				+"<option value = '2'>" + dict.getText("C_VERT") + "</option><br/>"
+			+"</select><br/>"
+			+"<br/>"+dict.getText("J2")+"<br/>"
+			+"<select id='screen0_player1_Dice'>"
+				+"GRIME3:<br/>"
+				+"<option value = '0'>" + dict.getText("C_ROUGE") + "</option><br/>"
+				+"<option selected='selected' value = '1'>" + dict.getText("C_BLEU") + "</option><br/>"
+				+"<option value = '2'>" + dict.getText("C_VERT") + "</option><br/>"
+			+"</select>"
+			+"<br/><br/><input type = 'submit' id='screen0_Submit' value='Ok'/>"
+			+"<br/><br/><div id=\"mainImageContainer\"><img src='grime3.png' id='mainImage3set' width='350px'/></div>"
+		+"</div>";
+		}
+
+		SetOf3Dices_2Players_1PerPlayer_Screen0.prototype.action = function()
+		{
+
+			
+			//Au cas où on serait entrain de revenir sur screen0, et que l'on aurait bindé une méthode différente à click la fois précédente.
+			$('#screen0_Submit').unbind();
+			$('#screen0_Submit').click(
+				function()
+				{
+					if($("#screen0_player0_Dice").val() == $("#screen0_player1_Dice").val())
+					{
+						alert(dict.getText("MEME_DEE"));
+						return;
+					}
+					dices = [];
+				
+					globalGamePointerRef= new Game_SetOf3Dices_2Players_1PerPlayer();
+				
+					dices[0] = new Dice(parseInt($("#screen0_player0_Dice").val()), globalGamePointerRef.numberOfDicesInTheSet );
+				
+					dices[1] = new Dice(parseInt($("#screen0_player1_Dice").val()), globalGamePointerRef.numberOfDicesInTheSet );
+				
+					globalGamePointerRef.assignDices(dices);
+				
+					activeScreen = new SetOf3Dices_2Players_1PerPlayer_Screen1(globalGamePointerRef);
+				
+					activeScreen.run();
+				}
+			)
+		}
+
+		function SetOf3Dices_2Players_1PerPlayer_Screen1(game)
+		{
+			this.game = game;
+			globalGamePointerRef = this.game;
+		};
+		// L'héritage se passe ici
+	
+		SetOf3Dices_2Players_1PerPlayer_Screen1.prototype = new Screen();
+		SetOf3Dices_2Players_1PerPlayer_Screen1.prototype.initialHtml = function()
+		{
+			return "<div id = 'screen1' class = 'screen'>"
+			+petiteEntete()
+			+dict.getText("JOUER_PARTIE")+"<br /><p id='screen1_Resultats'>&nbsp;</p>"
+			+"<div id='animations'><div id='onePerPlayer_Screen1_Dice1'></div><div id='onePerPlayer_Screen1_Dice2'></div><div style='clear: both'></div></div>"
+			+"<input id='screen1_Play' type='submit' value='"+dict.getText("LANCER_DEE")+"'/><br />"
+			+"<div id='screen1_Joueurs'><div id='screen1_Player0'>"+dict.getText("J1")+"<br/><img src='grime3/"
+			+this.game.dices[0].diceNo
+			+ ".png'/><br/><span id='Screen1_Player0_results'><span>0</span>"+ dict.getText("VICTOIRE")+"</span></div><div id='screen1_Player1'>"+dict.getText("J2")+"<br/><img src='grime3/"
+			+this.game.dices[1].diceNo
+			+".png'/><br/><span id='Screen1_Player1_results'><span>0</span>"+ dict.getText("VICTOIRE")+"</span></div></div>"
+			+"</div>";
+		}
+		SetOf3Dices_2Players_1PerPlayer_Screen1.prototype.action = function()
+		{
+			// On cree les differentes vues THREE
+			var animation = []
+			animation.push(new De3D($("#onePerPlayer_Screen1_Dice1"), globalGamePointerRef.dices[0].faces))
+			animation.push(new De3D($("#onePerPlayer_Screen1_Dice2"), globalGamePointerRef.dices[1].faces))
+
+
+			//Au cas où on serait entrain de revenir sur screen1, et que l'on aurait bindé une méthode différente à click la fois précédente.
+			$("#screen1_Play").unbind();
+			$("#screen1_Play").click
+			(
+				function()
+				{
+				
+					resultats = globalGamePointerRef._throw();
+				
+					animation[0].throw_(globalGamePointerRef.dices[0].faces.indexOf(resultats.results[0]));
+					animation[1].throw_(globalGamePointerRef.dices[1].faces.indexOf(resultats.results[1]));
+				
+					victoryAnim(resultats);
+
+					v0 = globalGamePointerRef.playerVictories[0];
+					v1 = globalGamePointerRef.playerVictories[1];
+					pourcentage0 = Math.floor(100* v0/(v0+v1));
+					pourcentage1 = Math.floor(100* v1/(v0+v1));
+					$("#Screen1_Player0_results").html("<span>"+globalGamePointerRef.playerVictories[0]+"</span>"+ dict.getText("VICTOIRE") + ", "+pourcentage0.toString() + "%");
+					$("#Screen1_Player1_results").html("<span>"+globalGamePointerRef.playerVictories[1]+"</span>"+ dict.getText("VICTOIRE") + ", "+pourcentage1.toString() + "%");
+				
+					if(globalGamePointerRef.playerVictories[0] == turnsToWin&&!globalGamePointerRef.someoneHasWon)
+					{
+						alert(dict.getText("J1_GAGNE"));
+						globalGamePointerRef.someoneHasWon=true;
+					}
+					if(globalGamePointerRef.playerVictories[1] == turnsToWin&&!globalGamePointerRef.someoneHasWon)
+					{
+						alert(dict.getText("J2_GAGNE"));
+						globalGamePointerRef.someoneHasWon=true;
+					}
+	
+				}
+			);
+		}
+	
+	////////////////////////////////SetOf3Dices_2Players_2PerPlayer0_Screen0
+		function SetOf3Dices_2Players_2PerPlayer_Screen0()
+		{	
+	
+		};
+		// L'héritage se passe ici
+		SetOf3Dices_2Players_2PerPlayer_Screen0.prototype = new Screen();
+		//Screen0.prototype.constructor = Screen0;
+	
+		SetOf3Dices_2Players_2PerPlayer_Screen0.prototype.initialHtml = function() {
+			return "<div id = 'screen0' class = 'screen'>"
+			+petiteEntete()
+			+dict.getText("CHOIX_DEE")+"<br/>"
+			+dict.getText("J1")+"<br/>"
+			+"<select id='screen0_player0_Dice'>"
+				+"GRIME3:<br/>"
+				+"<option value = '0'>" + dict.getText("C_ROUGE") + "</option><br/>"
+				+"<option value = '1'>" + dict.getText("C_BLEU") + "</option><br/>"
+				+"<option value = '2'>" + dict.getText("C_VERT") + "</option><br/>"
+			+"</select><br/>"
+			+dict.getText("J2")+"<br/>"
+			+"<select id='screen0_player1_Dice'>"
+				+"GRIME3:<br/>"
+				+"<option value = '0'>" + dict.getText("C_ROUGE") + "</option><br/>"
+				+"<option  selected='selected' value = '1'>" + dict.getText("C_BLEU") + "</option><br/>"
+				+"<option value = '2'>" + dict.getText("C_VERT") + "</option><br/>"
+			+"</select>"
+			+"<br/><br/><input type = 'submit' id='screen0_Submit' value='Ok'/>"
+			+"<br/><br/><div id=\"mainImageContainer\"><img src='grime3.png' id='mainImage3set' width='350px'/></div>"
+		+"</div>" };
+
+		SetOf3Dices_2Players_2PerPlayer_Screen0.prototype.action = function()
+		{
+
+			
+			//Au cas où on serait entrain de revenir sur screen0, et que l'on aurait bindé une méthode différente à click la fois précédente.
+			$('#screen0_Submit').unbind();
+			$('#screen0_Submit').click(
+				function()
+				{
+			
+					if($("#screen0_player0_Dice").val() == $("#screen0_player1_Dice").val())
+					{
+						alert(dict.getText("MEME_DEE"));
+						return;
+					}
+					dices = [[],[]];Dice
+				
+				
+					globalGamePointerRef= new Game_SetOf3Dices_2Players_2PerPlayer();
+				
+					dices[0][0] = new Dice(parseInt($("#screen0_player0_Dice").val()), globalGamePointerRef.numberOfDicesInTheSet );
+					dices[0][1] = new Dice(parseInt($("#screen0_player0_Dice").val()), globalGamePointerRef.numberOfDicesInTheSet );
+				
+					dices[1][0] = new Dice(parseInt($("#screen0_player1_Dice").val()), globalGamePointerRef.numberOfDicesInTheSet );
+					dices[1][1] = new Dice(parseInt($("#screen0_player1_Dice").val()), globalGamePointerRef.numberOfDicesInTheSet );
+				
+					globalGamePointerRef.assignDices(dices);
+				
+					activeScreen = new SetOf3Dices_2Players_2PerPlayer_Screen1(globalGamePointerRef);
+				
+					activeScreen.run();
+				}
+			)
+		}
+		function SetOf3Dices_2Players_2PerPlayer_Screen1(game)
+		{
+			this.game = game;
+			globalGamePointerRef = this.game;
+		};
+		// L'héritage se passe ici
+	
+		SetOf3Dices_2Players_2PerPlayer_Screen1.prototype = new Screen();
+		SetOf3Dices_2Players_2PerPlayer_Screen1.prototype.initialHtml = function()
+		{
+
+			return "<div id = 'screen1' class = 'screen'>"
+			+petiteEntete()
+			+dict.getText("JOUER_PARTIE")+"<br /><p id='screen1_Resultats'>&nbsp;</p>"
+			+"<div id='animations'><div id='onePerPlayer_Screen1_Dice11'></div><div id='onePerPlayer_Screen1_Dice12'></div><div id='onePerPlayer_Screen1_Dice21'></div><div id='onePerPlayer_Screen1_Dice22'></div><div style='clear: both'></div></div>"
+			+"<input id='screen1_Play' type='submit' value='"+dict.getText("LANCER_DEE")+"'/><br />"
+			+"<div id='screen1_Joueurs'><div id='screen1_Player0'>"+dict.getText("J1")+"<br/><img src='grime3/"
+			+this.game.dices[0][0].diceNo
+			+ ".png'/><br/><span id='Screen1_Player0_results'><span>0</span>"+ dict.getText("VICTOIRE")+"</span></div><div id='screen1_Player1'>"+dict.getText("J2")+"<br/><img src='grime3/"
+			+this.game.dices[1][0].diceNo
+			+".png'/><br/><span id='Screen1_Player1_results'><span>0</span>"+ dict.getText("VICTOIRE")+"</span></div></div>"
+			+"</div>";
+		}
+	
+		SetOf3Dices_2Players_2PerPlayer_Screen1.prototype.action = function()
+		{
+			// On cree les differentes vues THREE
+			var animation = []
+			animation.push(new De3D($("#onePerPlayer_Screen1_Dice11"), globalGamePointerRef.dices[0][0].faces))
+			animation.push(new De3D($("#onePerPlayer_Screen1_Dice12"), globalGamePointerRef.dices[0][1].faces))
+			animation.push(new De3D($("#onePerPlayer_Screen1_Dice21"), globalGamePointerRef.dices[1][0].faces))
+			animation.push(new De3D($("#onePerPlayer_Screen1_Dice22"), globalGamePointerRef.dices[1][1].faces))
+	
+			//Au cas où on serait entrain de revenir sur screen1, et que l'on aurait bindé une méthode différente à click la fois précédente.
+			$("#screen1_Play").unbind();
+			$("#screen1_Play").click
+			(
+				function()
+				{
+			
+					resultats =globalGamePointerRef._throw();
+
+					victoryAnim(resultats);
+
+					animation[0].throw_(globalGamePointerRef.dices[0][0].faces.indexOf(resultats.results[0][0]));
+					animation[1].throw_(globalGamePointerRef.dices[0][1].faces.indexOf(resultats.results[0][1]));
+					animation[2].throw_(globalGamePointerRef.dices[1][0].faces.indexOf(resultats.results[1][0]));
+					animation[3].throw_(globalGamePointerRef.dices[1][1].faces.indexOf(resultats.results[1][1]));
+								
+					v0 = globalGamePointerRef.playerVictories[0];
+					v1 = globalGamePointerRef.playerVictories[1];
+				
+					pourcentage0 = Math.floor(100* v0/(v0+v1));
+					pourcentage1 = Math.floor(100* v1/(v0+v1));
+				
+					$("#Screen1_Player0_results").html("<span>"+globalGamePointerRef.playerVictories[0]+"</span>" + dict.getText("VICTOIRE") + ", "+pourcentage0.toString() + "%");
+					$("#Screen1_Player1_results").html("<span>"+globalGamePointerRef.playerVictories[1]+"</span>" + dict.getText("VICTOIRE") + ", "+pourcentage1.toString() + "%");
+				
+
+
+					if(globalGamePointerRef.playerVictories[0] == turnsToWin&&!globalGamePointerRef.someoneHasWon)
+					{
+						alert(dict.getText("J1_GAGNE"));
+						globalGamePointerRef.someoneHasWon=true;
+					}
+					if(globalGamePointerRef.playerVictories[1] == turnsToWin&&!globalGamePointerRef.someoneHasWon)
+					{
+						alert(dict.getText("J2_GAGNE"));
+						globalGamePointerRef.someoneHasWon=true;
+					}
+	
+				}
+			);
+		}
+
+	/////////////////////////SetOf5Dices_2Players_1PerPlayer_Screen0
+		function SetOf5Dices_2Players_1PerPlayer_Screen0()
+		{	
+		};
+		// L'héritage se passe ici
+		SetOf5Dices_2Players_1PerPlayer_Screen0.prototype = new Screen();
+		//Screen0.prototype.constructor = Screen0;
+	
+		SetOf5Dices_2Players_1PerPlayer_Screen0.prototype.initialHtml = function() {
+		return pickGrime5(2) }
+
+		SetOf5Dices_2Players_1PerPlayer_Screen0.prototype.action = function()
+		{
+			//Au cas où on serait entrain de revenir sur screen0, et que l'on aurait bindé une méthode différente à click la fois précédente.
+			$('#screen0_Submit').unbind();
+			$('#screen0_Submit').click(
+				function()
+				{
+			
+					if($("#screen0_player0_Dice").val() == $("#screen0_player1_Dice").val())
+					{
+						alert(dict.getText("MEME_DEE"));
+						return;
+					}
+
+					dices = [];
+				
+				
+
+					globalGamePointerRef= new Game_SetOf3Dices_2Players_1PerPlayer();
+				
+					dices[0] = new Dice(parseInt($("#screen0_player0_Dice").val()), 5 );
+				
+					dices[1] = new Dice(parseInt($("#screen0_player1_Dice").val()), 5);
+			
+				
+					globalGamePointerRef.assignDices(dices);
+				
+				
+				
+					activeScreen = new SetOf5Dices_2Players_1PerPlayer_Screen1(globalGamePointerRef);
+				
+					activeScreen.run();
+				}
+			)
+		}
+
+		function SetOf5Dices_2Players_1PerPlayer_Screen1(game)
+		{
+			this.game = game;
+			globalGamePointerRef = this.game;
+		};
+		// L'héritage se passe ici
+	
+		SetOf5Dices_2Players_1PerPlayer_Screen1.prototype = new Screen();
+		SetOf5Dices_2Players_1PerPlayer_Screen1.prototype.initialHtml = function()
+		{
+			return "<div id = 'screen1' class = 'screen'>"
+			+petiteEntete()
+			+dict.getText("JOUER_PARTIE")+"<br /><p id='screen1_Resultats'>&nbsp;</p>"
+			+"<div id='animations'><div id='onePerPlayer_Screen1_Dice1'></div><div id='onePerPlayer_Screen1_Dice2'></div><div style='clear: both'></div></div>"
+			+"<input id='screen1_Play' type='submit' value='"+dict.getText("LANCER_DEE")+"'/><br />"
+			+"<div id='screen1_Joueurs'><div id='screen1_Player0'>"+dict.getText("J1")+"<br/><img src='grime5/"
+			+this.game.dices[0].diceNo
+			+ ".png'/><br/><span id='Screen1_Player0_results'><span>0</span>"+ dict.getText("VICTOIRE")+"</span></div><div id='screen1_Player1'>"+dict.getText("J2")+"<br/><img src='grime5/"
+			+this.game.dices[1].diceNo
+			+".png'/><br/><span id='Screen1_Player1_results'><span>0</span>"+ dict.getText("VICTOIRE")+"</span></div></div>"
+			+"</div>";
+		}
+	
+		SetOf5Dices_2Players_1PerPlayer_Screen1.prototype.action = SetOf3Dices_2Players_1PerPlayer_Screen1.prototype.action;
+
+		//////////////////////////////////////////////////////////////
+		function SetOf5Dices_2Players_2PerPlayer_Screen0()
+		{	
+	
+		};
+		// L'héritage se passe ici
+		SetOf5Dices_2Players_2PerPlayer_Screen0.prototype = new Screen();
+		//Screen0.prototype.constructor = Screen0;
+	
+		SetOf5Dices_2Players_2PerPlayer_Screen0.prototype.initialHtml = function() {
+			return pickGrime5(2);
+		}
+
+		SetOf5Dices_2Players_2PerPlayer_Screen0.prototype.action = function()
+		{	
+			//Au cas où on serait entrain de revenir sur screen0, et que l'on aurait bindé une méthode différente à click la fois précédente.
+			$('#screen0_Submit').unbind();
+			$('#screen0_Submit').click(
+				function()
+				{
+			
+					if($("#screen0_player0_Dice").val() == $("#screen0_player1_Dice").val())
+					{
+						alert(dict.getText("MEME_DEE"));
+						return;
+					}
+					dices = [[],[]];
+				
+					globalGamePointerRef= new Game_SetOf5Dices_2Players_2PerPlayer();
+				
+					dices[0][0] = new Dice(parseInt($("#screen0_player0_Dice").val()), globalGamePointerRef.numberOfDicesInTheSet );
+					dices[0][1] = new Dice(parseInt($("#screen0_player0_Dice").val()), globalGamePointerRef.numberOfDicesInTheSet );
+				
+					dices[1][0] = new Dice(parseInt($("#screen0_player1_Dice").val()), globalGamePointerRef.numberOfDicesInTheSet );
+					dices[1][1] = new Dice(parseInt($("#screen0_player1_Dice").val()), globalGamePointerRef.numberOfDicesInTheSet );
+				
+					globalGamePointerRef.assignDices(dices);
+				
+					activeScreen = new SetOf5Dices_2Players_2PerPlayer_Screen1(globalGamePointerRef);
+				
+					activeScreen.run();
+				}
+			)
+		}
+		function SetOf5Dices_2Players_2PerPlayer_Screen1(game)
+		{
+			this.game = game;
+			globalGamePointerRef = this.game;
+		};
+		// L'héritage se passe ici
+	
+		SetOf5Dices_2Players_2PerPlayer_Screen1.prototype = new Screen();
+		SetOf5Dices_2Players_2PerPlayer_Screen1.prototype.initialHtml = function()
+		{
+			return "<div id = 'screen1' class = 'screen'>"
+			+petiteEntete()
+			+dict.getText("JOUER_PARTIE")+"<br /><p id='screen1_Resultats'>&nbsp;</p>"
+			+"<div id='animations'><div id='onePerPlayer_Screen1_Dice11'></div><div id='onePerPlayer_Screen1_Dice12'></div><div id='onePerPlayer_Screen1_Dice21'></div><div id='onePerPlayer_Screen1_Dice22'></div><div style='clear: both'></div></div>"
+			+"<input id='screen1_Play' type='submit' value='"+dict.getText("LANCER_DEE")+"'/><br />"
+			+"<div id='screen1_Joueurs'><div id='screen1_Player0'>"+dict.getText("J1")+"<br/><img src='grime5/"
+			+this.game.dices[0][0].diceNo
+			+ ".png'/><br/><span id='Screen1_Player0_results'><span>0</span>"+ dict.getText("VICTOIRE")+"</span></div><div id='screen1_Player1'>"+dict.getText("J2")+"<br/><img src='grime5/"
+			+this.game.dices[1][0].diceNo
+			+".png'/><br/><span id='Screen1_Player1_results'><span>0</span>"+ dict.getText("VICTOIRE")+"</span></div></div>"
+			+"</div>";
+		}
+	
+		SetOf5Dices_2Players_2PerPlayer_Screen1.prototype.action = SetOf3Dices_2Players_2PerPlayer_Screen1.prototype.action;
+
+		/////////////////////////SetOf5Dices_3Players_1PerPlayer_Screen0
+		function SetOf5Dices_3Players_1PerPlayer_Screen0()
+		{	
+		};
+		// L'héritage se passe ici
+		SetOf5Dices_3Players_1PerPlayer_Screen0.prototype = new Screen();
+		//Screen0.prototype.constructor = Screen0;
+	
+		SetOf5Dices_3Players_1PerPlayer_Screen0.prototype.initialHtml = function() 
+		{
+			return pickGrime5(3); 
+		}
+
+		SetOf5Dices_3Players_1PerPlayer_Screen0.prototype.action = function()
+		{
+			//Au cas où on serait entrain de revenir sur screen0, et que l'on aurait bindé une méthode différente à click la fois précédente.
+			$('#screen0_Submit').unbind();
+			$('#screen0_Submit').click(
+				function()
+				{
+			
+					if($("#screen0_player0_Dice").val() == $("#screen0_player1_Dice").val())
+					{
+						alert(dict.getText("MEME_DEE"));
+						return;
+					}
+
+					dices = [];
+				
+				
+
+					globalGamePointerRef= new Game_SetOf5Dices_3Players_1PerPlayer();
+				
+					dices[0] = new Dice(parseInt($("#screen0_player0_Dice").val()), 5 );
+				
+					dices[1] = new Dice(parseInt($("#screen0_player1_Dice").val()), 5);
+			
+					dices[2] = new Dice(parseInt($("#screen0_player2_Dice").val()), 5);
+				
+					globalGamePointerRef.assignDices(dices);
+				
+				
+				
+					activeScreen = new SetOf5Dices_3Players_1PerPlayer_Screen1(globalGamePointerRef);
+				
+					activeScreen.run();
+				}
+			)
+		}
+
+		function SetOf5Dices_3Players_1PerPlayer_Screen1(game)
+		{
+			this.game = game;
+			globalGamePointerRef = this.game;
+		};
+		// L'héritage se passe ici
+	
+		SetOf5Dices_3Players_1PerPlayer_Screen1.prototype = new Screen();
+		SetOf5Dices_3Players_1PerPlayer_Screen1.prototype.initialHtml = function()
+		{
+			return "<div id = 'screen1' class = 'screen'>"
+			+petiteEntete()
+			+dict.getText("JOUER_PARTIE")+"<br /><p id='screen1_Resultats'>&nbsp;</p>"
+			+"<div id='animations'><div id='onePerPlayer_Screen1_Dice1'></div><div id='onePerPlayer_Screen1_Dice2'></div><div id='onePerPlayer_Screen1_Dice3'></div><div style='clear: both'></div></div>"
+			+"<input id='screen1_Play' type='submit' value='"+dict.getText("LANCER_DEE")+"'/><br />"
+			+"<div id='screen1_Joueurs'><div id='screen1_Player0'>"+dict.getText("J1")+"<br/><img src='grime5/"
+			+this.game.dices[0].diceNo
+			+ ".png'/><br/><span id='Screen1_Player0_results'><span>0</span>"+ dict.getText("VICTOIRE")+"</span></div><div id='screen1_Player1'>"+dict.getText("J2")+"<br/><img src='grime5/"
+			+this.game.dices[1].diceNo
+			+".png'/><br/><span id='Screen1_Player1_results'><span>0</span>"+ dict.getText("VICTOIRE")+"</span></div><div id='screen1_Player2'>"+dict.getText("J3")+"<br/><img src='grime5/"
+			+this.game.dices[2].diceNo
+			+".png'/><br/><span id='Screen1_Player2_results'><span>0</span>"+ dict.getText("VICTOIRE")+"</span></div></div></div>"
+			+"</div>";
+		}
+	
+		 SetOf5Dices_3Players_1PerPlayer_Screen1.prototype.action  = function()
+		{
+			// On cree les differentes vues THREE
+			var animation = []
+			animation.push(new De3D($("#onePerPlayer_Screen1_Dice1"), globalGamePointerRef.dices[0].faces))
+			animation.push(new De3D($("#onePerPlayer_Screen1_Dice2"), globalGamePointerRef.dices[1].faces))
+			animation.push(new De3D($("#onePerPlayer_Screen1_Dice3"), globalGamePointerRef.dices[2].faces))
+
+
+			//Au cas où on serait entrain de revenir sur screen1, et que l'on aurait bindé une méthode différente à click la fois précédente.
+			$("#screen1_Play").unbind();
+			$("#screen1_Play").click
+			(
+				function()
+				{
+				
+					resultats = globalGamePointerRef._throw();
+				
+					animation[0].throw_(globalGamePointerRef.dices[0].faces.indexOf(resultats.results[0]));
+					animation[1].throw_(globalGamePointerRef.dices[1].faces.indexOf(resultats.results[1]));
+					animation[2].throw_(globalGamePointerRef.dices[2].faces.indexOf(resultats.results[2]));
+				
+					victoryAnim(resultats);
+
+					v0 = globalGamePointerRef.playerVictories[0];
+					v1 = globalGamePointerRef.playerVictories[1];
+					v2 = globalGamePointerRef.playerVictories[2];
+					
+					pourcentage0 = Math.floor(100* v0/(v0+v1+v2));
+					pourcentage1 = Math.floor(100* v1/(v0+v1+v2));
+					pourcentage2 = Math.floor(100* v2/(v0+v1+v2));
+					
+					$("#Screen1_Player0_results").html("<span>"+globalGamePointerRef.playerVictories[0]+"</span>"+ dict.getText("VICTOIRE") + ", "+pourcentage0.toString() + "%");
+					$("#Screen1_Player1_results").html("<span>"+globalGamePointerRef.playerVictories[1]+"</span>"+ dict.getText("VICTOIRE") + ", "+pourcentage1.toString() + "%");
+					$("#Screen1_Player2_results").html("<span>"+globalGamePointerRef.playerVictories[2]+"</span>"+ dict.getText("VICTOIRE") + ", "+pourcentage2.toString() + "%");
+					
+					if(globalGamePointerRef.playerVictories[0] == turnsToWin&&!globalGamePointerRef.someoneHasWon)
+					{
+						alert(dict.getText("J1_GAGNE"));
+						globalGamePointerRef.someoneHasWon=true;
+					}
+					if(globalGamePointerRef.playerVictories[1] == turnsToWin&&!globalGamePointerRef.someoneHasWon)
+					{
+						alert(dict.getText("J2_GAGNE"));
+						globalGamePointerRef.someoneHasWon=true;
+					}
+					if(globalGamePointerRef.playerVictories[2] == turnsToWin&&!globalGamePointerRef.someoneHasWon)
+					{
+						alert(dict.getText("J3_GAGNE"));
+						globalGamePointerRef.someoneHasWon=true;
+					}
+	
+				}
+			);
+		}
+
+		/////////////////////////SetOf5Dices_3Players_2PerPlayer_Screen0
+		function SetOf5Dices_3Players_2PerPlayer_Screen0()
+		{	
+		};
+		// L'héritage se passe ici
+		SetOf5Dices_3Players_2PerPlayer_Screen0.prototype = new Screen();
+		//Screen0.prototype.constructor = Screen0;
+	
+		SetOf5Dices_3Players_2PerPlayer_Screen0.prototype.initialHtml = function() {
+		return pickGrime5(3) }
+
+		SetOf5Dices_3Players_2PerPlayer_Screen0.prototype.action = function()
+		{
+			//Au cas où on serait entrain de revenir sur screen0, et que l'on aurait bindé une méthode différente à click la fois précédente.
+			$('#screen0_Submit').unbind();
+			$('#screen0_Submit').click(
+				function()
+				{
+			
+					if(
+						$("#screen0_player0_Dice").val() == $("#screen0_player1_Dice").val() ||
+						$("#screen0_player0_Dice").val() == $("#screen0_player2_Dice").val() ||
+						$("#screen0_player1_Dice").val() == $("#screen0_player2_Dice").val() 
+					)
+					{
+						alert(dict.getText("MEME_DEE"));
+						return;
+					}
+
+					dices = new Array();
+			
+					dices[0] = new Array();
+					dices[1] = new Array();
+					dices[2] = new Array();
+
+					globalGamePointerRef = new Game_SetOf5Dices_3Players_2PerPlayer();
+				
+					dices[0][0] = new Dice(parseInt($("#screen0_player0_Dice").val()), 5 );
+					dices[0][1] = new Dice(parseInt($("#screen0_player0_Dice").val()), 5 );
+																					   
+					dices[1][0] = new Dice(parseInt($("#screen0_player1_Dice").val()), 5 );
+					dices[1][1] = new Dice(parseInt($("#screen0_player1_Dice").val()), 5 );
+																					   
+					dices[2][0] = new Dice(parseInt($("#screen0_player2_Dice").val()), 5 );
+					dices[2][1] = new Dice(parseInt($("#screen0_player2_Dice").val()), 5 );
+				
+					globalGamePointerRef.assignDices(dices);
+				
+				
+				
+					activeScreen = new SetOf5Dices_3Players_2PerPlayer_Screen1(globalGamePointerRef);
+				
+					activeScreen.run();
+				}
+			)
+		}
+
+		function SetOf5Dices_3Players_2PerPlayer_Screen1(game)
+		{
+			this.game = game;
+			globalGamePointerRef = this.game;
+		};
+		// L'héritage se passe ici
+	
+		SetOf5Dices_3Players_2PerPlayer_Screen1.prototype = new Screen();
+		SetOf5Dices_3Players_2PerPlayer_Screen1.prototype.initialHtml = function()
+		{
+			return "<div id = 'screen1' class = 'screen'>"
+			+petiteEntete()
+			+dict.getText("JOUER_PARTIE")+"<br /><p id='screen1_Resultats'>&nbsp;</p>"
+			+"<div id='animations'><div id='TwoPerPlayer_Screen1_Dice_1'></div><div id='TwoPerPlayer_Screen1_Dice_2'></div><div id='TwoPerPlayer_Screen1_Dice_3'></div><div id='TwoPerPlayer_Screen1_Dice_4'></div><div id='TwoPerPlayer_Screen1_Dice_5'></div><div id='TwoPerPlayer_Screen1_Dice_6'></div><div style='clear: both'></div></div>"
+			+"<input id='screen1_Play' type='submit' value='"+dict.getText("LANCER_DEE")+"'/><br />"
+			+"<div id='screen1_Joueurs'><div id='screen1_Player0'>"+dict.getText("J1")+"<br/><img src='grime5/"
+			+this.game.dices[0][0].diceNo
+			+ ".png'/><br/><span id='Screen1_Player0_results'><span>0</span>"+ dict.getText("VICTOIRE")+"</span></div><div id='screen1_Player1'>"+dict.getText("J2")+"<br/><img src='grime5/"
+			+this.game.dices[1][0].diceNo
+			+".png'/><br/><span id='Screen1_Player1_results'><span>0</span>"+ dict.getText("VICTOIRE")+"</span></div><div id='screen1_Player2'>"+dict.getText("J3")+"<br/><img src='grime5/"
+			+this.game.dices[2][0].diceNo
+			+".png'/><br/><span id='Screen1_Player2_results'><span>0</span>"+ dict.getText("VICTOIRE")+"</span></div></div></div>"
+			+"</div>";
+		}
+	
+		 SetOf5Dices_3Players_2PerPlayer_Screen1.prototype.action  = function()
+		{
+			$("#content screen").height = 800;
+			
+			// On cree les differentes vues THREE
+			var animation = []
+			
+			animation.push(new De3D($("#TwoPerPlayer_Screen1_Dice_1"), globalGamePointerRef.dices[0][0].faces))
+			animation.push(new De3D($("#TwoPerPlayer_Screen1_Dice_2"), globalGamePointerRef.dices[0][1].faces))
+			animation.push(new De3D($("#TwoPerPlayer_Screen1_Dice_3"), globalGamePointerRef.dices[1][0].faces))
+			animation.push(new De3D($("#TwoPerPlayer_Screen1_Dice_4"), globalGamePointerRef.dices[1][1].faces))
+			animation.push(new De3D($("#TwoPerPlayer_Screen1_Dice_5"), globalGamePointerRef.dices[2][0].faces))
+			animation.push(new De3D($("#TwoPerPlayer_Screen1_Dice_6"), globalGamePointerRef.dices[2][1].faces))
+
+			//Au cas où on serait entrain de revenir sur screen1, et que l'on aurait bindé une méthode différente à click la fois précédente.
+			$("#screen1_Play").unbind();
+			$("#screen1_Play").click
+			(
+				function()
+				{
+				
+					resultats = globalGamePointerRef._throw();
+				
+					animation[0].throw_(globalGamePointerRef.dices[0][0].faces.indexOf(resultats.results[0][0]));
+					animation[1].throw_(globalGamePointerRef.dices[0][1].faces.indexOf(resultats.results[0][1]));
+					animation[2].throw_(globalGamePointerRef.dices[1][0].faces.indexOf(resultats.results[1][0]));
+					animation[3].throw_(globalGamePointerRef.dices[1][1].faces.indexOf(resultats.results[1][1]));
+					animation[4].throw_(globalGamePointerRef.dices[2][0].faces.indexOf(resultats.results[2][0]));
+					animation[5].throw_(globalGamePointerRef.dices[2][1].faces.indexOf(resultats.results[2][1]));
+				
+					victoryAnim(resultats);
+
+					v0 = globalGamePointerRef.playerVictories[0];
+					v1 = globalGamePointerRef.playerVictories[1];
+					v2 = globalGamePointerRef.playerVictories[2];
+					
+					pourcentage0 = Math.floor(100* v0/(v0+v1+v2));
+					pourcentage1 = Math.floor(100* v1/(v0+v1+v2));
+					pourcentage2 = Math.floor(100* v2/(v0+v1+v2));
+					
+					$("#Screen1_Player0_results").html("<span>"+globalGamePointerRef.playerVictories[0]+"</span>"+ dict.getText("VICTOIRE") + ", "+pourcentage0.toString() + "%");
+					$("#Screen1_Player1_results").html("<span>"+globalGamePointerRef.playerVictories[1]+"</span>"+ dict.getText("VICTOIRE") + ", "+pourcentage1.toString() + "%");
+					$("#Screen1_Player2_results").html("<span>"+globalGamePointerRef.playerVictories[2]+"</span>"+ dict.getText("VICTOIRE") + ", "+pourcentage2.toString() + "%");
+					
+					if(globalGamePointerRef.playerVictories[0] == turnsToWin&&!globalGamePointerRef.someoneHasWon)
+					{
+						alert(dict.getText("J1_GAGNE"));
+						globalGamePointerRef.someoneHasWon=true;
+					}
+					if(globalGamePointerRef.playerVictories[1] == turnsToWin&&!globalGamePointerRef.someoneHasWon)
+					{
+						alert(dict.getText("J2_GAGNE"));
+						globalGamePointerRef.someoneHasWon=true;
+					}
+					if(globalGamePointerRef.playerVictories[2] == turnsToWin&&!globalGamePointerRef.someoneHasWon)
+					{
+						alert(dict.getText("J3_GAGNE"));
+						globalGamePointerRef.someoneHasWon=true;
+					}
+	
+				}
+			);
+		}
+
+	$(document).ready
+	(
+		function()
+		{	
+			activeScreen = new LangChoiceScreen();
+			activeScreen.run();	
+		
+			//Dès que le type de dés est choisi, on preload les images
+		
+			principale3 = new Image(568,164);
+			principale3.src="grime3.png";
+			principale5 = new Image(550,96);
+			principale5.src="grime5.png";
+			des3=[];
+			for(i = 0; i<3;i++)
+			{
+				des3[i] = new Image(181,180);
+				des3[i].src = "grime3/"+i+".png";
+			}
+			des5=[];
+			for(i = 0; i<5;i++)
+			{
+		
+				des5[i] = new Image(96,96);
+				des5[i].src = "grime5/"+i+".png";
+			}
+			des5=[];
+			faces3=[];
+			faces5=[];
+			/*
+			for(i = 0; i < 6; i++)
+			{
+				faces3[i] = new Image(50,50);
+				faces3[i].src="grime3/faces/"+i+".png";
+			}
+			*/
+			for(i = 0; i < 10; i++)
+			{
+				faces5[i] = new Image(34,33);
+				faces5[i].src="grime5/faces/"+i+".png";
+			}
+		
+		}
+	);
+
+
+	</script>
+</head>
+<body>
+	<div id="content" >
+		
+	</div>
+</body>
+</html>

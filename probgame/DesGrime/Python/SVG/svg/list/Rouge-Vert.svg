@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"  >
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"  >
+<polygon opacity="0.6" points="29.0 29.0 151.0 29.0 151.0 101.0 29.0 101.0" fill="rgb(255,0,0)"  />
+<g transform="translate(40,40)"  >
+<rect style="fill:rgb(255, 0, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="25.0" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="25.0" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="25.0" cx="25.0" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="25.0" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="25.0" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<g transform="translate(90,40)"  >
+<rect style="fill:rgb(0, 255, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+</g>
+<polygon opacity="0.6" points="29.0 109.0 151.0 109.0 151.0 181.0 29.0 181.0" fill="rgb(255,0,0)"  />
+<g transform="translate(40,120)"  >
+<rect style="fill:rgb(255, 0, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="25.0" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="25.0" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="25.0" cx="25.0" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="25.0" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="25.0" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<g transform="translate(90,120)"  >
+<rect style="fill:rgb(0, 255, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="25.0" cx="25.0" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<polygon opacity="0.6" points="29.0 189.0 151.0 189.0 151.0 261.0 29.0 261.0" fill="rgb(255,0,0)"  />
+<g transform="translate(40,200)"  >
+<rect style="fill:rgb(255, 0, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="25.0" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="25.0" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="25.0" cx="25.0" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="25.0" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="25.0" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<g transform="translate(90,200)"  >
+<rect style="fill:rgb(0, 255, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="25.0" cx="25.0" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<polygon opacity="0.6" points="29.0 269.0 151.0 269.0 151.0 341.0 29.0 341.0" fill="rgb(255,0,0)"  />
+<g transform="translate(40,280)"  >
+<rect style="fill:rgb(255, 0, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="25.0" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="25.0" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="25.0" cx="25.0" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="25.0" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="25.0" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<g transform="translate(90,280)"  >
+<rect style="fill:rgb(0, 255, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="25.0" cx="25.0" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<polygon opacity="0.6" points="29.0 349.0 151.0 349.0 151.0 421.0 29.0 421.0" fill="rgb(255,0,0)"  />
+<g transform="translate(40,360)"  >
+<rect style="fill:rgb(255, 0, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="25.0" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="25.0" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="25.0" cx="25.0" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="25.0" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="25.0" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<g transform="translate(90,360)"  >
+<rect style="fill:rgb(0, 255, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="25.0" cx="25.0" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<polygon opacity="0.6" points="29.0 429.0 151.0 429.0 151.0 501.0 29.0 501.0" fill="rgb(255,0,0)"  />
+<g transform="translate(40,440)"  >
+<rect style="fill:rgb(255, 0, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="25.0" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="25.0" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="25.0" cx="25.0" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="25.0" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="25.0" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<g transform="translate(90,440)"  >
+<rect style="fill:rgb(0, 255, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="25.0" cx="25.0" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<polygon opacity="0.6" points="159.0 29.0 281.0 29.0 281.0 101.0 159.0 101.0" fill="rgb(255,0,0)"  />
+<g transform="translate(170,40)"  >
+<rect style="fill:rgb(255, 0, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<g transform="translate(220,40)"  >
+<rect style="fill:rgb(0, 255, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+</g>
+<polygon opacity="0.6" points="159.0 109.0 281.0 109.0 281.0 181.0 159.0 181.0" fill="rgb(0,255,0)"  />
+<g transform="translate(170,120)"  >
+<rect style="fill:rgb(255, 0, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<g transform="translate(220,120)"  >
+<rect style="fill:rgb(0, 255, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="25.0" cx="25.0" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<polygon opacity="0.6" points="159.0 189.0 281.0 189.0 281.0 261.0 159.0 261.0" fill="rgb(0,255,0)"  />
+<g transform="translate(170,200)"  >
+<rect style="fill:rgb(255, 0, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<g transform="translate(220,200)"  >
+<rect style="fill:rgb(0, 255, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="25.0" cx="25.0" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<polygon opacity="0.6" points="159.0 269.0 281.0 269.0 281.0 341.0 159.0 341.0" fill="rgb(0,255,0)"  />
+<g transform="translate(170,280)"  >
+<rect style="fill:rgb(255, 0, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<g transform="translate(220,280)"  >
+<rect style="fill:rgb(0, 255, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="25.0" cx="25.0" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<polygon opacity="0.6" points="159.0 349.0 281.0 349.0 281.0 421.0 159.0 421.0" fill="rgb(0,255,0)"  />
+<g transform="translate(170,360)"  >
+<rect style="fill:rgb(255, 0, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<g transform="translate(220,360)"  >
+<rect style="fill:rgb(0, 255, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="25.0" cx="25.0" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<polygon opacity="0.6" points="159.0 429.0 281.0 429.0 281.0 501.0 159.0 501.0" fill="rgb(0,255,0)"  />
+<g transform="translate(170,440)"  >
+<rect style="fill:rgb(255, 0, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<g transform="translate(220,440)"  >
+<rect style="fill:rgb(0, 255, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="25.0" cx="25.0" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<polygon opacity="0.6" points="289.0 29.0 411.0 29.0 411.0 101.0 289.0 101.0" fill="rgb(255,0,0)"  />
+<g transform="translate(300,40)"  >
+<rect style="fill:rgb(255, 0, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<g transform="translate(350,40)"  >
+<rect style="fill:rgb(0, 255, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+</g>
+<polygon opacity="0.6" points="289.0 109.0 411.0 109.0 411.0 181.0 289.0 181.0" fill="rgb(0,255,0)"  />
+<g transform="translate(300,120)"  >
+<rect style="fill:rgb(255, 0, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<g transform="translate(350,120)"  >
+<rect style="fill:rgb(0, 255, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="25.0" cx="25.0" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<polygon opacity="0.6" points="289.0 189.0 411.0 189.0 411.0 261.0 289.0 261.0" fill="rgb(0,255,0)"  />
+<g transform="translate(300,200)"  >
+<rect style="fill:rgb(255, 0, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<g transform="translate(350,200)"  >
+<rect style="fill:rgb(0, 255, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="25.0" cx="25.0" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<polygon opacity="0.6" points="289.0 269.0 411.0 269.0 411.0 341.0 289.0 341.0" fill="rgb(0,255,0)"  />
+<g transform="translate(300,280)"  >
+<rect style="fill:rgb(255, 0, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<g transform="translate(350,280)"  >
+<rect style="fill:rgb(0, 255, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="25.0" cx="25.0" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<polygon opacity="0.6" points="289.0 349.0 411.0 349.0 411.0 421.0 289.0 421.0" fill="rgb(0,255,0)"  />
+<g transform="translate(300,360)"  >
+<rect style="fill:rgb(255, 0, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<g transform="translate(350,360)"  >
+<rect style="fill:rgb(0, 255, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="25.0" cx="25.0" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<polygon opacity="0.6" points="289.0 429.0 411.0 429.0 411.0 501.0 289.0 501.0" fill="rgb(0,255,0)"  />
+<g transform="translate(300,440)"  >
+<rect style="fill:rgb(255, 0, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<g transform="translate(350,440)"  >
+<rect style="fill:rgb(0, 255, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="25.0" cx="25.0" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<polygon opacity="0.6" points="419.0 29.0 541.0 29.0 541.0 101.0 419.0 101.0" fill="rgb(255,0,0)"  />
+<g transform="translate(430,40)"  >
+<rect style="fill:rgb(255, 0, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<g transform="translate(480,40)"  >
+<rect style="fill:rgb(0, 255, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+</g>
+<polygon opacity="0.6" points="419.0 109.0 541.0 109.0 541.0 181.0 419.0 181.0" fill="rgb(0,255,0)"  />
+<g transform="translate(430,120)"  >
+<rect style="fill:rgb(255, 0, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<g transform="translate(480,120)"  >
+<rect style="fill:rgb(0, 255, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="25.0" cx="25.0" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<polygon opacity="0.6" points="419.0 189.0 541.0 189.0 541.0 261.0 419.0 261.0" fill="rgb(0,255,0)"  />
+<g transform="translate(430,200)"  >
+<rect style="fill:rgb(255, 0, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<g transform="translate(480,200)"  >
+<rect style="fill:rgb(0, 255, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="25.0" cx="25.0" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<polygon opacity="0.6" points="419.0 269.0 541.0 269.0 541.0 341.0 419.0 341.0" fill="rgb(0,255,0)"  />
+<g transform="translate(430,280)"  >
+<rect style="fill:rgb(255, 0, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<g transform="translate(480,280)"  >
+<rect style="fill:rgb(0, 255, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="25.0" cx="25.0" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<polygon opacity="0.6" points="419.0 349.0 541.0 349.0 541.0 421.0 419.0 421.0" fill="rgb(0,255,0)"  />
+<g transform="translate(430,360)"  >
+<rect style="fill:rgb(255, 0, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<g transform="translate(480,360)"  >
+<rect style="fill:rgb(0, 255, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="25.0" cx="25.0" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<polygon opacity="0.6" points="419.0 429.0 541.0 429.0 541.0 501.0 419.0 501.0" fill="rgb(0,255,0)"  />
+<g transform="translate(430,440)"  >
+<rect style="fill:rgb(255, 0, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<g transform="translate(480,440)"  >
+<rect style="fill:rgb(0, 255, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="25.0" cx="25.0" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<polygon opacity="0.6" points="549.0 29.0 671.0 29.0 671.0 101.0 549.0 101.0" fill="rgb(255,0,0)"  />
+<g transform="translate(560,40)"  >
+<rect style="fill:rgb(255, 0, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<g transform="translate(610,40)"  >
+<rect style="fill:rgb(0, 255, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+</g>
+<polygon opacity="0.6" points="549.0 109.0 671.0 109.0 671.0 181.0 549.0 181.0" fill="rgb(0,255,0)"  />
+<g transform="translate(560,120)"  >
+<rect style="fill:rgb(255, 0, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<g transform="translate(610,120)"  >
+<rect style="fill:rgb(0, 255, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="25.0" cx="25.0" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<polygon opacity="0.6" points="549.0 189.0 671.0 189.0 671.0 261.0 549.0 261.0" fill="rgb(0,255,0)"  />
+<g transform="translate(560,200)"  >
+<rect style="fill:rgb(255, 0, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<g transform="translate(610,200)"  >
+<rect style="fill:rgb(0, 255, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="25.0" cx="25.0" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<polygon opacity="0.6" points="549.0 269.0 671.0 269.0 671.0 341.0 549.0 341.0" fill="rgb(0,255,0)"  />
+<g transform="translate(560,280)"  >
+<rect style="fill:rgb(255, 0, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<g transform="translate(610,280)"  >
+<rect style="fill:rgb(0, 255, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="25.0" cx="25.0" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<polygon opacity="0.6" points="549.0 349.0 671.0 349.0 671.0 421.0 549.0 421.0" fill="rgb(0,255,0)"  />
+<g transform="translate(560,360)"  >
+<rect style="fill:rgb(255, 0, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<g transform="translate(610,360)"  >
+<rect style="fill:rgb(0, 255, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="25.0" cx="25.0" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<polygon opacity="0.6" points="549.0 429.0 671.0 429.0 671.0 501.0 549.0 501.0" fill="rgb(0,255,0)"  />
+<g transform="translate(560,440)"  >
+<rect style="fill:rgb(255, 0, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<g transform="translate(610,440)"  >
+<rect style="fill:rgb(0, 255, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="25.0" cx="25.0" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<polygon opacity="0.6" points="679.0 29.0 801.0 29.0 801.0 101.0 679.0 101.0" fill="rgb(255,0,0)"  />
+<g transform="translate(690,40)"  >
+<rect style="fill:rgb(255, 0, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<g transform="translate(740,40)"  >
+<rect style="fill:rgb(0, 255, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+</g>
+<polygon opacity="0.6" points="679.0 109.0 801.0 109.0 801.0 181.0 679.0 181.0" fill="rgb(0,255,0)"  />
+<g transform="translate(690,120)"  >
+<rect style="fill:rgb(255, 0, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<g transform="translate(740,120)"  >
+<rect style="fill:rgb(0, 255, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="25.0" cx="25.0" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<polygon opacity="0.6" points="679.0 189.0 801.0 189.0 801.0 261.0 679.0 261.0" fill="rgb(0,255,0)"  />
+<g transform="translate(690,200)"  >
+<rect style="fill:rgb(255, 0, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<g transform="translate(740,200)"  >
+<rect style="fill:rgb(0, 255, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="25.0" cx="25.0" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<polygon opacity="0.6" points="679.0 269.0 801.0 269.0 801.0 341.0 679.0 341.0" fill="rgb(0,255,0)"  />
+<g transform="translate(690,280)"  >
+<rect style="fill:rgb(255, 0, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<g transform="translate(740,280)"  >
+<rect style="fill:rgb(0, 255, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="25.0" cx="25.0" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<polygon opacity="0.6" points="679.0 349.0 801.0 349.0 801.0 421.0 679.0 421.0" fill="rgb(0,255,0)"  />
+<g transform="translate(690,360)"  >
+<rect style="fill:rgb(255, 0, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<g transform="translate(740,360)"  >
+<rect style="fill:rgb(0, 255, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="25.0" cx="25.0" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<polygon opacity="0.6" points="679.0 429.0 801.0 429.0 801.0 501.0 679.0 501.0" fill="rgb(0,255,0)"  />
+<g transform="translate(690,440)"  >
+<rect style="fill:rgb(255, 0, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+<g transform="translate(740,440)"  >
+<rect style="fill:rgb(0, 255, 0);stroke:rgb(0,0,0);stroke-linecap:butt;stroke-width:1" height="50" width="50"  />
+<ellipse cy="12.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="12.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="12.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="37.5" cx="37.5" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+<ellipse cy="25.0" cx="25.0" rx="5.0" ry="5.0" style="fill:rgb(255, 255, 255)"  />
+</g>
+</svg>
+</svg>

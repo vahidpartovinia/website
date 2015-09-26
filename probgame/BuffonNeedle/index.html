@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Buffon</title>
+	<meta name="author" content="Jules Thuillier - Erwan Marchand" />
+	<link href="stylesheet.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/themes/smoothness/jquery-ui.css" />
+	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  	<script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+  	
+	<!-- Date: 2014-09-08 -->
+	<script type='text/javascript' src='lib/selectors.js'></script>
+	<script type='text/javascript' src='lib/graph.js'></script>
+	<!--[if lt IE 9]><script language="javascript" type="text/javascript" src="lib/dist/excanvas.js"></script><![endif]-->
+	<script type="text/javascript" src="lib/dist/jquery.jqplot.min.js"></script>
+	
+	<script type="text/javascript" src="lib/dist/plugins/jqplot.canvasOverlay.min.js"></script>
+
+	<script type="text/javascript" src="lib/dist/plugins/jqplot.highlighter.min.js"></script>
+	<script type="text/javascript" src="lib/dist/plugins/jqplot.cursor.min.js"></script>
+	<script type="text/javascript" src="lib/dist/plugins/jqplot.pointLabels.min.js"></script>
+	<script type="text/javascript" src="lib/dist/plugins/jqplot.dateAxisRenderer.min.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="lib/dist/jquery.jqplot.min.css" />
+
+	
+	
+</head>
+<body onload="drawLines(10)">
+
+<div id="main">
+	
+	
+	<div id="title">
+		<h2>Aiguilles de Buffon</h2>
+	</div>
+	
+	
+<div id="top">
+	<div id="form">
+		
+	
+	<table style="width:80%">
+		  <tr>
+		    <td><label for="s_needles">Number of throw (max 5000) :</label></td>
+		    <td><input type="text" name="s_needles" id="s_needles"></td> 
+		  </tr>
+		  <tr>
+		    <td><label for="s_number">Needles per throw (max 5000) :</label></td>
+		    <td><input type="text" name="s_number" id="s_number"></td> 
+		  </tr>
+		  <tr>
+		    <td><label for="s_line">Number of lines (max 200) :</label></td>
+		    <td><input type="text" name="s_line" id="s_line"></td> 
+		  </tr>
+	</table>
+		
+		<p>
+		  <label for="s_length">Needles length :</label>
+		  
+		  <input type="text" id="s_length" readonly style="border:0; font-weight:bold;">
+		</p>
+		<div id="needleLength-slider" class="slider"></div>
+		
+		<p>
+		  <label for="s_duration">Drawing duration :</label>
+		  <input type="text" id="s_duration" readonly style="border:0;  font-weight:bold;">
+		</p>
+		<div id="drawDuration-slider" class="slider"></div>
+		
+		<div id='approximation'>Pi Approximation : </div>
+
+	</div>
+	
+	<div id="button_div">
+		
+		<img src="images/palypause.png" alt="Play/Pause" id="button_img" onclick="play()" />
+		
+	</div>
+	
+</div> 		
+	
+	<div id="game">
+		
+
+		<canvas id="game_canvas" width="700" height="700">
+			This text is displayed if your browser does not support HTML5 Canvas.
+		</canvas>
+		<script type='text/javascript' src='lib/draw.js'></script>
+		
+	</div>
+	<div>
+		<br/><br/>
+		<label for="graph_size">Graph heigth :</label></td>
+		<input type="text" name="graph_size" id="graph_size" value="3">
+	</div>
+	<div id="graph">
+		<script>
+			var plot = $.jqplot('graph', [datas, bdat[0], bdat[1]], $.extend(true, {}, {
+		
+			series:[{
+			  	color:'#0066FF',
+			  	show: true,
+
+			  	 markerOptions: { 
+			  	 		size: 1, 
+			  	 		style:"x" 
+			  	 },
+				},
+				{
+			linePattern: 'dashed',
+			lineWidth: 2, 
+			  rendererOptions: {
+					bandData: [bdat[0], bdat[1]],
+	                 bands: {
+	                    show: true,
+	                    showLine: true,
+                    	fillColor: 'rgba(198, 88, 88, 0.6)'
+
+	               	 },	                 		
+         	    },
+         	    
+			  },
+			  	{
+				linePattern: 'dashed',
+				lineWidth: 2, 
+			  rendererOptions: {
+					bandData: [bdat[0], bdat[1]],
+	                 bands: {
+	                    show: true,
+	                    showLine: true,
+                    	fillColor: 'rgba(198, 88, 88, 0.6)'
+
+	               	 },	                 		
+         	    },
+         	    
+			  	}
+			  	
+			  	],
+			  	
+			  title:'Approximation de Pi',
+			  axes:{
+			  	
+			  	xaxis:{
+			  		min:1, 
+			  		max:numberOfThrow,
+			  		label: "Nombre d'aiguilles lancées",
+					labelRenderer: $.jqplot.CanvasAxisLabelRenderer
+			  		}, 
+			  	yaxis:{
+			  		min:3.14159-graph_heigth/2, 
+			  		max:3.14159+graph_heigth/2
+			  		}
+			  
+			  	},
+			  
+			  	cursor:{
+            		zoom:true,
+            		looseZoom: true
+        		},
+        		
+			  	grid: {
+				        drawGridLines: false,        // wether to draw lines across the grid or not.
+				      	
+				    },
+			  	
+			  	seriesDefaults: {
+  				  	shadow: false,
+    				showMarker: false
+ 				},
+			  
+
+		        canvasOverlay: {
+		            show: true,
+		            objects: [
+		            // Ligne horizontale pour representer pi
+		                {horizontalLine: {
+		                    name: 'pi',
+		                    y: 3.14159,
+		                    lineWidth: 2,
+		                    color: '#003399',
+		                    shadow: false,
+
+		                }}
+		                
+		            ]
+		        },
+			  	cursor:{
+            		zoom:true,
+            		looseZoom: true
+        		}
+			}));
+			
+		</script>
+		
+	</div>
+	
+	<div id="footer">		
+	</div>
+</div>
+
+</body>
+</html>
+

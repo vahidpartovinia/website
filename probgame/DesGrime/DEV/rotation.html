@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+<body>
+
+<canvas id="myCanvas" width="800" height="600" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+t = 0.0;
+var ctx;
+var c;
+var img;
+var parSeconde = 30;
+var interval;
+var tempsMax = 2000;
+function rotate()
+{
+    
+	t+=1000/parSeconde;
+    
+
+    ctx.clearRect(-500, -500, 1000, 1000);
+
+    //rf = (1 - i/100.0)*Math.PI/(parSeconde);
+	toursParSeconde = 1;
+	rf = toursParSeconde * 2*Math.PI/parSeconde -t*2*Math.PI/(1000*parSeconde*parSeconde);
+	
+    ctx.rotate(rf);
+    
+	
+    
+    if(t >= tempsMax)
+	{
+		clearInterval(interval);
+		img.src="C:\\Users\\Jules\\Documents\\GitHub\\DesGrime\\grime3\\faces\\5.png";
+	}
+    ctx.drawImage(img,-img.width/2.0 ,-img.width/2.0);
+    $("#console").html((rf).toString()  );
+    
+}
+
+$(document).ready(
+function()
+{
+c=document.getElementById("myCanvas");
+ctx=c.getContext("2d");
+img = new Image();
+img.src="C:\\Users\\Jules\\Documents\\GitHub\\DesGrime\\grime3\\faces\\0.png";
+ctx.translate(400,400);
+interval = setInterval(rotate,1000/parSeconde);
+
+}
+);
+
+</script>
+<div id="console"></div>
+</body>
+</html>

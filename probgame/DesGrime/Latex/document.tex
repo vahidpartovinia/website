@@ -1,0 +1,242 @@
+%%This is a very basic article template.
+%%There is just one section and two subsections.
+\documentclass{article}
+\usepackage{mathtools}
+\usepackage{amssymb}
+
+
+\usepackage{graphicx}
+
+\begin{document}
+
+\section{Nontransitive dice explained}
+
+\subsection{Preface}
+    
+    The nontransitive dice discussed in this article can be viewed as a way to
+    caricature complex interaction that we have to deal with daily. To gain
+    understanding of the concepts behind those dice, an aspect of discrete
+    mathematics, the binary relation, will be presented. While beign very
+    high-level and abstract, it can be applied to a lot of concrete situation in
+    almost every domain and it will help introduce transitivity and intransivity
+    as a property of a relation. Briefs example of transitivity,
+    antitransitivity andintransitive will be given, followed by an introduction
+    to nontransitive dice, which is an applied example of an intransitive
+    relation. Various situation using those dices will be
+     analyzed mathematically and real life examples will be given.
+	
+	\subsubsection{Overview of relation}
+    The relation is an abstract concept which links numbers of elements togheter.
+    Consider a group of student and books of the library. We will define the
+    relation $ \mathfrak{R} $ as every pair of students and books suchs as the
+    student $A_{i}$ have read the book $B_{j}$.
+    Formally, it looks like this :
+	\begin{equation}
+	\begin{split}
+	
+	\mathfrak{R} = (A,B, \text{have read})\\
+	\text{which yeilds the pairs} \\
+	(A_{i}, B_{j}) i,j \in \mathbb{R}
+	
+	\end{split}
+	\end{equation}
+
+    GRAPHICS HERE\\	
+    
+    We can also define relations inside only one group, suchs as a student-student
+    relation.
+    For example, lets consider the following :
+	
+	\begin{equation}
+	\begin{split}
+	
+	\mathfrak{R} = (A,A, \text{know})\\
+	\text{which yeilds the pairs} \\
+	(A_{i}, A_{j}) i,j \in \mathbb{R}
+	
+	\end{split}
+	\end{equation}
+
+    GRAPHICS HERE\\	
+    
+	Thus, a relation from a set against a set is valid and make sens. This will be used to help define transitivity.
+    
+	\subsubsection{Transitivity from a mathematical point of view}
+	\label{transitivity}
+	In his book \underline{\textit{Mathematiques discretes}}, Kenneth H. Rosen defines the conditions
+	for a relation to be transitive as follow : \\
+	
+    Let A,B,C be elements of a set S. \\
+	If (A,B) \& (B,C) are valid transitions in the relation R,\\
+    it implies that transition (A,C) exists. \\
+    
+    This definition is the stronger version of antitransitivity. The differences between the two 
+    is that a intransitive relation needs all elements to be not transitive, as an antitransitive
+     is qualified as such with 
+    only one element or more not being transitive.\\
+	GRAPHS HERE \\
+	
+	\subsubsection{Transitivity from an everyday life point of view}
+    Transitive, intransitive and antitransitive situation are part of our
+    everyday life. For a concrete example of transitive relation, lets consider
+    the following example : The relation is characterized by ''Is in the same
+    family as''. If you are in the same family as your father, good chances
+    are that you are from the same family as your father's father. Now for the
+    intransitive relation, let's consider the characterization of the relation
+    as ''is father of'' This relation is intransitive because your father's
+    father cannot be in any ways your father (hopefully), which follows the
+    properties defined before for intransitivity. For the antitransitive
+    relation, we could consider a group of people and ''is friend with'' as
+    characterization. If in this group, A is friend with B and B with C,
+    sometimes A is friends with C, sometimes not. Transitivity is not always
+    applied there, therefore it is antitransitive.
+    
+    \subsection{Nontransitive dice}
+    \label{NTDice}
+
+    The nontransitive dice were invented as a game to illustrate intransitivity.
+    In this game, the first player offers the opponent to choose a dice from a
+    set of different dices. After that, the first player now pick his dice.
+    After an arbitrary but fixed number of rolls, the player who won the most
+    rolls win. This could potentially be used as a betting game, but not one of
+    the fairest. This is due to the fact that nontransitive dice exhibits
+    intransitivity as we will see later. First, we will be presented a method to
+    evaluate the odds of the set of intransitive dices presented at
+    \ref{fig:3NTDice}. After that, we will map the relation between those dices
+    to exhibits intransitivity.
+    
+	\subsubsection{Comparing the dices}
+
+    First, a legitimate question would be ''how can dices that have the same
+    value from the sum of each faces present different odds one from another?''.
+    A unsatisfactory answer would be to use intuition while looking at the
+    dices face. Comparing the red and green one, for example, will reveal that
+    the red dice can only win in the cases where the roll exhibits the red dice
+    with 9 and the green with 0 or 5 ((R:9,G:0) , (R:9, G:5)). Since the red
+    dice have only one chance in 6 to obtain 9, and the green 5 out of 6 to
+    obtain anything but 0, we have a strong (and correct) feeling that the green
+    dice \textit{weight} more than the red. The use of the word weight here is
+    to illustrate that the green win over the red since it is \textit{heavier}.
+    
+    \subsection{Evaluating the odds}
+    
+    We saw in the previous section that the green dice seemed heavier than
+    the red one. There's a mathematical way to prove this, and it is quite simple
+    assuming a little knowledge of combinatorial probability. First of all, our
+    dice are 6 faced ones. Hence, it exists $ 6 * 6 = 36$ possibility for one
+    roll. \ref{fig:RvsG_1D} illustrates the odds of that roll. 
+    
+    %ADD GRAPH ROUGE-VERT-1D%
+    
+    The tree here represent the possibility associated for each faces. For
+    example, with the green dice, we have 1/6 chances to get 0 and 5/6 chances
+    for a 5. Likewise, for the red section, if we have obtained 0 from green,
+    there's 1/6 chance to obtain 9 and 5/6 chance to obtain 4 for the red dice.
+    We calculate the probability of getting a 0 from green and a 9 from red
+    as $\tfrac{1}{6}*\tfrac{1}{6}$, the probability for (G:0,R:4) as
+    $\tfrac{1}{6}*\tfrac{5}{6}$ and so forth. In the three, we identified the
+    winning dice with the probability number with the color of the winning dice.
+    
+    While this confirms our taught that the green is \textit{heavier} than the
+    red dice, it also proves that two different dices with the same value for
+    the sum of their faces dosent necesserly have the same weight. This dosen't
+    mean that the red one will always loose against the green at each rolls, but
+    if the number of rolls is high enough, the probability shown in
+    \ref{fig:RvsG_1D} and the rolls outcome will certainly have a similar look.
+    
+    Now lets compare the green dice against the blue one, as
+    shown in \ref{fig:BvsG_1D}
+    
+    %ADD GRAPH BLEU-VERT-1D%
+   
+    Here we see that the blue dice win over the green one, therefore imnplying
+    that the blue one is \textit{heavier} than the green one. This could also
+    mean, with some simple deduction, that the blue is heavier than the red,
+    since the green is heavier than the latter. Let's prove this wrong with
+    \ref{fig:RvsB_1D}.
+    
+    %ADD GRAPH ROUGE-BLEU-1D%
+    
+    While this clearly shows that the red dice win over the blue, this also mean
+    that the dice weight cannot be calculated globally. It must be calculated
+    against each dice, because as we seen, blue wins over green, green wins over
+    red but blue looses against red. 
+    
+	\subsubsection{Intransitivity in nontransitive dices set}
+
+    While the previous graphs demonstrated the relation between the dice, we
+    could apply the definition from \ref{sec:transitivity} to characterize the
+    relation between the dices. If the three dices were normal dice (the 1 to 6
+    dices), each one would have the same weight. Now, as the red weight more
+    than the blue, the blue than the green and the green than the red, this
+    exhibits the following relation :
+    
+    % ADD GRAPH RELATION_3D_1D %
+    
+    \ref{fig:RELATION_3D_1D} shows that the following relation exhibits an
+    intransitive relation. In truns, if your opponents pick the dice first and
+    you know the relation behind the dices, and the number of rolls is
+    sufficiently large (about 20 rolls start to exhibits the dices properties),
+    youre chances of winning will be a lot larger.
+
+\subsection{Grime dice}
+    
+    The dices from \ref{fig:3NTDice} we studied at section \ref{sec:NTDice} was
+    a subset of a larger set known as "Grime dice''. This larger sets exhibits
+    intransivity in about the same way than the three previous dice, exept that
+    Grime dices contains 5 different dices. This set is presented at the figure
+    below :
+    
+    % ADD GRAPH GRIMEDICE-1D %
+    
+    \subsubsection{The intransitivity in Grime dice presented}
+    
+    As we already know, the red, blue and green dice already form a set of
+    intransitive dices. We see from the figure below that they still form a
+    subset inside the Grime dice set :
+    
+    We wont go in the details about how one dice beats another. It's up to the
+    reader to apply the same method presented at \ref{sec:NTDice} to mesaure the
+    dices weight against each others. 
+    
+    We see that adding 2 more dices adds some pair of dices in the relation.
+    Now, every dices beats 2 dices and is beaten by two. Choosing the right dice
+    after your two opponent's have chosen thiers can makes the odds beats the
+    two of them.
+    
+    \subsubsection{A game in a game : using a pair of dice}
+    
+    Grime dices hold a pretty secret. You can have two different games 
+    if you decide to change the rules. Choosing a pair of two identical dices
+    and comparing the results of the sums of the pairs yeilds another
+    intransitive relation similar to the first with different probabilities.
+    This time, it is harder to guess the weight of the dices as we did before,
+    so we go directly with a graph three that sums up the probabilities of the
+    red dice against the pink one. 
+    
+    % ADD GRAPH ROUGE-ROSE-1D %
+    % ADD GRAPH ROUGE-ROSE-2D %
+    
+    We can see that the odds have changed from one game to another. The relation
+    diagram representing the new intransitive relation is as following :
+    
+    % ADD GRAPH GRIMEDICE-2D %
+    
+    Note however that even if the red dice beats the green one in this game,
+    they almost weight the same. This means the number of rolls to beat the
+    green will need to be really high. 
+    
+\subsection{Creating nontransitive dice}
+    
+    Looking back at Grime dices may makes us think that the reversing order of
+    the relation depending on the use a single or a pair of dice is a natural
+    property.
+    It is not, and this behaviour is due to carefully chosen value on the dices.
+    This section will explore how we can create such set of dice for three
+    six-faced dice.
+    
+\subsection{Conclusion}
+    Intransitivity and transitivity is a concept that benefits to be applied to as much situations as possible.
+    To make the right choice in an entreprise, the manager gain to identify all of the pro's and con's of each, and 
+    how it will transition in the buisness.	
+\end{document}

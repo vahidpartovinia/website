@@ -1,0 +1,47 @@
+		
+canvas
+{
+	border:#666 1px solid;
+	background-color: white;
+}
+
+body
+{
+	text-align: center;
+		background-color: white;
+		font-family:Arial;
+}
+
+#graphButtonENG, #graphButtonFR
+{
+	width: 200px;
+	height: 75px;
+	margin-left:50px;
+	font-size:40px;
+}
+
+#success
+{
+	width: 600px;
+	height: 20px;
+}
+
+[type="number"]
+{
+	width: 100px;
+	height: 30px;
+}
+
+.title 
+{
+	margin: 8px;
+	font-size: 40px;
+	text-decoration:underline;
+	font-size:20px;
+}
+
+#frButton, #engButton
+{
+	font-size:15px;
+	float: right;
+}

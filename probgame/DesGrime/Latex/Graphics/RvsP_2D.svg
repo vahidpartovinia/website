@@ -1,0 +1,2902 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="svg2"
+   inkscape:version="0.48.4 r9939"
+   width="1331.61"
+   height="1109"
+   sodipodi:docname="RvsP_2D.eps">
+  <metadata
+     id="metadata648">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs646" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="732"
+     inkscape:window-height="480"
+     id="namedview644"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="0.22425739"
+     inkscape:cx="1107.7273"
+     inkscape:cy="637.81891"
+     inkscape:window-x="139"
+     inkscape:window-y="412"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2" />
+  <svg
+     version="1.1"
+     id="svg4"
+     inkscape:version="0.48.4 r9939"
+     width="100%"
+     height="100%"
+     transform="translate(-9,-55)">
+    <line
+       y1="610"
+       x2="200"
+       style="stroke:#000000;stroke-width:2"
+       x1="10"
+       y2="410"
+       id="line6" />
+    <text
+       style="font-size:40px;fill:#931ccb;stroke:#000000;stroke-width:0.5;font-family:arial"
+       y="520"
+       x="90"
+       id="text8">2/6</text>
+    <g
+       transform="translate(210,385)"
+       id="g10">
+      <rect
+         style="fill:#931ccb"
+         height="50"
+         width="50"
+         id="rect12"
+         x="0"
+         y="0" />
+      <ellipse
+         cy="25"
+         cx="25"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse14"
+         d="m 30,25 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="25"
+         sodipodi:cy="25"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+    </g>
+    <line
+       y1="410"
+       x2="425"
+       style="stroke:#000000;stroke-width:2"
+       x1="270"
+       y2="250"
+       id="line16" />
+    <text
+       style="font-size:40px;fill:#ff0000;stroke:#000000;stroke-width:0.5;font-family:arial"
+       y="340"
+       x="332.5"
+       id="text18">1/6</text>
+    <g
+       transform="translate(435,225)"
+       id="g20">
+      <rect
+         style="fill:#ff0000"
+         height="50"
+         width="50"
+         id="rect22"
+         x="0"
+         y="0" />
+      <ellipse
+         cy="12.5"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse24"
+         d="m 17.5,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.7614237 2.2385763,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="25"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse26"
+         d="m 17.5,25 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.761424 2.2385763,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="25"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse28"
+         d="m 17.5,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.761424 2.2385763,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="12.5"
+         cx="25"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse30"
+         d="m 30,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.7614237 2.238576,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="25"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="25"
+         cx="25"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse32"
+         d="m 30,25 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="25"
+         sodipodi:cy="25"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="25"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse34"
+         d="m 30,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="25"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="12.5"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse36"
+         d="m 42.5,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.7614237 2.238576,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="25"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse38"
+         d="m 42.5,25 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="25"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse40"
+         d="m 42.5,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+    </g>
+    <line
+       y1="250"
+       x2="650"
+       style="stroke:#000000;stroke-width:2"
+       x1="495"
+       y2="143"
+       id="line42" />
+    <text
+       style="font-size:40px;fill:#931ccb;stroke:#000000;stroke-width:0.5;font-family:arial"
+       y="206.5"
+       x="557.5"
+       id="text44">2/6</text>
+    <g
+       transform="translate(660,118)"
+       id="g46">
+      <rect
+         style="fill:#931ccb"
+         height="50"
+         width="50"
+         id="rect48"
+         x="0"
+         y="0" />
+      <ellipse
+         cy="25"
+         cx="25"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse50"
+         d="m 30,25 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="25"
+         sodipodi:cy="25"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+    </g>
+    <line
+       y1="143"
+       x2="875"
+       style="stroke:#000000;stroke-width:2"
+       x1="720"
+       y2="80"
+       id="line52" />
+    <text
+       style="font-size:40px;fill:#ff0000;stroke:#000000;stroke-width:0.5;font-family:arial"
+       y="121.5"
+       x="782.5"
+       id="text54">1/6</text>
+    <g
+       transform="translate(885,55)"
+       id="g56">
+      <rect
+         style="fill:#ff0000"
+         height="50"
+         width="50"
+         id="rect58"
+         x="0"
+         y="0" />
+      <ellipse
+         cy="12.5"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse60"
+         d="m 17.5,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.7614237 2.2385763,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="25"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse62"
+         d="m 17.5,25 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.761424 2.2385763,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="25"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse64"
+         d="m 17.5,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.761424 2.2385763,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="12.5"
+         cx="25"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse66"
+         d="m 30,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.7614237 2.238576,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="25"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="25"
+         cx="25"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse68"
+         d="m 30,25 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="25"
+         sodipodi:cy="25"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="25"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse70"
+         d="m 30,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="25"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="12.5"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse72"
+         d="m 42.5,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.7614237 2.238576,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="25"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse74"
+         d="m 42.5,25 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="25"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse76"
+         d="m 42.5,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+    </g>
+    <text
+       style="font-size:50px;font-family:arial"
+       y="98"
+       x="945"
+       id="text78">=</text>
+    <text
+       style="font-size:40px;fill:#ff0000;font-family:arial"
+       y="93"
+       x="985"
+       id="text80">0.31 %</text>
+    <line
+       y1="143"
+       x2="875"
+       style="stroke:#000000;stroke-width:2"
+       x1="720"
+       y2="151"
+       id="line82" />
+    <text
+       style="font-size:40px;fill:#ff0000;stroke:#000000;stroke-width:0.5;font-family:arial"
+       y="157"
+       x="782.5"
+       id="text84">5/6</text>
+    <g
+       transform="translate(885,126)"
+       id="g86">
+      <rect
+         style="fill:#ff0000"
+         height="50"
+         width="50"
+         id="rect88"
+         x="0"
+         y="0" />
+      <ellipse
+         cy="12.5"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse90"
+         d="m 17.5,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.7614237 2.2385763,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse92"
+         d="m 17.5,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.761424 2.2385763,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="12.5"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse94"
+         d="m 42.5,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.7614237 2.238576,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse96"
+         d="m 42.5,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+    </g>
+    <text
+       style="font-size:50px;font-family:arial"
+       y="169"
+       x="945"
+       id="text98">=</text>
+    <text
+       style="font-size:40px;fill:#ff0000;font-family:arial"
+       y="164"
+       x="985"
+       id="text100">1.54 %</text>
+    <line
+       y1="250"
+       x2="650"
+       style="stroke:#000000;stroke-width:2"
+       x1="495"
+       y2="276"
+       id="line102" />
+    <text
+       style="font-size:40px;fill:#931ccb;stroke:#000000;stroke-width:0.5;font-family:arial"
+       y="273"
+       x="557.5"
+       id="text104">4/6</text>
+    <g
+       transform="translate(660,251)"
+       id="g106">
+      <rect
+         style="fill:#931ccb"
+         height="50"
+         width="50"
+         id="rect108"
+         x="0"
+         y="0" />
+      <ellipse
+         cy="12.5"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse110"
+         d="m 17.5,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.7614237 2.2385763,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="25"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse112"
+         d="m 17.5,25 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.761424 2.2385763,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="25"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse114"
+         d="m 17.5,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.761424 2.2385763,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="12.5"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse116"
+         d="m 42.5,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.7614237 2.238576,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="25"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse118"
+         d="m 42.5,25 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="25"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse120"
+         d="m 42.5,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+    </g>
+    <line
+       y1="276"
+       x2="875"
+       style="stroke:#000000;stroke-width:2"
+       x1="720"
+       y2="221"
+       id="line122" />
+    <text
+       style="font-size:40px;fill:#ff0000;stroke:#000000;stroke-width:0.5;font-family:arial"
+       y="258.5"
+       x="782.5"
+       id="text124">1/6</text>
+    <g
+       transform="translate(885,196)"
+       id="g126">
+      <rect
+         style="fill:#ff0000"
+         height="50"
+         width="50"
+         id="rect128"
+         x="0"
+         y="0" />
+      <ellipse
+         cy="12.5"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse130"
+         d="m 17.5,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.7614237 2.2385763,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="25"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse132"
+         d="m 17.5,25 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.761424 2.2385763,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="25"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse134"
+         d="m 17.5,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.761424 2.2385763,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="12.5"
+         cx="25"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse136"
+         d="m 30,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.7614237 2.238576,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="25"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="25"
+         cx="25"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse138"
+         d="m 30,25 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="25"
+         sodipodi:cy="25"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="25"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse140"
+         d="m 30,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="25"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="12.5"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse142"
+         d="m 42.5,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.7614237 2.238576,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="25"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse144"
+         d="m 42.5,25 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="25"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse146"
+         d="m 42.5,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+    </g>
+    <text
+       style="font-size:50px;font-family:arial"
+       y="239"
+       x="945"
+       id="text148">=</text>
+    <text
+       style="font-size:40px;fill:#ff0000;font-family:arial"
+       y="234"
+       x="985"
+       id="text150">0.62 %</text>
+    <line
+       y1="276"
+       x2="875"
+       style="stroke:#000000;stroke-width:2"
+       x1="720"
+       y2="292"
+       id="line152" />
+    <text
+       style="font-size:40px;fill:#ff0000;stroke:#000000;stroke-width:0.5;font-family:arial"
+       y="294"
+       x="782.5"
+       id="text154">5/6</text>
+    <g
+       transform="translate(885,267)"
+       id="g156">
+      <rect
+         style="fill:#ff0000"
+         height="50"
+         width="50"
+         id="rect158"
+         x="0"
+         y="0" />
+      <ellipse
+         cy="12.5"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse160"
+         d="m 17.5,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.7614237 2.2385763,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse162"
+         d="m 17.5,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.761424 2.2385763,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="12.5"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse164"
+         d="m 42.5,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.7614237 2.238576,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse166"
+         d="m 42.5,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+    </g>
+    <text
+       style="font-size:50px;font-family:arial"
+       y="310"
+       x="945"
+       id="text168">=</text>
+    <text
+       style="font-size:40px;fill:#ff0000;font-family:arial"
+       y="305"
+       x="985"
+       id="text170">3.09 %</text>
+    <line
+       y1="410"
+       x2="425"
+       style="stroke:#000000;stroke-width:2"
+       x1="270"
+       y2="490"
+       id="line172" />
+    <text
+       style="font-size:40px;fill:#ff0000;stroke:#000000;stroke-width:0.5;font-family:arial"
+       y="460"
+       x="332.5"
+       id="text174">5/6</text>
+    <g
+       transform="translate(435,465)"
+       id="g176">
+      <rect
+         style="fill:#ff0000"
+         height="50"
+         width="50"
+         id="rect178"
+         x="0"
+         y="0" />
+      <ellipse
+         cy="12.5"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse180"
+         d="m 17.5,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.7614237 2.2385763,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse182"
+         d="m 17.5,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.761424 2.2385763,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="12.5"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse184"
+         d="m 42.5,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.7614237 2.238576,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse186"
+         d="m 42.5,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+    </g>
+    <line
+       y1="490"
+       x2="650"
+       style="stroke:#000000;stroke-width:2"
+       x1="495"
+       y2="410"
+       id="line188" />
+    <text
+       style="font-size:40px;fill:#931ccb;stroke:#000000;stroke-width:0.5;font-family:arial"
+       y="460"
+       x="557.5"
+       id="text190">2/6</text>
+    <g
+       transform="translate(660,385)"
+       id="g192">
+      <rect
+         style="fill:#931ccb"
+         height="50"
+         width="50"
+         id="rect194"
+         x="0"
+         y="0" />
+      <ellipse
+         cy="25"
+         cx="25"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse196"
+         d="m 30,25 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="25"
+         sodipodi:cy="25"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+    </g>
+    <line
+       y1="410"
+       x2="875"
+       style="stroke:#000000;stroke-width:2"
+       x1="720"
+       y2="362"
+       id="line198" />
+    <text
+       style="font-size:40px;fill:#ff0000;stroke:#000000;stroke-width:0.5;font-family:arial"
+       y="396"
+       x="782.5"
+       id="text200">1/6</text>
+    <g
+       transform="translate(885,337)"
+       id="g202">
+      <rect
+         style="fill:#ff0000"
+         height="50"
+         width="50"
+         id="rect204"
+         x="0"
+         y="0" />
+      <ellipse
+         cy="12.5"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse206"
+         d="m 17.5,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.7614237 2.2385763,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="25"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse208"
+         d="m 17.5,25 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.761424 2.2385763,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="25"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse210"
+         d="m 17.5,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.761424 2.2385763,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="12.5"
+         cx="25"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse212"
+         d="m 30,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.7614237 2.238576,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="25"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="25"
+         cx="25"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse214"
+         d="m 30,25 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="25"
+         sodipodi:cy="25"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="25"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse216"
+         d="m 30,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="25"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="12.5"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse218"
+         d="m 42.5,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.7614237 2.238576,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="25"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse220"
+         d="m 42.5,25 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="25"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse222"
+         d="m 42.5,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+    </g>
+    <text
+       style="font-size:50px;font-family:arial"
+       y="380"
+       x="945"
+       id="text224">=</text>
+    <text
+       style="font-size:40px;fill:#ff0000;font-family:arial"
+       y="375"
+       x="985"
+       id="text226">1.54 %</text>
+    <line
+       y1="410"
+       x2="875"
+       style="stroke:#000000;stroke-width:2"
+       x1="720"
+       y2="433"
+       id="line228" />
+    <text
+       style="font-size:40px;fill:#ff0000;stroke:#000000;stroke-width:0.5;font-family:arial"
+       y="431.5"
+       x="782.5"
+       id="text230">5/6</text>
+    <g
+       transform="translate(885,408)"
+       id="g232">
+      <rect
+         style="fill:#ff0000"
+         height="50"
+         width="50"
+         id="rect234"
+         x="0"
+         y="0" />
+      <ellipse
+         cy="12.5"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse236"
+         d="m 17.5,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.7614237 2.2385763,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse238"
+         d="m 17.5,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.761424 2.2385763,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="12.5"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse240"
+         d="m 42.5,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.7614237 2.238576,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse242"
+         d="m 42.5,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+    </g>
+    <text
+       style="font-size:50px;font-family:arial"
+       y="451"
+       x="945"
+       id="text244">=</text>
+    <text
+       style="font-size:40px;fill:#ff0000;font-family:arial"
+       y="446"
+       x="985"
+       id="text246">7.72 %</text>
+    <line
+       y1="490"
+       x2="650"
+       style="stroke:#000000;stroke-width:2"
+       x1="495"
+       y2="543"
+       id="line248" />
+    <text
+       style="font-size:40px;fill:#931ccb;stroke:#000000;stroke-width:0.5;font-family:arial"
+       y="526.5"
+       x="557.5"
+       id="text250">4/6</text>
+    <g
+       transform="translate(660,518)"
+       id="g252">
+      <rect
+         style="fill:#931ccb"
+         height="50"
+         width="50"
+         id="rect254"
+         x="0"
+         y="0" />
+      <ellipse
+         cy="12.5"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse256"
+         d="m 17.5,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.7614237 2.2385763,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="25"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse258"
+         d="m 17.5,25 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.761424 2.2385763,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="25"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse260"
+         d="m 17.5,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.761424 2.2385763,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="12.5"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse262"
+         d="m 42.5,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.7614237 2.238576,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="25"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse264"
+         d="m 42.5,25 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="25"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse266"
+         d="m 42.5,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+    </g>
+    <line
+       y1="543"
+       x2="875"
+       style="stroke:#000000;stroke-width:2"
+       x1="720"
+       y2="504"
+       id="line268" />
+    <text
+       style="font-size:40px;fill:#ff0000;stroke:#000000;stroke-width:0.5;font-family:arial"
+       y="533.5"
+       x="782.5"
+       id="text270">1/6</text>
+    <g
+       transform="translate(885,479)"
+       id="g272">
+      <rect
+         style="fill:#ff0000"
+         height="50"
+         width="50"
+         id="rect274"
+         x="0"
+         y="0" />
+      <ellipse
+         cy="12.5"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse276"
+         d="m 17.5,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.7614237 2.2385763,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="25"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse278"
+         d="m 17.5,25 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.761424 2.2385763,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="25"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse280"
+         d="m 17.5,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.761424 2.2385763,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="12.5"
+         cx="25"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse282"
+         d="m 30,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.7614237 2.238576,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="25"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="25"
+         cx="25"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse284"
+         d="m 30,25 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="25"
+         sodipodi:cy="25"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="25"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse286"
+         d="m 30,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="25"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="12.5"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse288"
+         d="m 42.5,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.7614237 2.238576,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="25"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse290"
+         d="m 42.5,25 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="25"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse292"
+         d="m 42.5,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+    </g>
+    <text
+       style="font-size:50px;font-family:arial"
+       y="522"
+       x="945"
+       id="text294">=</text>
+    <text
+       style="font-size:40px;fill:#ff0000;font-family:arial"
+       y="517"
+       x="985"
+       id="text296">3.09 %</text>
+    <line
+       y1="543"
+       x2="875"
+       style="stroke:#000000;stroke-width:2"
+       x1="720"
+       y2="574"
+       id="line298" />
+    <text
+       style="font-size:40px;fill:#ff0000;stroke:#000000;stroke-width:0.5;font-family:arial"
+       y="568.5"
+       x="782.5"
+       id="text300">5/6</text>
+    <g
+       transform="translate(885,549)"
+       id="g302">
+      <rect
+         style="fill:#ff0000"
+         height="50"
+         width="50"
+         id="rect304"
+         x="0"
+         y="0" />
+      <ellipse
+         cy="12.5"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse306"
+         d="m 17.5,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.7614237 2.2385763,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse308"
+         d="m 17.5,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.761424 2.2385763,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="12.5"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse310"
+         d="m 42.5,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.7614237 2.238576,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse312"
+         d="m 42.5,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+    </g>
+    <text
+       style="font-size:50px;font-family:arial"
+       y="592"
+       x="945"
+       id="text314">=</text>
+    <text
+       style="font-size:40px;fill:#ff0000;font-family:arial"
+       y="587"
+       x="985"
+       id="text316">15.43 %</text>
+    <line
+       y1="610"
+       x2="200"
+       style="stroke:#000000;stroke-width:2"
+       x1="10"
+       y2="810"
+       id="line318" />
+    <text
+       style="font-size:40px;fill:#931ccb;stroke:#000000;stroke-width:0.5;font-family:arial"
+       y="720"
+       x="90"
+       id="text320">4/6</text>
+    <g
+       transform="translate(210,785)"
+       id="g322">
+      <rect
+         style="fill:#931ccb"
+         height="50"
+         width="50"
+         id="rect324"
+         x="0"
+         y="0" />
+      <ellipse
+         cy="12.5"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse326"
+         d="m 17.5,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.7614237 2.2385763,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="25"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse328"
+         d="m 17.5,25 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.761424 2.2385763,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="25"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse330"
+         d="m 17.5,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.761424 2.2385763,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="12.5"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse332"
+         d="m 42.5,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.7614237 2.238576,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="25"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse334"
+         d="m 42.5,25 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="25"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse336"
+         d="m 42.5,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+    </g>
+    <line
+       y1="810"
+       x2="425"
+       style="stroke:#000000;stroke-width:2"
+       x1="270"
+       y2="730"
+       id="line338" />
+    <text
+       style="font-size:40px;fill:#ff0000;stroke:#000000;stroke-width:0.5;font-family:arial"
+       y="780"
+       x="332.5"
+       id="text340">1/6</text>
+    <g
+       transform="translate(435,705)"
+       id="g342">
+      <rect
+         style="fill:#ff0000"
+         height="50"
+         width="50"
+         id="rect344"
+         x="0"
+         y="0" />
+      <ellipse
+         cy="12.5"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse346"
+         d="m 17.5,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.7614237 2.2385763,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="25"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse348"
+         d="m 17.5,25 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.761424 2.2385763,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="25"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse350"
+         d="m 17.5,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.761424 2.2385763,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="12.5"
+         cx="25"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse352"
+         d="m 30,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.7614237 2.238576,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="25"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="25"
+         cx="25"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse354"
+         d="m 30,25 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="25"
+         sodipodi:cy="25"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="25"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse356"
+         d="m 30,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="25"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="12.5"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse358"
+         d="m 42.5,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.7614237 2.238576,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="25"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse360"
+         d="m 42.5,25 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="25"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse362"
+         d="m 42.5,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+    </g>
+    <line
+       y1="730"
+       x2="650"
+       style="stroke:#000000;stroke-width:2"
+       x1="495"
+       y2="676"
+       id="line364" />
+    <text
+       style="font-size:40px;fill:#931ccb;stroke:#000000;stroke-width:0.5;font-family:arial"
+       y="713"
+       x="557.5"
+       id="text366">2/6</text>
+    <g
+       transform="translate(660,651)"
+       id="g368">
+      <rect
+         style="fill:#931ccb"
+         height="50"
+         width="50"
+         id="rect370"
+         x="0"
+         y="0" />
+      <ellipse
+         cy="25"
+         cx="25"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse372"
+         d="m 30,25 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="25"
+         sodipodi:cy="25"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+    </g>
+    <line
+       y1="676"
+       x2="875"
+       style="stroke:#000000;stroke-width:2"
+       x1="720"
+       y2="645"
+       id="line374" />
+    <text
+       style="font-size:40px;fill:#ff0000;stroke:#000000;stroke-width:0.5;font-family:arial"
+       y="670.5"
+       x="782.5"
+       id="text376">1/6</text>
+    <g
+       transform="translate(885,620)"
+       id="g378">
+      <rect
+         style="fill:#ff0000"
+         height="50"
+         width="50"
+         id="rect380"
+         x="0"
+         y="0" />
+      <ellipse
+         cy="12.5"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse382"
+         d="m 17.5,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.7614237 2.2385763,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="25"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse384"
+         d="m 17.5,25 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.761424 2.2385763,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="25"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse386"
+         d="m 17.5,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.761424 2.2385763,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="12.5"
+         cx="25"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse388"
+         d="m 30,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.7614237 2.238576,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="25"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="25"
+         cx="25"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse390"
+         d="m 30,25 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="25"
+         sodipodi:cy="25"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="25"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse392"
+         d="m 30,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="25"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="12.5"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse394"
+         d="m 42.5,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.7614237 2.238576,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="25"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse396"
+         d="m 42.5,25 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="25"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse398"
+         d="m 42.5,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+    </g>
+    <text
+       style="font-size:50px;font-family:arial"
+       y="663"
+       x="945"
+       id="text400">=</text>
+    <text
+       style="font-size:40px;fill:#ff0000;font-family:arial"
+       y="658"
+       x="985"
+       id="text402">0.62 %</text>
+    <line
+       y1="676"
+       x2="875"
+       style="stroke:#000000;stroke-width:2"
+       x1="720"
+       y2="715"
+       id="line404" />
+    <text
+       style="font-size:40px;fill:#ff0000;stroke:#000000;stroke-width:0.5;font-family:arial"
+       y="705.5"
+       x="782.5"
+       id="text406">5/6</text>
+    <g
+       transform="translate(885,690)"
+       id="g408">
+      <rect
+         style="fill:#ff0000"
+         height="50"
+         width="50"
+         id="rect410"
+         x="0"
+         y="0" />
+      <ellipse
+         cy="12.5"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse412"
+         d="m 17.5,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.7614237 2.2385763,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse414"
+         d="m 17.5,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.761424 2.2385763,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="12.5"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse416"
+         d="m 42.5,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.7614237 2.238576,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse418"
+         d="m 42.5,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+    </g>
+    <text
+       style="font-size:50px;font-family:arial"
+       y="733"
+       x="945"
+       id="text420">=</text>
+    <text
+       style="font-size:40px;fill:#ff0000;font-family:arial"
+       y="728"
+       x="985"
+       id="text422">3.09 %</text>
+    <line
+       y1="730"
+       x2="650"
+       style="stroke:#000000;stroke-width:2"
+       x1="495"
+       y2="810"
+       id="line424" />
+    <text
+       style="font-size:40px;fill:#931ccb;stroke:#000000;stroke-width:0.5;font-family:arial"
+       y="780"
+       x="557.5"
+       id="text426">4/6</text>
+    <g
+       transform="translate(660,785)"
+       id="g428">
+      <rect
+         style="fill:#931ccb"
+         height="50"
+         width="50"
+         id="rect430"
+         x="0"
+         y="0" />
+      <ellipse
+         cy="12.5"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse432"
+         d="m 17.5,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.7614237 2.2385763,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="25"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse434"
+         d="m 17.5,25 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.761424 2.2385763,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="25"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse436"
+         d="m 17.5,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.761424 2.2385763,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="12.5"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse438"
+         d="m 42.5,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.7614237 2.238576,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="25"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse440"
+         d="m 42.5,25 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="25"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse442"
+         d="m 42.5,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+    </g>
+    <line
+       y1="810"
+       x2="875"
+       style="stroke:#000000;stroke-width:2"
+       x1="720"
+       y2="786"
+       id="line444" />
+    <text
+       style="font-size:40px;fill:#ff0000;stroke:#000000;stroke-width:0.5;font-family:arial"
+       y="808"
+       x="782.5"
+       id="text446">1/6</text>
+    <g
+       transform="translate(885,761)"
+       id="g448">
+      <rect
+         style="fill:#ff0000"
+         height="50"
+         width="50"
+         id="rect450"
+         x="0"
+         y="0" />
+      <ellipse
+         cy="12.5"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse452"
+         d="m 17.5,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.7614237 2.2385763,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="25"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse454"
+         d="m 17.5,25 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.761424 2.2385763,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="25"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse456"
+         d="m 17.5,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.761424 2.2385763,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="12.5"
+         cx="25"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse458"
+         d="m 30,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.7614237 2.238576,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="25"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="25"
+         cx="25"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse460"
+         d="m 30,25 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="25"
+         sodipodi:cy="25"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="25"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse462"
+         d="m 30,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="25"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="12.5"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse464"
+         d="m 42.5,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.7614237 2.238576,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="25"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse466"
+         d="m 42.5,25 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="25"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse468"
+         d="m 42.5,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+    </g>
+    <text
+       style="font-size:50px;font-family:arial"
+       y="804"
+       x="945"
+       id="text470">=</text>
+    <text
+       style="font-size:40px;fill:#ff0000;font-family:arial"
+       y="799"
+       x="985"
+       id="text472">1.23 %</text>
+    <line
+       y1="810"
+       x2="875"
+       style="stroke:#000000;stroke-width:2"
+       x1="720"
+       y2="857"
+       id="line474" />
+    <text
+       style="font-size:40px;fill:#ff0000;stroke:#000000;stroke-width:0.5;font-family:arial"
+       y="843.5"
+       x="782.5"
+       id="text476">5/6</text>
+    <g
+       transform="translate(885,832)"
+       id="g478">
+      <rect
+         style="fill:#ff0000"
+         height="50"
+         width="50"
+         id="rect480"
+         x="0"
+         y="0" />
+      <ellipse
+         cy="12.5"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse482"
+         d="m 17.5,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.7614237 2.2385763,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse484"
+         d="m 17.5,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.761424 2.2385763,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="12.5"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse486"
+         d="m 42.5,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.7614237 2.238576,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse488"
+         d="m 42.5,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+    </g>
+    <text
+       style="font-size:50px;font-family:arial"
+       y="875"
+       x="945"
+       id="text490">=</text>
+    <text
+       style="font-size:40px;fill:#ff0000;font-family:arial"
+       y="870"
+       x="985"
+       id="text492">6.17 %</text>
+    <line
+       y1="810"
+       x2="425"
+       style="stroke:#000000;stroke-width:2"
+       x1="270"
+       y2="970"
+       id="line494" />
+    <text
+       style="font-size:40px;fill:#ff0000;stroke:#000000;stroke-width:0.5;font-family:arial"
+       y="900"
+       x="332.5"
+       id="text496">5/6</text>
+    <g
+       transform="translate(435,945)"
+       id="g498">
+      <rect
+         style="fill:#ff0000"
+         height="50"
+         width="50"
+         id="rect500"
+         x="0"
+         y="0" />
+      <ellipse
+         cy="12.5"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse502"
+         d="m 17.5,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.7614237 2.2385763,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse504"
+         d="m 17.5,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.761424 2.2385763,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="12.5"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse506"
+         d="m 42.5,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.7614237 2.238576,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse508"
+         d="m 42.5,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+    </g>
+    <line
+       y1="970"
+       x2="650"
+       style="stroke:#000000;stroke-width:2"
+       x1="495"
+       y2="943"
+       id="line510" />
+    <text
+       style="font-size:40px;fill:#931ccb;stroke:#000000;stroke-width:0.5;font-family:arial"
+       y="966.5"
+       x="557.5"
+       id="text512">2/6</text>
+    <g
+       transform="translate(660,918)"
+       id="g514">
+      <rect
+         style="fill:#931ccb"
+         height="50"
+         width="50"
+         id="rect516"
+         x="0"
+         y="0" />
+      <ellipse
+         cy="25"
+         cx="25"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse518"
+         d="m 30,25 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="25"
+         sodipodi:cy="25"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+    </g>
+    <line
+       y1="943"
+       x2="875"
+       style="stroke:#000000;stroke-width:2"
+       x1="720"
+       y2="927"
+       id="line520" />
+    <text
+       style="font-size:40px;fill:#ff0000;stroke:#000000;stroke-width:0.5;font-family:arial"
+       y="945"
+       x="782.5"
+       id="text522">1/6</text>
+    <g
+       transform="translate(885,902)"
+       id="g524">
+      <rect
+         style="fill:#ff0000"
+         height="50"
+         width="50"
+         id="rect526"
+         x="0"
+         y="0" />
+      <ellipse
+         cy="12.5"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse528"
+         d="m 17.5,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.7614237 2.2385763,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="25"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse530"
+         d="m 17.5,25 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.761424 2.2385763,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="25"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse532"
+         d="m 17.5,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.761424 2.2385763,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="12.5"
+         cx="25"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse534"
+         d="m 30,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.7614237 2.238576,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="25"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="25"
+         cx="25"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse536"
+         d="m 30,25 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="25"
+         sodipodi:cy="25"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="25"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse538"
+         d="m 30,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="25"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="12.5"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse540"
+         d="m 42.5,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.7614237 2.238576,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="25"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse542"
+         d="m 42.5,25 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="25"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse544"
+         d="m 42.5,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+    </g>
+    <text
+       style="font-size:50px;font-family:arial"
+       y="945"
+       x="945"
+       id="text546">=</text>
+    <text
+       style="font-size:40px;fill:#ff0000;font-family:arial"
+       y="940"
+       x="985"
+       id="text548">3.09 %</text>
+    <line
+       y1="943"
+       x2="875"
+       style="stroke:#000000;stroke-width:2"
+       x1="720"
+       y2="998"
+       id="line550" />
+    <text
+       style="font-size:40px;fill:#ff0000;stroke:#000000;stroke-width:0.5;font-family:arial"
+       y="980.5"
+       x="782.5"
+       id="text552">5/6</text>
+    <g
+       transform="translate(885,973)"
+       id="g554">
+      <rect
+         style="fill:#ff0000"
+         height="50"
+         width="50"
+         id="rect556"
+         x="0"
+         y="0" />
+      <ellipse
+         cy="12.5"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse558"
+         d="m 17.5,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.7614237 2.2385763,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse560"
+         d="m 17.5,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.761424 2.2385763,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="12.5"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse562"
+         d="m 42.5,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.7614237 2.238576,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse564"
+         d="m 42.5,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+    </g>
+    <text
+       style="font-size:50px;font-family:arial"
+       y="1016"
+       x="945"
+       id="text566">=</text>
+    <text
+       style="font-size:40px;fill:#ff0000;font-family:arial"
+       y="1011"
+       x="985"
+       id="text568">15.43 %</text>
+    <line
+       y1="970"
+       x2="650"
+       style="stroke:#000000;stroke-width:2"
+       x1="495"
+       y2="1076"
+       id="line570" />
+    <text
+       style="font-size:40px;fill:#931ccb;stroke:#000000;stroke-width:0.5;font-family:arial"
+       y="1033"
+       x="557.5"
+       id="text572">4/6</text>
+    <g
+       transform="translate(660,1051)"
+       id="g574">
+      <rect
+         style="fill:#931ccb"
+         height="50"
+         width="50"
+         id="rect576"
+         x="0"
+         y="0" />
+      <ellipse
+         cy="12.5"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse578"
+         d="m 17.5,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.7614237 2.2385763,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="25"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse580"
+         d="m 17.5,25 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.761424 2.2385763,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="25"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse582"
+         d="m 17.5,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.761424 2.2385763,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="12.5"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse584"
+         d="m 42.5,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.7614237 2.238576,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="25"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse586"
+         d="m 42.5,25 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="25"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse588"
+         d="m 42.5,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+    </g>
+    <line
+       y1="1076"
+       x2="875"
+       style="stroke:#000000;stroke-width:2"
+       x1="720"
+       y2="1068"
+       id="line590" />
+    <text
+       style="font-size:40px;fill:#ff0000;stroke:#000000;stroke-width:0.5;font-family:arial"
+       y="1082"
+       x="782.5"
+       id="text592">1/6</text>
+    <g
+       transform="translate(885,1043)"
+       id="g594">
+      <rect
+         style="fill:#ff0000"
+         height="50"
+         width="50"
+         id="rect596"
+         x="0"
+         y="0" />
+      <ellipse
+         cy="12.5"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse598"
+         d="m 17.5,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.7614237 2.2385763,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="25"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse600"
+         d="m 17.5,25 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.761424 2.2385763,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="25"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse602"
+         d="m 17.5,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.761424 2.2385763,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="12.5"
+         cx="25"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse604"
+         d="m 30,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.7614237 2.238576,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="25"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="25"
+         cx="25"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse606"
+         d="m 30,25 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="25"
+         sodipodi:cy="25"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="25"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse608"
+         d="m 30,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="25"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="12.5"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse610"
+         d="m 42.5,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.7614237 2.238576,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="25"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse612"
+         d="m 42.5,25 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="25"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse614"
+         d="m 42.5,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+    </g>
+    <text
+       style="font-size:50px;font-family:arial"
+       y="1086"
+       x="945"
+       id="text616">=</text>
+    <text
+       style="font-size:40px;fill:#ff0000;font-family:arial"
+       y="1081"
+       x="985"
+       id="text618">6.17 %</text>
+    <line
+       y1="1076"
+       x2="875"
+       style="stroke:#000000;stroke-width:2"
+       x1="720"
+       y2="1139"
+       id="line620" />
+    <text
+       style="font-size:40px;fill:#ff0000;stroke:#000000;stroke-width:0.5;font-family:arial"
+       y="1117.5"
+       x="782.5"
+       id="text622">5/6</text>
+    <g
+       transform="translate(885,1114)"
+       id="g624">
+      <rect
+         style="fill:#ff0000"
+         height="50"
+         width="50"
+         id="rect626"
+         x="0"
+         y="0" />
+      <ellipse
+         cy="12.5"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse628"
+         d="m 17.5,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.7614237 2.2385763,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="12.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse630"
+         d="m 17.5,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.7614237,0 -5,-2.238576 -5,-5 0,-2.761424 2.2385763,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="12.5"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="12.5"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse632"
+         d="m 42.5,12.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.7614237 2.238576,-5 5,-5 2.761424,0 5,2.2385763 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="12.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+      <ellipse
+         cy="37.5"
+         cx="37.5"
+         rx="5"
+         ry="5"
+         style="fill:#ffffff"
+         id="ellipse634"
+         d="m 42.5,37.5 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z"
+         sodipodi:cx="37.5"
+         sodipodi:cy="37.5"
+         sodipodi:rx="5"
+         sodipodi:ry="5" />
+    </g>
+    <text
+       style="font-size:50px;font-family:arial"
+       y="1157"
+       x="945"
+       id="text636">=</text>
+    <text
+       style="font-size:40px;fill:#931ccb;font-family:arial"
+       y="1152"
+       x="985"
+       id="text638">30.86 %</text>
+    <text
+       style="font-size:40px;text-decoration: underline;fill:#ff0000;font-family:arial"
+       y="405"
+       x="1195"
+       id="text640">69.14 %</text>
+    <text
+       style="font-size:40px;fill:#931ccb;font-family:arial"
+       y="805"
+       x="1195"
+       id="text642">30.86 %</text>
+  </svg>
+</svg>

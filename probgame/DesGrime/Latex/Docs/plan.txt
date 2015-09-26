@@ -1,0 +1,21 @@
+Non-Transitive-Dice
+
+-Introduction
+    Non-transitivness in statistics
+
+1- Introduction of transitivity
+    From an everyday life point of view
+    From a mathematical point of view
+
+3- Why the dice are non-transitive
+    From a graphical point of view
+    From a mathematical point of view
+
+4- Examples of situations with non-transitive dices
+    With 3 different dice
+    With 5 different dice
+    With 5 different dice and with 2 dice per throw
+
+Conclusion
+    Non-transitivity in everyday life
+    

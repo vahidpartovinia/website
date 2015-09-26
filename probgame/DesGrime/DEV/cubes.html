@@ -1,0 +1,97 @@
+
+<html>
+<head>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://arc.id.au/Cango3D2v00.js"></script>
+	<script type="text/javascript" >
+	    function buildCube(g, width, dragObj) {
+	        var sq = ['M', 0, 0, 'L', width, 0, width, width, 0, width, 'z'];
+	        var faces = [6];
+	        // left side
+	        faces[0] = g.compileShape3D(sq, "sienna", 1, dragObj);
+	        faces[0].rotate(uY, -90);     // flip right edge out of screen
+
+	        // top
+	        faces[1] = g.compileShape3D(sq, "yellow", 1, dragObj);
+	        faces[1].rotate(uX, -90);        // flip top into of screen
+	        faces[1].translate(0, width, width); // move up and forward, yellow face now top
+	        // bottom
+	        faces[2] = g.compileShape3D(sq, "blue", 1, dragObj);
+	        faces[2].rotate(uX, 90);       // flip top edge out of screen
+	        // right side
+	        faces[3] = g.compileShape3D(sq, "red", 1, dragObj);
+	        faces[3].rotate(uY, 90);       // flip right edge into of screen
+	        faces[3].translate(width, 0, width); // move right and out, red face now right side
+	        // back
+	        faces[4] = g.compileShape3D(sq, "gray", 1, dragObj);
+	        faces[4].rotate(uX, -180);       // flip backward down into screen
+	        faces[4].translate(0, width, 0);    // move up so gray face now back
+	        // front
+	        faces[5] = g.compileShape3D(sq, "green", 1, dragObj);
+	        g.labelShape3D(faces[5], "Green", width / 2, width / 2, width / 5, 5, "white");
+	        faces[5].translate(0, 0, width);   // move out, green face now front
+
+	        // move the drawing origin to the middle for nice drag rotation
+	        faces.translate(-width / 2, -width / 2, -width / 2);
+	        return faces;
+	    }
+	    function turnCube(cvsID) {
+	        var g = new Cango3D(cvsID);  // create a graphics context
+	        g.clearCanvas("lightyellow");
+            
+	        g.setWorldCoords3D(-100, -50, 400);
+	        g.setLightSource(0, 100, 200);
+
+	        var radius = 50;
+	        var savMouseX = 0;
+	        var savMouseY = 0;
+
+	        var grabCube = function (mousePos) {
+	            savMouseX = mousePos.x;
+	            savMouseY = mousePos.y;
+	        };
+
+	        var dragCube = function (mousePos) {
+	            // This drag function rotates an object around its drawing origin
+	            // assume a lever from drawing origin to drag point z=radius being moved by mouse
+	            var dragPt = g.toWorldCoords3D(savMouseX - this.xGrabOfs, savMouseY - this.yGrabOfs, 0);
+	            dragPt.z = radius;
+	            var csrPt = g.toWorldCoords3D(mousePos.x - this.xGrabOfs, mousePos.y - this.yGrabOfs, 0);
+	            csrPt.z = radius;
+	            savMouseX = mousePos.x;    // save these as reference for next drag
+	            savMouseY = mousePos.y;
+	            // axis to rotate lever from dragPt to csrPt is the normal to plane defined by the 3 points
+	            var u = normal(this.dwgOrg, dragPt, csrPt);
+	            // calc angle between dragPt and csrPt (amount of rotation needed about axis 'u')
+	            var theta = incAngle(this.dwgOrg, dragPt, csrPt);    // degrees
+	            // apply this drag rotation to Transform3D.matrix that put object in its current position
+	            // obj.dragNdrop property 'currXfm' holds this Transform3D
+	            // move object drawing origin back to 0,0,0 to do the rotation
+	            this.currXfm.translate(-this.dwgOrg.x, -this.dwgOrg.y, -this.dwgOrg.z);
+	            this.currXfm.rotate(u, theta);
+	            this.currXfm.translate(this.dwgOrg.x, this.dwgOrg.y, this.dwgOrg.z);
+	            // redraw with rotation applied
+	            g.clearCanvas("lightyellow");
+	            g.render3D(cube, this.currXfm);
+	        };
+
+	        var drag = new Drag3D(g, grabCube, dragCube, null);
+	        var cube = buildCube(g, 100, drag);
+
+	        var tfm = new Transform3D();
+	        tfm.translate(130, 80, 0);
+	        g.render3D(cube, tfm);
+	    }
+
+	    $(document).ready(function () {
+	        
+	        turnCube("canvasID");
+	    }
+	);
+    </script>
+</head>
+<body>
+ <canvas id="canvasID" width="800" height="800" style="border:1px solid black;"></canvas>
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>First Session Project: M/M/1 Queue</title>
+    <script type="text/javascript" src="noms.js"></script>
+    <script type="text/javascript" src="mathAnglais.js"></script>
+    <script type="text/javascript" src="coreAnglais.js"></script>
+    </head>
+
+<body>
+        <div align="center">
+          <table width="742" border="3" cellspacing="10">
+            <tr>
+              <td height="61" colspan="2" align="center">Simulation of an M/M/1 queue limited to 50 people</td>
+            </tr>
+            <tr>
+              <td width="348" height="294"><p>Controls
+              </p>
+                <form class="" name="controlForm">
+             	<p class="VarInput">λ: <input id='lambda' name='lambda' value="1" min="0" max="10" step="any" type="number" onChange="OnChangeValue()" /> </p>
+           	   	<p class="VarInput">μ: <input id='mu' name='mu' value="1" min="1" max="15" step="any" type="number" onChange="OnChangeValue()" /> </p>
+			    <p class="VarInput">Time (s): <input id='t' name='t' value="15" min="1" max="300" step="1" type="number" onChange="OnChangeValue()" /> </p>
+			    <p class="VarInput">Time interval (ms): <input id='intervalle' name='intervalle' value="500" min="1" max="5000" step="0.1" type="number" onChange="OnChangeValue()" /> </p>
+                <p class="VarInput">Initial People: <input id='x' name='x' value="10" min="0" max="50" step="1" type="number" onChange="OnChangeValue()" /> </p>
+                </form>
+              </td>
+              <td width="350">
+              <p><button id="reset_btn" class="myButton" type="button" onClick="reinitialiser()">Reinitialize</button></p>
+              <p><button id="start_btn" class="myButton" type="button" onClick="debutSimulation()">Start</button></p>
+              <p><button id="end_btn" class="myButton" type="button" disabled="true" onClick="terminerSimulation()">Jump to end</button></p>
+              <div id="warning" class="warning"></div>
+              </td>
+            </tr>
+            
+            <tr>
+              <td height="443" colspan="2" align="center" valign="middle" nowrap="nowrap"><p>View</p>
+              <!-- DEBUT DE LA TABLE DE TEST -->
+              <!-- MIEUX REFAIRE EN JS PLUS TARD? -->
+              <form class="myTableForm" name="tableform"> 
+                <table border="1" align="center" style="table-layout:fixed; height:100;">
+                  <tr>
+                    <td width="75" height="30" nowrap="nowrap"><div id="table9" class="tableMember"></div></td>
+                    <td width="75" height="30" nowrap="nowrap"><div id="table10" class="tableMember"></div></td>
+                    <td width="75" height="30" nowrap="nowrap"><div id="table29" class="tableMember"></div></td>
+                    <td width="75" height="30" nowrap="nowrap"><div id="table30" class="tableMember"></div></td>
+                    <td width="75" height="30" nowrap="nowrap"><div id="table49" class="tableMember"></div></td>
+                  </tr>
+                  <tr>
+                    <td width="75" height="30" nowrap="nowrap"><div id="table8" class="tableMember"></div></td>
+                    <td width="75" height="30" nowrap="nowrap"><div id="table11" class="tableMember"></div></td>
+                    <td width="75" height="30" nowrap="nowrap"><div id="table28" class="tableMember"></div></td>
+                    <td width="75" height="30" nowrap="nowrap"><div id="table31" class="tableMember"></div></td>
+                    <td width="75" height="30" nowrap="nowrap"><div id="table48" class="tableMember"></div></td>
+                  </tr>
+                  <tr>
+                    <td width="75" height="30" nowrap="nowrap"><div id="table7" class="tableMember"></div></td>
+                    <td width="75" height="30" nowrap="nowrap"><div id="table12" class="tableMember"></div></td>
+                    <td width="75" height="30" nowrap="nowrap"><div id="table27" class="tableMember"></div></td>
+                    <td width="75" height="30" nowrap="nowrap"><div id="table32" class="tableMember"></div></td>
+                    <td width="75" height="30" nowrap="nowrap"><div id="table47" class="tableMember"></div></td>
+                  </tr>
+                  <tr>
+                    <td width="75" height="30" nowrap="nowrap"><div id="table6" class="tableMember"></div></td>
+                    <td width="75" height="30" nowrap="nowrap"><div id="table13" class="tableMember"></div></td>
+                    <td width="75" height="30" nowrap="nowrap"><div id="table26" class="tableMember"></div></td>
+                    <td width="75" height="30" nowrap="nowrap"><div id="table33" class="tableMember"></div></td>
+                    <td width="75" height="30" nowrap="nowrap"><div id="table46" class="tableMember"></div></td>
+                  </tr>
+                  <tr>
+                    <td width="75" height="30" nowrap="nowrap"><div id="table5" class="tableMember"></div></td>
+                    <td width="75" height="30" nowrap="nowrap"><div id="table14" class="tableMember"></div></td>
+                    <td width="75" height="30" nowrap="nowrap"><div id="table25" class="tableMember"></div></td>
+                    <td width="75" height="30" nowrap="nowrap"><div id="table34" class="tableMember"></div></td>
+                    <td width="75" height="30" nowrap="nowrap"><div id="table45" class="tableMember"></div></td>
+                  </tr>
+                  <tr>
+                    <td width="75" height="30" nowrap="nowrap"><div id="table4" class="tableMember"></div></td>
+                    <td width="75" height="30" nowrap="nowrap"><div id="table15" class="tableMember"></div></td>
+                    <td width="75" height="30" nowrap="nowrap"><div id="table24" class="tableMember"></div></td>
+                    <td width="75" height="30" nowrap="nowrap"><div id="table35" class="tableMember"></div></td>
+                    <td width="75" height="30" nowrap="nowrap"><div id="table44" class="tableMember"></div></td>
+                  </tr>
+                  <tr>
+                    <td width="75" height="30" nowrap="nowrap"><div id="table3" class="tableMember"></div></td>
+                    <td width="75" height="30" nowrap="nowrap"><div id="table16" class="tableMember"></div></td>
+                    <td width="75" height="30" nowrap="nowrap"><div id="table23" class="tableMember"></div></td>
+                    <td width="75" height="30" nowrap="nowrap"><div id="table36" class="tableMember"></div></td>
+                    <td width="75" height="30" nowrap="nowrap"><div id="table43" class="tableMember"></div></td>
+                  </tr>
+                  <tr>
+                    <td width="75" height="30" nowrap="nowrap"><div id="table2" class="tableMember"></div></td>
+                    <td width="75" height="30" nowrap="nowrap"><div id="table17" class="tableMember"></div></td>
+                    <td width="75" height="30" nowrap="nowrap"><div id="table22" class="tableMember"></div></td>
+                    <td width="75" height="30" nowrap="nowrap"><div id="table37" class="tableMember"></div></td>
+                    <td width="75" height="30" nowrap="nowrap"><div id="table42" class="tableMember"></div></td>
+                  </tr>
+                  <tr>
+                    <td width="75" height="30" nowrap="nowrap"><div id="table1" class="tableMember"></div></td>
+                    <td width="75" height="30" nowrap="nowrap"><div id="table18" class="tableMember"></div></td>
+                    <td width="75" height="30" nowrap="nowrap"><div id="table21" class="tableMember"></div></td>
+                    <td width="75" height="30" nowrap="nowrap"><div id="table38" class="tableMember"></div></td>
+                    <td width="75" height="30" nowrap="nowrap"><div id="table41" class="tableMember"></div></td>
+                  </tr>
+                  <tr>
+                    <td width="75" height="30" nowrap="nowrap"><div id="table0" class="tableMember"></div></td>
+                    <td width="75" height="30" nowrap="nowrap"><div id="table19" class="tableMember"></div></td>
+                    <td width="75" height="30" nowrap="nowrap"><div id="table20" class="tableMember"></div></td>
+                    <td width="75" height="30" nowrap="nowrap"><div id="table39" class="tableMember"></div></td>
+                    <td width="75" height="30" nowrap="nowrap"><div id="table40" class="tableMember"></div></td>
+                  </tr>
+                </table>
+              </form>
+                <!-- FIN DE LA TABLE DE TEST -->
+              <table align="center" border="0" style="height:50;">
+                  <tr>
+                    <td width="75">
+                    	<table border="1" cellpadding="4">
+                        	<tr>
+                            	<td>
+                                	Server
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td width="75">&nbsp;</td>
+                    <td width="75">&nbsp;</td>
+                    <td width="75">&nbsp;</td>
+                    <td width="75">&nbsp;</td>
+                  </tr>
+              </table>
+              Served clients = <label id= "nb_client_servis">0</label></p>
+              <p> 
+                <button id="etat_file" class="myButton" type="button" style="background-color: rgb(0,128,0);width:300px;height:40px;" onClick="debutSimulation()"><b>Ready</b></button>
+              </p></td>
+            </tr>
+            <tr>
+              <td height="220">
+              <p>Equations </p>
+              <p>System stability: ρ = λ / μ = <label id= "rho">1</label></p>
+              <p>Average service time: 1 / (μ - λ) = <label id= "t_moy_service">1</label></p>
+              <p>Average time in queue: ρ / (μ - λ) = <label id= "t_moy_file">1</label></p>
+              <p>Average time in server: 1 / μ = <label id= "t_moy_serveur">1</label></p>
+              </td>
+              <td height="220">
+              <p>The system will be considered stationary only if ρ &lt; 1. </p>
+              <p>The equations shown here are only valid for a stationary system.</p>
+              <p>   <button id="etat_stabilite" class="myButton" type="button" style="background-color: rgb(255,0,0);width:100px;height:40px;"><b>Unstable</b></button></p>
+              </td>
+            </tr>
+            <tr>
+              <td height="173" colspan="2"><p>Statistics</p>
+              <p>Average service time: 1 / (μ - λ) = <label id= "t_moy_service">1</label></p>
+              <p>Average time in queue: ρ / (μ - λ) = <label id= "t_moy_file">1</label></p>
+              <p>Average time in server: 1 / μ = <label id= "t_moy_serveur">1</label></p>
+              </td>
+            </tr>
+          </table>
+    </div>
+</body>
+</html>

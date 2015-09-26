@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MTH2302D</title>
+    <meta name="description" content="website description" />
+    <meta name="keywords" content="website keywords, website keywords" />
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine&amp;v1" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" />
+    <link rel="stylesheet" type="text/css" href="../style/style.css" />
+
+	<!-- PAGE INCLUDE------------------------------------------------------------------------------->
+    <!-- <link rel='stylesheet' type='text/css' href='piapprox/stylesheet.css' />  -->
+	<link rel="stylesheet" type="text/css" href="main.css">
+    <script type="text/javascript" src="jquery-2.1.0.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="view.js"></script>
+	<!---------------------------------------------------------------------------------------------->
+</head>
+
+<body onload="init();">
+    <div id="main">
+        <div id="header">
+            <div id="logo">
+                <h1>Probability <a href="#"> and </a> Statistics</h1>
+                <!--<div class="slogan">...</div>-->
+            </div>
+            <div id="menubar">
+                <ul id="menu">
+                    <!-- put class="current" in the li tag for the selected page - to highlight which page you're on -->
+                    <li><a href="index.html">Home</a></li>
+                    <!-- <li class="current"><a href="examples.html">Monte Carlo</a></li> -->
+					<li><a href="examples.html">Monte Carlo</a></li>
+                    <li><a href="page.html">Grime Dice</a></li>
+                    <!-- <li><a href="another_page.html">Monty Hall</a></li> -->
+					<li class="current"><a href="another_page.html">Monty Hall</a></li>
+                    <!-- <li><a href="contact.html">Buffon's Needle</a></li> -->
+                </ul>
+            </div>
+        </div>
+        <div id="site_content">
+                  <div id="sidebar_container">
+        <img class="paperclip" src="../style/paperclip.png" alt="paperclip" />
+        <div class="sidebar">
+        <!-- insert your sidebar items here -->
+        <h3>Latest News</h3>
+        <h4>What's the News?</h4>
+        <h5>1st July 2011</h5>
+        <p>Put your latest news item here, or anything else you would like in the sidebar!<br /><a href="#">Read more</a></p>
+        </div>
+        <img class="paperclip" src="style/paperclip.png" alt="paperclip" />
+        <div class="sidebar">
+          <h3>MTH2302D</h3>
+          <p>Information about Probability and Statistic class at Polytechnique Montreal.</p>
+		  <a href="http://www.polymtl.ca/etudes/cours/details.php?sigle=MTH2302D">MTH2302D Details and Schedule</a>
+		  <a href="http://moodle.polymtl.ca/course/view.php?name=MTH2302D">Course's Website</a>
+          <!-- <form method="post" action="#" id="subscribe"> -->
+            <!-- <p style="padding: 0 0 9px 0;"><input class="search" type="text" name="email_address" value="your email address" onclick="javascript: document.forms['subscribe'].email_address.value=''" /></p> -->
+            <!-- <p><input class="subscribe" name="subscribe" type="submit" value="Subscribe" /></p> -->
+          <!-- </form> -->
+        </div>
+        <img class="paperclip" src="../style/paperclip.png" alt="paperclip" />
+        <div class="sidebar">
+          <h3>Professor's website</h3>
+          <h4>Vahid Partovi Nia</h4>
+          <h5>Polytechnique Montreal</h5>
+          <p>Assistant Professor Department of Mathematical and Industrial Engineering<br /><a href="http://vahid.probstat.ca/">read more</a></p>
+        </div>
+      </div>
+      <!-- PAGE CONTENT ---------------------------------------------------------------------------------------->
+	  <div class="gameArea">
+        <div class="gameAreaContent">
+
+            <h2 align="center"> The Monty Hall Problem </h2>
+
+            <!-- <p id="Results"></p> -->
+            
+            <!-- <p id="Instructions">Choose a door to win a car!</p> -->
+
+            <div class="doorRoomGroup" style="left:15%">
+                <div id="door1" class="door">
+
+                </div>
+                <div id="room1" class="room">
+
+                </div>
+            </div>
+            <div class="doorRoomGroup" style="left:40%">
+                <div id="door2" class="door">
+
+                </div>
+                <div id="room2" class="room">
+
+                </div>
+            </div>
+            <div class="doorRoomGroup" style="left:65%">
+                <div id="door3" class="door">
+
+                </div>
+                <div id="room3" class="room">
+
+                </div>
+            </div>
+
+        </div>
+
+        <div id="host" class="host">
+            <div id="bubble"></div>
+            <img class="hostImg" src="tv_host.png">
+        </div>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p id="Wins">Wins ratio: 0.</p>
+        <p id="WinsWithSwitch">Wins with switch ratio: 0.</p>
+        <p id="Plays">You have played 0 times.</p>
+
+
+    </div>
+	  <!-------------------------------------------------------------------------------------------------------->
+        </div>
+<div id="footer">
+		<p>Copyright &copy; Alex Arsenault <a href="http://www.html5webtemplates.co.uk">design from HTML5webtemplates</a></p>
+		<a class="share-button" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fprobstat.ca%2F" target="_blank"><img src="color/Facebook.png"></a>
+		<a class="share-button" href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fprobstat.ca%2F&text=MTH2302D: http%3A%2F%2Fprobstat.ca%2F&via={TWITTER}" target="_blank" title="Tweet"><img src="color/Twitter.png"></a>
+		<a class="share-button" href="https://plus.google.com/share?url=http%3A%2F%2Fprobstat.ca%2F" target="_blank" title="Share on Google+"><img src="color/Google+.png"></a>
+		<a class="share-button" href="http://www.tumblr.com/share?v=3&u=http%3A%2F%2Fprobstat.ca%2F&t=MTH2302D&s=" target="_blank" title="Post to Tumblr"><img src="color/Tumblr.png"></a>
+		<a class="share-button" href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fprobstat.ca%2F&media={IMGURL}&description={DESCRIPTION}" target="_blank" title="Pin it"><img src="color/Pinterest.png"></a>
+		<a class="share-button" href="http://www.reddit.com/submit?url=http%3A%2F%2Fprobstat.ca%2F&title=MTH2302D" target="_blank" title="Submit to Reddit"><img src="color/Reddit.png"></a>
+		<a class="share-button" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fprobstat.ca%2F&title=MTH2302D&summary={DESCRIPTION}&source=http%3A%2F%2Fprobstat.ca%2F" target="_blank" title="Share on LinkedIn"><img src="color/LinkedIn.png"></a>
+		<a class="share-button" href="http://wordpress.com/press-this.php?u=http%3A%2F%2Fprobstat.ca%2F&t=MTH2302D&s={DESCRIPTION}&i={IMGURL}" target="_blank" title="Publish on WordPress"><img src="color/Wordpress.png"></a>
+    </div>
+    </div>
+</body>
+</html>
