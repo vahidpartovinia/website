@@ -1,9 +1,10 @@
-# website
-My Personal Website
-Pushed by git-ftp 
+# website pushed by git-ftp 
+# require git-ftp http://git-ftp.github.io/git-ftp/
 
+git add thefile
+git commit
 
+git push origin master
 
-http://git-ftp.github.io/git-ftp/
 
 git ftp push -u probstat -p - ftp://ftp.datawisdom.ca/public_html
