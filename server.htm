@@ -86,13 +86,16 @@ We have three servers, one CPU server (Cyrus), one GPU server (Nautilus), and on
                                  <img src="http://orionpax.de/23/uploads/photos/Nautilus_Final_Fog.jpg" class="center-block img-responsive img-rounded">
                               Nautilus is  the Capitan Nemo's submarine which goes deep in oceans. It is also our GPU computing server, intended to serve my graduate students in training deep neural networks. This Ubuntu Linux server supports SSH and FTP services currently 
                               running over 8 CPU that hosts  a powerful Tesla K40 GPU server with 12 GB RAM and 2880 CUDA cores on one of its PCI 3.0 express slots. Khalid Laaziri adminstrates Nautilus. 
+                              To have access first you must ssh using "ssh -x geraduser@ssh.gerad.ca" and then "ssh -x nautilus.gerad.lan"<br>
+                              You must "module load anaconda" and then "source activate keras-gpu" if you want to use keras with GPU acceleration, then run your python code using "python myfile.py". For more details contact Khalid. You may install what you like locally using "conda install".
+
                             </div>
                             <div class=" col-md-4">
                               <h3>What is RSTUDIO?</h3>
                                   <img src="http://core0.staticworld.net/images/article/2014/11/abstract_data_charts_statistics_thinkstock-100531408-primary.idge.jpg
 " class="center-block img-responsive img-rounded">
                              
-                              RSTUDIO is  our moderate computing server intended to serve students who just started computing over a remote server. RSTUDIO on our server is equipped with a web interface that mimics the common RStudio Desktop, except that the computations are sent to our powerful server. This server makes RSTUDIO available even on cell phones!
+                              RSTUDIO is  a server that I use also as my office desktop. RSTUDIO on our server is equipped with a web interface that mimics the common RStudio Desktop, except that the computations are sent to this server. This server makes RSTUDIO available on cell phones!
                             </div>
                           </div>
                       </div>
