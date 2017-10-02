@@ -84,15 +84,17 @@
                     <img src="photo/webphoto.jpg" class="img-responsive">
 
                     <h2>Vahid Partovi Nia</h2>
-                    is Researcher at <a href="http://cerc-datascience.polymtl.ca/">The Canada Excellence Research Chair in Data Science for Real-Time Decision-Making</a> of 
-                    <a href="http://www.polymtl.ca/en/">Ecole Polytechnique de Montreal</a>. His main research interests are 
+                    is Senior Machine Learning Scientist at Noah's Ark Research Lab of Huawei, and Adjunct Professor at 
+                                        <a href="http://www.polymtl.ca/en/">Ecole Polytechnique de Montreal</a>. He is member of <a href="http://cerc-datascience.polymtl.ca/">The Canada Excellence Research Chair in Data Science</a>. His mission is to make a bridge between the expertise in academia, and the cutting-edge technology in the domain of machine learning and artificial intelligence in industry. His research interest is diverse and is application-oriented including  
                     Data Science, Efficient Computing, Biostatistics, and Artificial Intelligence. 
                     He was Swiss <a href="http://www.snf.ch/E/Pages/default.aspx">SNF</a> funded 
                     postdoctoral fellow at <a href="http://www.math.mcgill.ca/">McGill University</a>, visiting scholar at <a href="https://statistics.stanford.edu/">Stanford University</a>, and received his Ph.D. in Statistics from 
                     <a href="http://stat.epfl.ch/">Ecole Polytechnique Federale de Lasuanne</a>, <a href="http://www.myswitzerland.com/en/home.html">Switzerland</a>.<br>
                     His hobbies include science, smart technology, data analysis, music, dance, computing, blogging, and Esperanto.<br>
+<br>
+<br>
 
-
+                    If you want to apply as a graduate student under my supervision at Ecole Polytechnique, please read <a href="student.htm">student page</a> first.
 
 <br>
 <br>
@@ -101,19 +103,6 @@
 
 
                        <p class="text-info text-right"></p>
-                        <p> Do you look for more fun with machine learning? My research team figures out which one is more likely to talk like you
-                        <a href="http://chirac-mitterrand.herokuapp.com">Mitterand or Chirac?</a> <br>
-
-
-
-<div class="container" style="width: 100%;">
- <div class="theme-table-image col-sm-6">
-   <img src="mitterand.jpg">
- </div>
- <div class="theme-table-image col-sm-6">
-   <img src="chirac.jpg">
- </div>
-</div>
       
 
 
@@ -129,326 +118,28 @@
 
 <br><br>
 
-                    <h3>Chicago Crime Density</h3>
-                    If you want to buy a house in Chicago, better to look at the crime density.
-                    Crime data are available publicly by the <a href="https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-present/ijzp-q8t2">City of Chicago</a> 
-                    <a href="chicago/index.html"><img src="chicago/snapshot.png" class="center-block img-responsive img-rounded"></a>
-                    <br>
 
 
+                    <h3>Data Science </h3>
+                    I designed a graduate course on Statistical Machine Learning and Data Mining and I am writing a graduate textbook, check <a href="teaching.htm">teaching</a> page for more details.<br> Every semester I run a one-day hands-on <a href="https://github.com/vahidpartovinia/pythonworkshop/">Python Workshop</a>  and an <a href="https://github.com/vahidpartovinia/pythonworkshop/">R Workshop</a> in Data Science and Artificial Intelligence at <a href="https://www.gerad.ca/en">GERAD</a>. 
+<br><br>
 
-
-                    <h3>Statistical Machine Learning Graduate Course</h3>
-                    I often give a graduate course on Statistical Machine Learning and Data Mining every fall at Ecole Polytechnique, check <a href="http://www.polymtl.ca/etudes/cours/details.php?sigle=MTH6312">HERE</a> for more information.<br> 
-
-
-                    To get an idea what this course is about, draw in the square and a k-nearest-neighbour classification algorithm recognizes the digit you drew.<br> 
-
-                     Check a nice convolutional neural networks which
-                     is much more precise compred to nearest-neighbours 
-                     <a href="http://scs.ryerson.ca/~aharley/vis/">HERE</a>. <br> 
-
-                     Check another visualization on deep neural networks by Google 
-                     <a href="http://playground.tensorflow.org/">HERE</a>. <br> 
-                      
-                    <script src="encog-js-1.0.js"></script>
-                    <script src="encog-widget-js-1.0.js"></script>
-
-                    <style type="text/css"><!--
-                    #example-holder
-                    {
-    border: 1px solid #000;
-    padding:5px;
-    background: #c0c0c0;
-    width: 420px;
-    height: 340px;
-    position: relative;
-}
-
-#drawing-area
-{
-    border: 1px solid #000;
-    background: white;
-    width:300px;
-    height:300px;
-    position: absolute;
-    display: inline;
-    top:5px;
-    left: 5px;
-}
-
-#downsampleView
-{
-    border: 1px solid #000;
-    background: white;
-    width: 110px;
-    height: 120px;
-    position: absolute;
-    display: inline;
-    top:5px;
-    left:313px;
-}
-
-#lstLetters
-{
-    border: 1px solid #000;
-    width:112px;
-    height: 171px;
-    position: absolute;
-    display: inline;
-    left: 313px;
-    top: 137px;
-}
-
-#example-btn1
-{
-    border: 1px solid #000;
-    position: absolute;
-    display: inline;
-    width: 416px;
-    top:315px;
-}
-
---></style><div id="example-holder">
-    <div id="drawing-area"></div><select id="lstLetters" size="10"></select><div id="example-btn1"><input id="btnRecognize" type="button" value="Recognize" /><input id="btnTeach" type="button" value="Teach" /><input id="btnClear" type="button" value="Clear" /><input id="btnDownsample" type="button" value="Down Sample" /><input id="btnRemove" type="button" value="Remove" /></div>
-    <p> <div id="downsampleView"></div></p>
-</div>
-<script type="text/javascript">
-<!--//--><![CDATA[// ><!--
-
-"use strict";
-if(window.addEventListener) {
-    window.addEventListener('load', function () {
-
-        var DOWNSAMPLE_WIDTH = 5;
-        var DOWNSAMPLE_HEIGHT = 8;
-
-        var lstLetters, downsampleArea;
-        var charData = {};
-        var drawingArea;
-        var downSampleData = [];
-
-        function init () {
-
-            // Find the canvas element.
-            drawingArea = ENCOG.GUI.Drawing.create('drawing-area',300,300);
-            downsampleArea = ENCOG.GUI.CellGrid.create('downsampleView',DOWNSAMPLE_WIDTH,DOWNSAMPLE_HEIGHT,110,120);
-
-            downsampleArea.outline = true;
-            downsampleArea.mouseDown = function(x,y) {};
-
-            downsampleArea.determineColor = function(row,col) {
-                var index = (row*this.gridWidth)+col;
-                if( downSampleData[index] < 0 )   {
-                    return "white";
-                }
-                else {
-                    return "black";
-                }
-            };
-
-            lstLetters = document.getElementById('lstLetters');
-
-            lstLetters.addEventListener('change', ev_selectList, true);
-
-            var btnClear = document.getElementById('btnClear');
-            var btnDownsample = document.getElementById('btnDownsample');
-            var btnRecognize = document.getElementById('btnRecognize');
-            var btnTeach = document.getElementById('btnTeach');
-            var btnRemove = document.getElementById('btnRemove');
-
-            btnClear.addEventListener('click', ev_clear, false);
-            btnDownsample.addEventListener('click', ev_downSample, false);
-            btnRecognize.addEventListener('click', ev_recognize, false);
-            btnTeach.addEventListener('click', ev_teach, false);
-            btnRemove.addEventListener('click', ev_remove, false);
-
-            downSampleData = drawingArea.performDownSample();
-            displaySample(downSampleData);
-            preload();
-        }
-
-        /////////////////////////////////////////////////////////////////////////////
-        // Event functions
-        /////////////////////////////////////////////////////////////////////////////
-
-        // Called when the "Teach" button is clicked.
-        function ev_teach(ev)
-        {
-            var data = drawingArea.performDownSample();
-            displaySample(data);
-
-            if( data == null )
-            {
-                alert("You must draw something first.");
-            }
-            else
-            {
-                var charEntered = prompt("What did you just draw?", "");
-
-                if( charEntered )
-                {
-                    if( charEntered in charData )
-                    {
-                        alert("That character is already defined.");
-                    }
-                    else if( charEntered.length!=1 )
-                    {
-                        alert("Please enter exactly one character.");
-                    }
-                    else
-                    {
-                        drawingArea.clear();
-                        charData[charEntered] = data;
-                        lstLetters.add(new Option(charEntered));
-                        clearDownSample();
-                    }
-                }
-            }
-        }
-
-        // Called when the "Remove" button is clicked.
-        function ev_remove(ev)
-        {
-            for (var i = lstLetters.length - 1; i>=0; i--) {
-                if (lstLetters.options[i].selected) {
-                    lstLetters.remove(i);
-                }
-            }
-            clearDownSample();
-        }
-
-        // Called when the "Downsample" button is clicked
-        function ev_downSample(ev)
-        {
-            downSampleData = drawingArea.performDownSample();
-            displaySample();
-        }
-
-        // Called when the "Clear" button is clicked
-        function ev_clear(ev)
-        {
-            drawingArea.clear();
-            clearDownSample();
-        }
-
-        // Called when the selected letter changes
-        function ev_selectList (ev)
-        {
-            var c = lstLetters.options[lstLetters.selectedIndex].text;
-            downSampleData = charData[c];
-            displaySample();
-        }
-
-        // Called when the "Recognize" button is clicked
-        function ev_recognize (ev)
-        {
-            downSampleData = drawingArea.performDownSample();
-            displaySample();
-            if( lstLetters.length<1 )
-            {
-                alert("Please teach me something first.");
-            }
-            else if( downSampleData == null )
-            {
-                alert("You must draw something to recognize.");
-            }
-            else
-            {
-                var bestChar = '??';
-                var bestScore = 0;
-
-                for(var c in charData )
-                {
-                    var data = charData[c];
-
-// Now we will actually recognize the letter drawn.
-// To do this, we will use a Euclidean distance
-// http://www.heatonresearch.com/wiki/Euclidean_Distance
-
-                    var sum = 0;
-                    for(var i = 0; i<data.length; i++ )
-                    {
-                        var delta = data[i] - downSampleData[i];
-                        sum = sum + (delta*delta);
-                    }
-
-                    sum = Math.sqrt(sum);
-
-// Basically we are calculating the Euclidean distance between
-// what was just drawn, and each of the samples we taught
-// the program.  The smallest Euclidean distance is the char.
-
-                    if( sum<bestScore || bestChar=='??' )
-                    {
-                        bestScore = sum;
-                        bestChar = c;
-                    }
-
-                }
-
-                alert('I believe you typed: ' + bestChar );
-            }
-
-            drawingArea.clear();
-            clearDownSample();
-        }
-
-        function clearDownSample() {
-            downSampleData = ENCOG.ArrayUtil.allocate1D(DOWNSAMPLE_WIDTH*DOWNSAMPLE_HEIGHT);
-            ENCOG.ArrayUtil.fillArray(downSampleData,0,downSampleData.length,-1);
-            displaySample();
-        }
-
-        // Preload the digits, so that the user can quickly do some OCR if desired.
-        function preload()
-        {
-            defineChar("0", new Array( -1,1,1,1,-1,1,1,-1,1,1,1,-1,-1,-1,1,1,-1,-1,-1,1,1,-1,-1,-1,1,1,-1,-1,-1,1,1,1,-1,-1,1,-1,1,1,1,-1 ) );
-            defineChar("1", new Array( 1,1,1,-1,-1,1,1,1,-1,-1,1,1,1,-1,-1,1,1,1,1,-1,-1,1,1,1,1,-1,-1,-1,1,1,-1,-1,-1,1,1,-1,1,1,1,1) );
-            defineChar("2", new Array(1,1,1,-1,-1,-1,-1,1,1,-1,-1,-1,-1,1,-1,-1,-1,-1,1,-1,-1,-1,-1,1,-1,1,1,1,1,-1,1,-1,1,1,-1,1,1,1,1,1) );
-            defineChar("3", new Array(1,1,1,1,-1,-1,-1,-1,1,1,-1,-1,-1,1,1,-1,-1,1,1,-1,-1,1,1,1,1,-1,-1,-1,-1,1,-1,-1,-1,-1,1,1,1,1,1,1) );
-            defineChar("4", new Array(1,-1,-1,1,-1,1,-1,-1,1,-1,1,-1,-1,1,-1,1,1,1,1,1,-1,-1,-1,1,-1,-1,-1,-1,1,-1,-1,-1,-1,1,-1,-1,-1,-1,1,-1) );
-            defineChar("5", new Array(1,1,1,1,1,1,-1,-1,-1,-1,1,-1,-1,-1,-1,1,1,1,1,1,-1,-1,-1,-1,1,-1,-1,-1,-1,1,-1,-1,-1,-1,1,1,1,1,1,1) );
-            defineChar("6", new Array(-1,1,1,1,-1,1,1,-1,-1,-1,1,-1,-1,-1,-1,1,-1,1,1,-1,1,1,1,1,1,1,1,-1,-1,1,1,1,-1,-1,1,-1,1,1,1,1) );
-            defineChar("7", new Array(1,1,1,1,1,-1,-1,-1,1,1,-1,-1,-1,1,-1,-1,-1,-1,1,-1,-1,-1,1,1,-1,-1,-1,1,-1,-1,-1,1,1,-1,-1,-1,1,-1,-1,-1) );
-            defineChar("8", new Array(1,1,1,1,1,1,-1,-1,-1,1,1,-1,-1,-1,1,1,1,1,1,1,-1,1,1,1,1,1,1,-1,-1,1,1,-1,-1,-1,1,1,1,1,1,1) );
-            defineChar("9", new Array(1,1,1,1,1,1,1,-1,-1,1,1,-1,-1,-1,1,1,1,1,1,1,-1,-1,-1,-1,1,-1,-1,-1,-1,1,-1,-1,-1,-1,1,-1,-1,-1,-1,1) );
-        }
-
-        // Define a character, add it to the list and to the map.
-        function defineChar(charEntered,data)
-        {
-            charData[charEntered] = data;
-            lstLetters.add(new Option(charEntered));
-        }
-
-        // Display downsampled data to the grid.
-        function displaySample()
-        {
-            downsampleArea.render();
-        }
-
-        // cause the init function to be called.
-        init();
-
-    }, false); }
-
-//--><!]]>
-</script>
-
-
+                    If you want to study data science here is the visualization of interesting programs for <a href="http://data-science-university-programs.silk.co/">data science programs</a>. Keep your eye on masters of data science in <a href="https://masterdatascience.science.ubc.ca">University of British Columbia</a> which is excellent one-year program in masters level. 
 
 
 
 
                     <br>
-                    <br>
+
+
+
+                            <h3>PolyStat Blog</h3>
+                        <p>  We regularly write blog posts on our google blog. </p>
 
 
 
 
-
-                    <br>
+<!-- start feedwind code --><script type="text/javascript">document.write('\x3Cscript type="text/javascript" src="' + ('https:' == document.location.protocol ? 'https://' : 'http://') + 'feed.mikle.com/js/rssmikle.js">\x3C/script>');</script><script type="text/javascript">(function() {var params = {rssmikle_url: "http://polystat.blogspot.com/feeds/posts/default?alt=rss",rssmikle_frame_width: "450",rssmikle_frame_height: "300",frame_height_by_article: "0",rssmikle_target: "_blank",rssmikle_font: "Arial, Helvetica, sans-serif",rssmikle_font_size: "12",rssmikle_border: "off",responsive: "off",rssmikle_css_url: "",text_align: "left",text_align2: "left",corner: "off",scrollbar: "off",autoscroll: "on_mc",scrolldirection: "up",scrollstep: "3",mcspeed: "30",sort: "Off",rssmikle_title: "on",rssmikle_title_sentence: "",rssmikle_title_link: "",rssmikle_title_bgcolor: "#0066FF",rssmikle_title_color: "#FFFFFF",rssmikle_title_bgimage: "",rssmikle_item_bgcolor: "#FFFFFF",rssmikle_item_bgimage: "",rssmikle_item_title_length: "55",rssmikle_item_title_color: "#0066FF",rssmikle_item_border_bottom: "on",rssmikle_item_description: "on",item_link: "off",rssmikle_item_description_length: "150",rssmikle_item_description_color: "#666666",rssmikle_item_date: "gl1",rssmikle_timezone: "Etc/GMT",datetime_format: "%b %e, %Y %l:%M %p",item_description_style: "text+tn",item_thumbnail: "full",item_thumbnail_selection: "auto",article_num: "15",rssmikle_item_podcast: "off",keyword_inc: "",keyword_exc: ""};feedwind_show_widget_iframe(params);})();</script><div style="font-size:10px; text-align:center; width:450px;"><a href="http://feed.mikle.com/" target="_blank" style="color:#CCCCCC;">RSS Feed Widget</a><!--Please display the above link in your web page according to Terms of Service.--></div><!-- end feedwind code -->
 
 
 
@@ -479,13 +170,63 @@ if(window.addEventListener) {
                     <div class="col-sm-6">
 
 
-                            <h3> ScienceData.ca</h3>
-                        <p>  We regularly write blog posts on our google blog. Are you looking for <a href="http://data-science-university-programs.silk.co/">data science?</a>  </p>
+<br>
+
+
+                    <h3> Current Research Support</h3>
+
+                  <a href="http://huawei.ca">
+                    <img src="photo/huawei_logo.jpg" width="50" height="50" alt=""></a>
+
+
+                    <a href="http://www.polymtl.ca">
+                    <img src="photo/poly_logo.png" width="113" height="50" alt=""></a>
+
+                    <a href="http://cerc-datascience.polymtl.ca">
+                    <img src="photo/ds4dm_logo.jpg" width="50" height="50" alt=""></a>
+
+
+
+                    <a href="http://www.nserc-crsng.gc.ca">
+                    <img src="photo/nserclogoscale.jpg" width="113" height="50" alt=""></a>
+
+                    <a href="http://www.nvidia.com/">
+                    <img src="photo/nvidialogoscale.jpg" width="68" height="50" alt=""></a>
+
+
+
+<br>
+
+                    <a href="http://www.mitacs.ca">
+                    <img src="photo/mitacslogoscale.jpg" width="135" height="50" alt=""></a>
+
+<br>
+<br>
+<br>
 
 
 
 
-<!-- start feedwind code --><script type="text/javascript">document.write('\x3Cscript type="text/javascript" src="' + ('https:' == document.location.protocol ? 'https://' : 'http://') + 'feed.mikle.com/js/rssmikle.js">\x3C/script>');</script><script type="text/javascript">(function() {var params = {rssmikle_url: "http://polystat.blogspot.com/feeds/posts/default?alt=rss",rssmikle_frame_width: "450",rssmikle_frame_height: "300",frame_height_by_article: "0",rssmikle_target: "_blank",rssmikle_font: "Arial, Helvetica, sans-serif",rssmikle_font_size: "12",rssmikle_border: "off",responsive: "off",rssmikle_css_url: "",text_align: "left",text_align2: "left",corner: "off",scrollbar: "off",autoscroll: "on_mc",scrolldirection: "up",scrollstep: "3",mcspeed: "30",sort: "Off",rssmikle_title: "on",rssmikle_title_sentence: "",rssmikle_title_link: "",rssmikle_title_bgcolor: "#0066FF",rssmikle_title_color: "#FFFFFF",rssmikle_title_bgimage: "",rssmikle_item_bgcolor: "#FFFFFF",rssmikle_item_bgimage: "",rssmikle_item_title_length: "55",rssmikle_item_title_color: "#0066FF",rssmikle_item_border_bottom: "on",rssmikle_item_description: "on",item_link: "off",rssmikle_item_description_length: "150",rssmikle_item_description_color: "#666666",rssmikle_item_date: "gl1",rssmikle_timezone: "Etc/GMT",datetime_format: "%b %e, %Y %l:%M %p",item_description_style: "text+tn",item_thumbnail: "full",item_thumbnail_selection: "auto",article_num: "15",rssmikle_item_podcast: "off",keyword_inc: "",keyword_exc: ""};feedwind_show_widget_iframe(params);})();</script><div style="font-size:10px; text-align:center; width:450px;"><a href="http://feed.mikle.com/" target="_blank" style="color:#CCCCCC;">RSS Feed Widget</a><!--Please display the above link in your web page according to Terms of Service.--></div><!-- end feedwind code -->
+                    <h3> Past Research Support</h3>
+
+                    <a href="https://www.iperceptions.com/en-ca/home">
+                    <img src="photo/iperceptionslogoscale.jpg" width="206" height="50" alt=""></a>
+
+
+                    <a href="https://www.thalesgroup.com">
+                    <img src="photo/thaleslogoscale.jpg" width="202" height="50" alt=""></a>
+
+
+                    <a href="http://www.aircanada.com/">
+                    <img src="photo/aircanadalogoscale.jpg" width="61" height="50" alt=""></a>
+
+
+                    <a href="https://www.odotech.com">
+                    <img src="photo/odotechlogoscale.jpg" width="44" height="50" alt=""></a>
+
+
+
+
 
                                             </div>
 </div>
@@ -512,46 +253,6 @@ if(window.addEventListener) {
                     </div>
 
                      <div class="col-sm-6">
-
-
-<br>
-
-
-                    <h3> Current Research Support</h3>
-                    <a href="https://www.iperceptions.com/en-ca/home">
-                    <img src="photo/iperceptionslogoscale.jpg" width="206" height="50" alt=""></a>
-
-                    <a href="http://www.nserc-crsng.gc.ca">
-                    <img src="photo/nserclogoscale.jpg" width="113" height="50" alt=""></a>
-<br>
-
-                    <a href="http://www.nvidia.com/">
-                    <img src="photo/nvidialogoscale.jpg" width="68" height="50" alt=""></a>
-
-                    <a href="https://www.thalesgroup.com">
-                    <img src="photo/thaleslogoscale.jpg" width="202" height="50" alt=""></a>
-
-
-<br>
-
-                    <a href="http://www.mitacs.ca">
-                    <img src="photo/mitacslogoscale.jpg" width="135" height="50" alt=""></a>
-
-<br>
-<br>
-<br>
-
-
-
-
-                    <h3> Past Research Support</h3>
-
-                    <a href="http://www.aircanada.com/">
-                    <img src="photo/aircanadalogoscale.jpg" width="61" height="50" alt=""></a>
-
-
-                    <a href="https://www.odotech.com">
-                    <img src="photo/odotechlogoscale.jpg" width="44" height="50" alt=""></a>
 
 
 
