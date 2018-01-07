@@ -1,0 +1,214 @@
+\documentclass[12pt,a4paper]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% write which packages is used in your text
+\usepackage{amsmath}
+\usepackage[amsmath]{ntheorem}
+\usepackage{lastpage}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+%now you can write a text with French accents 
+\usepackage[utf8]{inputenc}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% write your abbreviation of symbols here
+
+%fill the brackets with your firstname and lastname
+\def\StudentName{FirstName LastName} 
+%fill the brackets with your matricule (poly student number)
+\def\StudentMatricule{StudentNumber}
+% exercise of which week? 
+\def\ExerciseNo{1}
+
+
+
+
+\def\R{\mathcal{R}}% set of real numbers as \R
+\def\argmax{\mathrm{argmax}} % argmax
+\def\argmin{\mathrm{argmin}} % argmin
+\def\T{^\top} %transpose
+\def\bbeta{\boldsymbol \beta} % bold beta
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% define your tags here
+\theoremheaderfont{\normalfont\bfseries}
+\theorembodyfont{\normalfont}
+\newtheorem{exercise}{Exercise}
+\numberwithin{exercise}{section} % important bit
+
+\newtheorem{solution}{Solution}
+\numberwithin{solution}{section} % important bit
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% define what to write in paper margins
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{{\bf~\StudentName,~\StudentMatricule}}
+\chead{}
+\rhead{\emph{Exercise no~\ExerciseNo}}
+\lfoot{}
+\cfoot{\thepage~/~\pageref{LastPage}}
+\rfoot{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% gives more space and expands margins
+\textwidth 6.4in
+\textheight 9in \oddsidemargin 0in \evensidemargin 0in \topmargin -0.5in
+\renewcommand{\baselinestretch}{2} 
+% this puts more space between lines, so that I can write comments in between
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+
+%%%%%Generates your first page
+\begin{titlepage}
+\begin{center}
+\textsc{\LARGE Exercise no \ExerciseNo}\\[1.5cm]
+\vspace{2in}
+\textsc{\Large \StudentName~\StudentMatricule}\\[0.5cm]
+\textsc{Statistical Machine Learning}\\[0.5cm]
+\today
+\end{center}
+\end{titlepage}
+%%%% Title Page ends here
+
+
+
+
+\section{Optimization} For each part of the following exercise argue if derivative is applicable for minimization, and why derivative equal zero gives the minimum. 
+
+\begin{exercise} Find the least squares estimator $\hat \beta_0=\argmin~S(\beta_0)$, in which $$S(\beta_0)=\sum_{i=1}^n (y_i -\beta_0 )^2.$$
+\end{exercise}
+
+\begin{solution}
+\end{solution}
+
+\begin{exercise} 
+Find the least squares estimator $\hat \beta_1=\argmin~S(\beta_1)$ , in which $$S(\beta_1)=\sum_{i=1}^n (y_i -\beta_1 x_{1i})^2.$$
+\end{exercise}
+
+\begin{solution}
+\end{solution}
+
+
+
+
+\begin{exercise}
+ Find the least squares estimator $(\hat \beta_0,\hat \beta_1)=\argmin~S(\beta_0,\beta_1)$, in which $$S(\beta_0,\beta_1)=\sum_{i=1}^n (y_i-\beta_0 -\beta_1 x_{1i})^2.$$
+\end{exercise}
+
+\begin{solution}
+\end{solution}
+
+
+
+\begin{exercise}
+ Find the least squares estimator $(\hat \beta_1,\hat \beta_2)=\argmin~S(\beta_1,\beta_2)$, in which $$S(\beta_1,\beta_2)=\sum_{i=1}^n (y_i-\beta_1 x_{1i}-\beta_2 x_{2i})^2.$$\\
+\end{exercise}
+
+\begin{solution}
+\end{solution}
+
+
+\begin{exercise}
+ How do you minimize if you cannot differentiate the function $S$, but you know $S$ is differentiable?
+\end{exercise}
+
+\begin{solution}
+\end{solution}
+
+
+
+\begin{exercise}
+ How do you minimize if you know $S$ is not differentiable (such as the absolute loss function $S(\beta_0)=\sum_{i=1}^n |y_i -\beta_0 |$.
+\end{exercise}
+
+\begin{solution}
+\end{solution}
+
+
+
+
+\section{Linear Algebra}
+\begin{exercise}
+ Show that any matrix in the form $\mathbf A\T\mathbf A$ is positive semi-definite where $\mathbf A\T$ is the transpose of $\mathbf A$. 
+ \end{exercise}
+
+\begin{solution}
+\end{solution}
+
+
+ \begin{exercise}
+How can you use this result in optimization? 
+\end{exercise}
+
+\begin{solution}
+\end{solution}
+
+
+Suppose you have a code that solves the systems of linear equations $\mathbf A \mathbf x =\mathbf b$ where $\mathbf A_{p\times p}$ and $\mathbf b_{p\times 1}$ both are known and $\mathbf x$ is unknown. 
+\begin{exercise}
+When does this system of linear equation have at least one solution? Why?
+\end{exercise} 
+
+\begin{solution}
+\end{solution}
+
+
+
+\begin{exercise}
+When does this system of linear equation has infinite solutions? Why?
+\end{exercise}
+
+\begin{solution}
+\end{solution}
+
+
+\begin{exercise} 
+When does this system of linear equation does not have any solution?
+\end{exercise}
+
+\begin{solution}
+\end{solution}
+
+
+%
+\begin{exercise} 
+When does this system of linear equation have exactly one solution? Write a pseudo code that finds this solution.
+\end{exercise}
+
+\begin{solution}
+\end{solution}
+
+
+\begin{exercise} 
+How can you find the inverse of a matrix using a code that solves this system of linear equations? 
+\end{exercise}
+
+\begin{solution}
+\end{solution}
+
+
+\section{Mathematical Statistics}
+\begin{exercise}
+What is Fisher information, observed information, and Hessian. How they are related and why they are useful?
+\end{exercise}
+
+\begin{solution}
+\end{solution}
+
+
+\begin{exercise}
+Find the maximum likelihood estimator for univariate $\theta,$ if $y_i\mid x_i \sim N(x_i\theta,1),$ and then find the asymptotic variance of  $\hat\theta_{\mathrm{MLE}}$ using the closed form of $\hat\theta_{\mathrm{MLE}}$, using Fisher information, using observed information, using Hessian.
+\end{exercise}
+
+\begin{solution}
+\end{solution}
+
+
+
+\end{document}
