@@ -1,0 +1,161 @@
+\documentclass[12pt,a4paper]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% write which packages is used in your text
+\usepackage{amsmath}
+\usepackage[amsmath]{ntheorem}
+\usepackage{lastpage}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+%now you can write a text with French accents 
+\usepackage[utf8]{inputenc}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% write your abbreviation of symbols here
+
+%fill the brackets with your firstname and lastname
+\def\StudentName{FirstName LastName} 
+%fill the brackets with your matricule (poly student number)
+\def\StudentMatricule{StudentNumber}
+% exercise of which week? 
+\def\ExerciseNo{1}
+
+
+
+
+\def \y {\mathbf y}
+\def \X {\mathbf X}
+\def \A {\mathbf A}
+\def \t {^\top}
+\def \inv {^ {-1}}
+\def \x {\mathbf x}
+\def \bbeta {\boldsymbol \beta}
+\def \eeps {\boldsymbol \varepsilon}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% define your tags here
+\theoremheaderfont{\normalfont\bfseries}
+\theorembodyfont{\normalfont}
+\newtheorem{exercise}{Exercise}
+\numberwithin{exercise}{section} % important bit
+
+\newtheorem{solution}{Solution}
+\numberwithin{solution}{section} % important bit
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% define what to write in paper margins
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{{\bf~\StudentName,~\StudentMatricule}}
+\chead{}
+\rhead{\emph{Exercise no~\ExerciseNo}}
+\lfoot{}
+\cfoot{\thepage~/~\pageref{LastPage}}
+\rfoot{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% gives more space and expands margins
+\textwidth 6.4in
+\textheight 9in \oddsidemargin 0in \evensidemargin 0in \topmargin -0.5in
+\renewcommand{\baselinestretch}{2} 
+% this puts more space between lines, so that I can write comments in between
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+
+%%%%%Generates your first page
+\begin{titlepage}
+\begin{center}
+\textsc{\LARGE Exercise no \ExerciseNo}\\[1.5cm]
+\vspace{2in}
+\textsc{\Large \StudentName~\StudentMatricule}\\[0.5cm]
+\textsc{Statistical Machine Learning}\\[0.5cm]
+\today
+\end{center}
+\end{titlepage}
+%%%% Title Page ends here
+
+
+
+\section{Optimization}
+\begin{exercise}
+Show that  $S(\bbeta) = (\y-\X\bbeta)\t  (\y-\X\bbeta)$ is a convex function.
+\end{exercise}
+\begin{solution}
+\end{solution}
+
+
+\section{Implementation} Install Anaconda 3 (along with Python 3.6). Use ``jupiter notebook" to execute your python codes.
+\begin{exercise} Copy paste the following code in your jupyter notebook and upload the grphs for polynomial order=1, order=2, order=3. You may play with the order from 1 to 10 and let me know which order think is a better fit? Why?
+\newpage
+\begin{verbatim}
+# library for data handling and statistics 
+import pandas as pd
+# library for numerical computation
+import numpy as np
+# library for plot
+import matplotlib.pyplot as plt
+# library for plot style
+import seaborn as sns
+# put plots in jupyter window
+%matplotlib inline
+# define the path of data
+PATH = 'http://www-bcf.usc.edu/~gareth/ISL/Advertising.csv'
+# read a CSV data file
+advertising = pd.read_csv(PATH, usecols=[1,2,3,4])
+# seaborn plot
+sns.regplot(advertising.TV, advertising.sales, order=3, ci=None, scatter_kws={'color':'r', 's':9})
+
+# control axes 
+plt.xlim(-10,310)
+plt.ylim(ymin=0);
+\end{verbatim} 
+\end{exercise}
+
+
+\begin{solution}
+\end{solution}
+
+\section{Mathematical Statistics} 
+\begin{exercise} In this exercise you see that the mean and the median both impose a constant model on data, but the constant is estimated differently.
+\begin{itemize}
+\item Show that the mean is the minimizer of of the constant model $y_i = \beta_0 +\varepsilon_i$, using $S(\beta_0) = \sum_{i=1}^n (y_i - \beta_0)^2$ 
+\item Show that the median is the minimizer of of the constant model $y_i = \beta_0 +\varepsilon_i$, using $S(\beta_0) = \sum_{i=1}^n |y_i - \beta_0|$ 
+\item Construct a loss function $S(\beta_0)$ that produces the trimmed-mean as $\hat\beta_0$.
+\end{itemize}
+\end{exercise}
+\begin{solution}
+\end{solution}
+
+
+\begin{exercise} 
+Show maximum likelihood estimator for linear model $y_i=\x_i\t \beta + \varepsilon_i $ coincides with the least squares if  $\varepsilon_i \sim N(0, \sigma^2)$, for a known $\sigma^2$.
+
+\end{exercise}
+\begin{solution}
+\end{solution}
+
+\begin{exercise}
+Recommend a density function for $\varepsilon_i$ that leads to median regression. Median regression minimizes $S(\bbeta) = \sum_{i=1}^n|\y_i - \x_i\t\bbeta|$
+\end{exercise}
+
+\section{Computation}
+
+\begin{exercise}
+How do you compute the least squares estimator  $\hat\bbeta$ using for a given response vector $\y$ and design matrix $\X$
+\begin{itemize}
+\item LU decomposition
+\item QR decomposition
+\item SVD decomposition
+\end{itemize}
+\end{exercise}
+\begin{solution}
+\end{solution}
+\end{document}
