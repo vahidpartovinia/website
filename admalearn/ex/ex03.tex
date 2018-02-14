@@ -1,0 +1,217 @@
+\documentclass[12pt,a4paper]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% write which packages is used in your text
+\usepackage{amsmath}
+\usepackage[amsmath]{ntheorem}
+\usepackage{lastpage}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+%now you can write a text with French accents 
+\usepackage[utf8]{inputenc}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% write your abbreviation of symbols here
+
+%fill the brackets with your firstname and lastname
+\def\StudentName{FirstName LastName} 
+%fill the brackets with your matricule (poly student number)
+\def\StudentMatricule{StudentNumber}
+% exercise of which week? 
+\def\ExerciseNo{3}
+
+
+
+
+\def \y {\mathbf y}
+\def \X {\mathbf X}
+\def \A {\mathbf A}
+\def \t {^\top}
+\def \inv {^ {-1}}
+\def \x {\mathbf x}
+\def \bbeta {\boldsymbol \beta}
+\def \eeps {\boldsymbol \varepsilon}
+
+\def \Q {\mathbf Q}
+\def \R {\mathbf R}
+\def \q {\mathbf q}
+\def \zero {\mathbf 0}
+
+\def \L {\mathbf L}
+\def \U {\mathbf U}
+
+\def \A {\mathbf A}
+\def \P {\mathbf P}
+
+\def \D {\mathbf D}
+\def \MSE {\mathrm{MSE}}
+\def \E {\mathbb{E}}
+\def \V {\mathbb{V}}
+
+\def \sumi {\sum_{i=1}^n}
+\def \sumj {\sum_{j=1}^p}
+
+\def \argmin {\mathrm {argmin}~}
+\def \sign {\mathrm {sign}}
+\def \N {\mathcal{N}}
+\def \eye {\mathbf{I}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% define your tags here
+\theoremheaderfont{\normalfont\bfseries}
+\theorembodyfont{\normalfont}
+\newtheorem{exercise}{Exercise}
+\numberwithin{exercise}{section} % important bit
+
+\newtheorem{solution}{Solution}
+\numberwithin{solution}{section} % important bit
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% define what to write in paper margins
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{{\bf~\StudentName,~\StudentMatricule}}
+\chead{}
+\rhead{\emph{Exercise no~\ExerciseNo}}
+\lfoot{}
+\cfoot{\thepage~/~\pageref{LastPage}}
+\rfoot{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% gives more space and expands margins
+\textwidth 6.4in
+\textheight 9in \oddsidemargin 0in \evensidemargin 0in \topmargin -0.5in
+\renewcommand{\baselinestretch}{2} 
+% this puts more space between lines, so that I can write comments in between
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+
+%%%%%Generates your first page
+\begin{titlepage}
+\begin{center}
+\textsc{\LARGE Exercise no \ExerciseNo}\\[1.5cm]
+\vspace{2in}
+\textsc{\Large \StudentName~\StudentMatricule}\\[0.5cm]
+\textsc{Statistical Machine Learning}\\[0.5cm]
+\today
+\end{center}
+\end{titlepage}
+%%%% Title Page ends here
+
+
+
+\section{Optimization}
+\begin{exercise}
+Find the solution of 
+\begin{itemize}
+\item Orthogonal ridge: $S(\bbeta) = {1\over 2n} \sumi \sumj (y_{ij}-\beta_j)^2 + {\lambda} \sumj \beta_j^2 $ \\
+Hint: first solve $S_j= {1\over 2n} \sumi (y_{ij}-\beta_j)^2 + {\lambda} \sumj | \beta_j |$ , and then generalize. 
+
+\item Orthogonal lasso: $S(\bbeta) = {1\over 2n} \sumi \sumj (y_{ij}-\beta_j)^2 + {\lambda } \sumj | \beta_j | $ \\
+Hint: first solve $S_j= {1\over 2n} \sumi (y_{ij}-\beta_j)^2 + {\lambda } | \beta_j |$ . Solve once for $\beta_j \geq0$ and another time for $\beta_j <0$. Put the pieces together. Then generalize. 
+
+\item Ridge regression: minimize
+$$S(\bbeta) = {1\over 2} (\y - \X\bbeta)\t (\y-\X\bbeta) + {\lambda} \bbeta\t\bbeta$$
+Hint: use vector differentiation formulas of lecture01.
+\item Lasso: Write the coordinate descent algorithm for minimizing
+$$S(\bbeta) = {1\over 2} (\y - \X\bbeta)\t (\y-\X\bbeta) + {\lambda} \sumj |\beta_j|$$
+
+\end{itemize}
+\end{exercise}
+\begin{solution}
+\end{solution}
+
+\newpage
+
+\begin{exercise}
+This extension of least squares allow you to model closed surfaces such as 3D scan of body or face.  \\
+
+Find the linearly constrained least squares estimator $(\y - \X\bbeta)\t(\y-\X\bbeta)$ subject to 
+$\mathbf T\bbeta=\mathbf b$ in which $\mathbf T$ and $\mathbf b$ both are known. Hint: use the Lagrangian dual. \\
+How do you compute this estimator efficiently? 
+\end{exercise}
+\begin{solution}
+\end{solution}
+
+
+\begin{exercise}
+Show that the eigen values of $\mathbf A+\lambda \mathbf I$ equals $\lambda_i+\lambda$ where $\lambda_i$'s are the eigenvalues of $\mathbf A$. Use this result to argue that the ridge regression improves the condition number of $\X\t\X$.\\
+\end{exercise}
+\begin{solution}
+\end{solution}
+\newpage 
+\section{Mathematical Statistics}
+\begin{exercise}
+Show the kernel density estimator $\hat f (y)={1\over n\lambda} \sum_{i=1}^n K({y_i-y\over \lambda })$ 
+ is a probability density,  for any non-negative kernel that $ \int_{-\infty}^\infty K(y)dy=1$, \\
+ Hint : you must show $\hat f(y)\geq 0$ and $\int_{-\infty}^\infty \hat f(y)dy=1$.\\
+\end{exercise}
+
+
+\begin{exercise}
+A weighted linear model with weights $ \mathbf W$ is called ordinary linear regression if $\mathbf 
+W=\sigma^2 \mathbf I$ for a known $\sigma^2$.
+\begin{itemize}
+\item Find the maximum likelihood estimator of $ \bbeta$ for the weighted linear regression. Weighted linear regression   is $\mathbf y=\X \bbeta+ \eeps$ while $\boldsymbol \varepsilon \sim N(\mathbf 0, \mathbf W)$ and $\mathbf W_{n\times n}$ is the known variance covariance matrix of $\boldsymbol \varepsilon$. 
+\item How do you compute the wighted least squares efficiently?
+\item What is $\mathbf W$ in $S(\bbeta) = \sumi a_i (y_i -\x_i\t \bbeta)^2 ?$
+\end{itemize}
+\end{exercise}
+
+\newpage
+\section{Implementation}
+
+\begin{exercise}
+How do you fit a weighted linear regression using a code that only fits the ordinary linear regression?\\
+Hint: re-define $\y$  and $\X$ as a function of $\mathbf W$
+\end{exercise}
+
+\begin{exercise}
+How do you fit ridge regression using a code that only fits the ordinary linear regression?\\ 
+Hint: you must re-write the ridge estimator as a least squares problem and redefine a new (perhaps larger) $\y_\lambda$ and $\X_\lambda$ so that 
+$(\X\t\X+\lambda \mathbf I)\inv \X\t \y = (\X_\lambda\t\X_\lambda)\inv \X_\lambda\t \y_\lambda$.
+\end{exercise}
+\newpage
+
+\begin{exercise}
+Chicago is well-known to be a crime city. Use R to discover where  to  buy a house in Chicago.\\ 
+The crime data of Chicago are publicly available here \\
+{\small
+\url{https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-present/ijzp-q8t2/data}} \\
+ Take the subset of crimes committed in 2017 and plot a red dot (with enough transparency) for each \emph{theft} appeared during 2017 on googlemap. \\
+Hint: Use \texttt{get\_map}, and \texttt{ggmap} functions from 
+\texttt{ggmap} library to download the google map with appropriate zoom, longitude, and latitude. 
+Then add red points using \texttt{geom\_point} function of \texttt{ggplot2} library with transparency on your Chicago map.  Using \texttt{ggplot} functions is not straightforward, check some simple examples first, before trying to overlay your points on the map.\\
+Try to reproduce something similar to my graph (below).\\
+\includegraphics[width=0.5\textwidth]{gmap}
+\begin{solution}
+Put your graph here.
+\end{solution}
+\end{exercise}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
