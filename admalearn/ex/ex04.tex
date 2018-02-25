@@ -1,0 +1,174 @@
+\documentclass[12pt,a4paper]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% write which packages is used in your text
+\usepackage{amsmath}
+\usepackage[amsmath]{ntheorem}
+\usepackage{lastpage}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+%now you can write a text with French accents 
+\usepackage[utf8]{inputenc}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% write your abbreviation of symbols here
+
+%fill the brackets with your firstname and lastname
+\def\StudentName{FirstName LastName} 
+%fill the brackets with your matricule (poly student number)
+\def\StudentMatricule{StudentNumber}
+% exercise of which week? 
+\def\ExerciseNo{4}
+
+
+
+
+\def \y {\mathbf y}
+\def \X {\mathbf X}
+\def \A {\mathbf A}
+\def \t {^\top}
+\def \inv {^ {-1}}
+\def \x {\mathbf x}
+\def \bbeta {\boldsymbol \beta}
+\def \eeps {\boldsymbol \varepsilon}
+
+\def \Q {\mathbf Q}
+\def \R {\mathbf R}
+\def \q {\mathbf q}
+\def \zero {\mathbf 0}
+
+\def \L {\mathbf L}
+\def \U {\mathbf U}
+
+\def \A {\mathbf A}
+\def \P {\mathbf P}
+
+\def \D {\mathbf D}
+\def \MSE {\mathrm{MSE}}
+\def \E {\mathbb{E}}
+\def \V {\mathbb{V}}
+
+\def \sumi {\sum_{i=1}^n}
+\def \sumj {\sum_{j=1}^p}
+
+\def \argmin {\mathrm {argmin}~}
+\def \argmax {\mathrm {argmax}~}
+\def \sign {\mathrm {sign}}
+\def \N {\mathcal{N}}
+\def \eye {\mathbf{I}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% define your tags here
+\theoremheaderfont{\normalfont\bfseries}
+\theorembodyfont{\normalfont}
+\newtheorem{exercise}{Exercise}
+\numberwithin{exercise}{section} % important bit
+
+\newtheorem{solution}{Solution}
+\numberwithin{solution}{section} % important bit
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% define what to write in paper margins
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{{\bf~\StudentName,~\StudentMatricule}}
+\chead{}
+\rhead{\emph{Exercise no~\ExerciseNo}}
+\lfoot{}
+\cfoot{\thepage~/~\pageref{LastPage}}
+\rfoot{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% gives more space and expands margins
+\textwidth 6.4in
+\textheight 9in \oddsidemargin 0in \evensidemargin 0in \topmargin -0.5in
+\renewcommand{\baselinestretch}{2} 
+% this puts more space between lines, so that I can write comments in between
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+
+%%%%%Generates your first page
+\begin{titlepage}
+\begin{center}
+\textsc{\LARGE Exercise no \ExerciseNo}\\[1.5cm]
+\vspace{2in}
+\textsc{\Large \StudentName~\StudentMatricule}\\[0.5cm]
+\textsc{Statistical Machine Learning}\\[0.5cm]
+\today
+\end{center}
+\end{titlepage}
+%%%% Title Page ends here
+
+
+
+\section{Mathematical Statistics}
+\begin{exercise} 
+Read Section 2 of \url{http://www-stat.stanford.edu/~tibs/ftp/lars.pdf}, then solve Ex 3.25 of  Elements of Statistical Learning (ESL) in page 97.
+\end{exercise}
+\begin{solution}
+\end{solution}
+
+\begin{exercise}
+Consider two interesting functions related to Bernoulli distribution, and defined over  $x\in (0,1)$. 
+\begin{eqnarray}
+f(x)&=&x\{\log (1-x)-\log x\}- \log(1-x)\\
+g(x)&=& x(1-x)
+\end{eqnarray}
+\begin{itemize}
+\item Plot these two functions.
+\item Argue how these two functions are related to the concept of information and the concept of entropy.
+\item Write the Tylor expansion of $f(x)$ up to a quadratic term and compare with $g(x)$.
+\item Find $\lim\limits_{x\to 0} x\log(x)$. How does this limit help to define $f(x)$ over $x\in [0,1]$.
+\end{itemize}
+\end{exercise}
+
+\section{Optimization}
+\begin{exercise}
+Many of quadratic multivariate methods fall on eigenvalue problem.
+\begin{itemize}
+\item For given positive definite matrices $\mathbf B$ and $\mathbf W$, show 
+$$ \lambda_\mathrm{max}=\max {\mathbf x\t \mathbf B \mathbf x \over \mathbf x\t \mathbf W \mathbf x}, \quad\quad\mathbf{e}_{\mathrm{max}}=\mathbf \argmax {\mathbf x\t \mathbf B \mathbf x \over \mathbf x\t \mathbf W \mathbf x}  $$  
+where $\lambda_{\mathrm {max}}$ is the maximum eigenvalue of $\mathbf B\mathbf W^{-1}$. \\
+    Hint: use the result of the principal components. 
+
+\item How do you think this optimization problem is related to data classification? 
+\end{itemize}
+\end{exercise}
+\begin{solution}
+\end{solution}
+
+
+\section{Computation}
+\begin{exercise}
+Suppose the data vector $\x_{p\times 1}$mean vector $\boldsymbol \mu_{p\times 1}$ and variance covariance matrix $\boldsymbol \Sigma_{p\times p}$ are given. How do you compute the log likelihood of multivariate normal distribution  efficiently? \\
+\end{exercise}
+\begin{solution}
+\end{solution}
+
+
+
+\newpage
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
