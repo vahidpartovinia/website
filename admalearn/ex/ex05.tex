@@ -1,0 +1,178 @@
+\documentclass[12pt,a4paper]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% write which packages is used in your text
+\usepackage{amsmath}
+\usepackage[amsmath]{ntheorem}
+\usepackage{lastpage}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+%now you can write a text with French accents 
+\usepackage[utf8]{inputenc}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% write your abbreviation of symbols here
+
+%fill the brackets with your firstname and lastname
+\def\StudentName{FirstName LastName} 
+%fill the brackets with your matricule (poly student number)
+\def\StudentMatricule{StudentNumber}
+% exercise of which week? 
+\def\ExerciseNo{5}
+
+
+
+
+\def \y {\mathbf y}
+\def \X {\mathbf X}
+\def \A {\mathbf A}
+\def \t {^\top}
+\def \inv {^ {-1}}
+\def \x {\mathbf x}
+\def \bbeta {\boldsymbol \beta}
+\def \SSigma {\boldsymbol \Sigma}
+\def \eeps {\boldsymbol \varepsilon}
+
+\def \Q {\mathbf Q}
+\def \R {\mathbf R}
+\def \q {\mathbf q}
+\def \zero {\mathbf 0}
+
+\def \L {\mathbf L}
+\def \U {\mathbf U}
+
+\def \A {\mathbf A}
+\def \P {\mathbf P}
+
+\def \D {\mathbf D}
+\def \MSE {\mathrm{MSE}}
+\def \E {\mathbb{E}}
+\def \V {\mathbb{V}}
+
+\def \sumi {\sum_{i=1}^n}
+\def \sumj {\sum_{j=1}^p}
+
+\def \argmin {\mathrm {argmin}~}
+\def \argmax {\mathrm {argmax}~}
+\def \sign {\mathrm {sign}}
+\def \N {\mathcal{N}}
+\def \eye {\mathbf{I}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% define your tags here
+\theoremheaderfont{\normalfont\bfseries}
+\theorembodyfont{\normalfont}
+\newtheorem{exercise}{Exercise}
+\numberwithin{exercise}{section} % important bit
+
+\newtheorem{solution}{Solution}
+\numberwithin{solution}{section} % important bit
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% define what to write in paper margins
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{{\bf~\StudentName,~\StudentMatricule}}
+\chead{}
+\rhead{\emph{Exercise no~\ExerciseNo}}
+\lfoot{}
+\cfoot{\thepage~/~\pageref{LastPage}}
+\rfoot{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% gives more space and expands margins
+\textwidth 6.4in
+\textheight 9in \oddsidemargin 0in \evensidemargin 0in \topmargin -0.5in
+\renewcommand{\baselinestretch}{2} 
+% this puts more space between lines, so that I can write comments in between
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+
+%%%%%Generates your first page
+\begin{titlepage}
+\begin{center}
+\textsc{\LARGE Exercise no \ExerciseNo}\\[1.5cm]
+\vspace{2in}
+\textsc{\Large \StudentName~\StudentMatricule}\\[0.5cm]
+\textsc{Statistical Machine Learning}\\[0.5cm]
+\today
+\end{center}
+\end{titlepage}
+%%%% Title Page ends here
+
+
+
+\section{Mathematical Statistics}
+\begin{exercise} 
+Derive the BIC. Suppose 
+\begin{eqnarray*}
+\y_{n\times 1} \mid \X_{n\times p} , \bbeta_{p\times 1} &\sim& \N(\X\bbeta, \sigma^2 \mathbf I) \\
+\bbeta \mid \X &\sim& \N \left(\hat\bbeta , \left\{ {1\over n} \X\t\X \right\}^{-1} \sigma^2 \right)
+\end{eqnarray*}
+\begin{itemize}
+\item Show that 
+$$-2 \log f(\y \mid \X) = -2 \log\left\{ \int \cdots \int f(\y\mid \X , \bbeta) f(\bbeta\mid \X) d\bbeta \right\} =  -2\log f(\y\mid\hat \bbeta, \X ) +  p \log (n+1) $$
+Hint: first use the second order Tylor expansion of $\log f(y\mid \bbeta, \X)$ around $\hat\bbeta$ and then take the integral. Note that this approximation is exact, because the original function and the Tylor expanded functions both are quadratic functions. \\
+\item For what $f(\bbeta\mid\X)$ the penalization term $\log(n+1)$ changes to $\log n$\\
+Hint: think about a constant function.
+\end{itemize}
+\end{exercise}
+\begin{solution}
+\end{solution}
+\newpage
+
+\begin{exercise}
+In many regression examples the error variance $\sigma$ is unknown. How do you compute AIC if $\sigma$ is unknown.
+
+Note that the plug-in estimator of $\sigma$ cancels out the likelihood, i.e. $\hat\sigma^2 = {1\over n-p} \sum_{i=1}^n{ (y_i - \hat y_i)^2}$ 
+$$-2 \log \mathrm{likelihood}={1\over \hat\sigma^2} \sum_{i=1}^n{ (y_i - \hat y_i)^2}= n-p,$$
+this means a naive AIC implementation reduces to $\mathrm{AIC}=n-p+2p=n+p$, which is only function of sample size and model dimension and is  not function of data $y_i$ and predictions $\hat y_i$!  A similar problem appears in BIC computation as well.
+\end{exercise}
+\begin{solution}
+\end{solution}
+
+\newpage
+\section{Computation}
+
+\begin{exercise}
+Suppose $x\in[-0.1 , 0.1]$ and the unknown regression function $f(x)=x\sin(1/x).$ Simulate $500$ data points from this model with  error $\V(\varepsilon_i)=\sigma^2$. Set the random data generator seed to reproduce the same data and take $\sigma=0.01$. Plot your data and the function such as the one below.\\
+\begin{center}
+\includegraphics[width=0.5\textwidth]{xsin}
+\end{center}
+\begin{enumerate}
+\item Step 1: use linear regression with $p=5$ columns.
+\begin{enumerate}
+\item Use polynomial basis to estimate this unknown function.
+\item Use Fourier basis to estimate this unknown function.
+\item Choose equidistant $\xi_l$ and use the cubic spline basis $b_l(x)=\{\max(0,x-\xi_l)\}^3, l=1,\ldots,p.$ 
+\end{enumerate}
+Plot all these expansion fits, and visually judge which one approximates the function better.\\
+\item Step 2: 
+\begin{itemize}
+\item Choose an appropriate $p$ using BIC for your simulated data, and for all three above bases ($p$ might be different for each basis). For simplicity take $\sigma=0.01$ to be known.
+\item Choose an appropriate $p$ using leave-one-out.
+\item Choose an appropriate $p$ using $10$-fold cross-validation, take $B=20$ and plot the estimated cross-validation error with its confidence bound.
+\item Which basis do you prefer to use for this example? Why?
+\end{itemize}
+Note: I recommend that you implement BIC, leave-one-out, and 10-fold cross-validation yourself, to make sure you understand how they work. It looks simple, but many researchers cannot implement $k$-fold cross-validation and its confidence bound properly.
+\end{enumerate}
+
+\end{exercise}
+
+\begin{solution}
+\end{solution}
+
+
+
+
+
+
+\end{document}
