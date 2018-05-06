@@ -1,0 +1,161 @@
+\documentclass[12pt,a4paper]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% write which packages is used in your text
+\usepackage{amsmath}
+\usepackage[amsmath]{ntheorem}
+\usepackage{lastpage}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+%now you can write a text with French accents 
+\usepackage[utf8]{inputenc}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% write your abbreviation of symbols here
+
+%fill the brackets with your firstname and lastname
+\def\StudentName{FirstName LastName} 
+%fill the brackets with your matricule (poly student number)
+\def\StudentMatricule{StudentNumber}
+% exercise of which week? 
+\def\ExerciseNo{6}
+
+
+
+
+\def \y {\mathbf y}
+\def \X {\mathbf X}
+\def \A {\mathbf A}
+\def \t {^\top}
+\def \inv {^ {-1}}
+\def \x {\mathbf x}
+\def \bbeta {\boldsymbol \beta}
+\def \SSigma {\boldsymbol \Sigma}
+\def \eeps {\boldsymbol \varepsilon}
+
+\def \Q {\mathbf Q}
+\def \R {\mathbf R}
+\def \q {\mathbf q}
+\def \zero {\mathbf 0}
+
+\def \L {\mathbf L}
+\def \U {\mathbf U}
+
+\def \A {\mathbf A}
+\def \P {\mathbf P}
+
+\def \D {\mathbf D}
+\def \MSE {\mathrm{MSE}}
+\def \E {\mathbb{E}}
+\def \V {\mathbb{V}}
+
+\def \sumi {\sum_{i=1}^n}
+\def \sumj {\sum_{j=1}^p}
+
+\def \argmin {\mathrm {argmin}~}
+\def \argmax {\mathrm {argmax}~}
+\def \sign {\mathrm {sign}}
+\def \N {\mathcal{N}}
+\def \eye {\mathbf{I}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% define your tags here
+\theoremheaderfont{\normalfont\bfseries}
+\theorembodyfont{\normalfont}
+\newtheorem{exercise}{Exercise}
+\numberwithin{exercise}{section} % important bit
+
+\newtheorem{solution}{Solution}
+\numberwithin{solution}{section} % important bit
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% define what to write in paper margins
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{{\bf~\StudentName,~\StudentMatricule}}
+\chead{}
+\rhead{\emph{Exercise no~\ExerciseNo}}
+\lfoot{}
+\cfoot{\thepage~/~\pageref{LastPage}}
+\rfoot{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% gives more space and expands margins
+\textwidth 6.4in
+\textheight 9in \oddsidemargin 0in \evensidemargin 0in \topmargin -0.5in
+\renewcommand{\baselinestretch}{2} 
+% this puts more space between lines, so that I can write comments in between
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+
+%%%%%Generates your first page
+\begin{titlepage}
+\begin{center}
+\textsc{\LARGE Exercise no \ExerciseNo}\\[1.5cm]
+\vspace{2in}
+\textsc{\Large \StudentName~\StudentMatricule}\\[0.5cm]
+\textsc{Statistical Machine Learning}\\[0.5cm]
+\today
+\end{center}
+\end{titlepage}
+%%%% Title Page ends here
+
+
+
+\section{Mathematical Statistics}
+\begin{exercise}
+Take a look at the objective function of linear support vector machines $D(\beta_0,\boldsymbol \beta)$ from ``The elements of Statistical Learning'' (ESL) page 131.\\
+Show that minimizing 
+$$D(\beta_0,\boldsymbol \beta)=-\sum\limits_{i\in\mathcal M}
+y_i(\beta_0 + \mathbf x_i^\top \boldsymbol \beta )$$ 
+is equivalent to minimizing 
+$$S(\beta_0,\boldsymbol \beta)=\sum
+_{i=1}^n \{1-y_i(\beta_0+\mathbf x_i^\top\boldsymbol \beta)\}_+.$$
+
+
+\smallskip
+Hint: Start with finding $(\beta_0,\boldsymbol \beta)$ so that $y_i(\beta_0+\mathbf  x_i^\top\boldsymbol \beta) >0, \forall i=1,\ldots,n$. Since $n$ is finite it is equivalent to $y_i(\beta_0+\mathbf x_i^\top\boldsymbol \beta) >\delta$  for some $\delta>0$. (A trivial choice of $0<\delta<\mathrm{min}_{i=1,\ldots,n} \{y_i(\beta_0+\mathbf  x_i^\top\boldsymbol \beta)\} $, which means the vector $(\beta_0,\boldsymbol \beta)$ is re-scalable.) 
+\bigskip
+This means observation $i$ is misclassified if $y_i(\beta_0+\mathbf  x_i^\top\boldsymbol \beta)<\delta$ and now argue it is the same as minimizing 
+$$S(\beta_0,\boldsymbol \beta)=\sum_{i=1}^n \{\delta-y_i(\beta_0+\mathbf  x_i^\top\boldsymbol \beta)\}_+$$ To avoid re-scalability problem, choose for instance $\delta=1$. Still the minimizer $(\hat \beta_0,\hat{\boldsymbol \beta})$ is non-unique if data are separable, because any $S(\hat\beta_0,\hat{\boldsymbol \beta})=0$ is a solution (if you do not understand why you encounter uniqueness problem, look at Figure 4.14 page 129 of ESL giving two blue lines both with $S(\hat\beta_0,\hat{\boldsymbol \beta})=0$; this uniqueness problem is the same as the convergence problem of the logistic regression while data are separable).
+\bigskip
+
+
+{\bf Connection to Ridge Regression}
+
+
+\bigskip
+
+
+One way to find a unique solution is by adding $L_2$ penalty for a given $\lambda>0$ or so called maximizing the margin
+$$S(\beta_0,\boldsymbol \beta)=\sum_{i=1}^n \{1-y_i(\beta_0+\mathbf  x_i^\top\boldsymbol \beta)\}_+ +\lambda \sum_{j=1}^p \beta_j^2$$
+
+A special choice of $\lambda$ while data are not separable gives the maximum margin support vector classifier. This suggests the ridge estimator is a good initial value for the SVM! You can show that the hinge loss above resembles logistic regression objective function, so SVM is like L2 penalized logistic regression. 
+\end{exercise}
+\begin{solution}
+Put your proof here.
+\end{solution}
+
+\newpage
+
+\section{Application}
+\begin{exercise}
+Create a decision tree of depth 5 for the spam data shared on the course website. You may use the \texttt{classtree.ipynb} code shared on the course website and play with it. 
+\end{exercise}
+\begin{solution}
+Put the tree here.
+\end{solution}
+
+
+
+
+
+\end{document}
